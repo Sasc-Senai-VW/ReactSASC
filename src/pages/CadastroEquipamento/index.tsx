@@ -1,31 +1,108 @@
 import "./style.css";
 
+import { useState } from "react";
+
 import { BsPcDisplay } from "react-icons/bs";
-import { BsArrowDownShort } from "react-icons/bs";
 
 
-export default function CadastroEquipamento() {
+
+function CadastroEquipamento() {
+
+  const [categoria, Setcategoria] = useState<string[]>(
+    [
+        "Categoria1",
+        "Categoria2",
+        "Categoria3"
+    ]
+  );
+
+    const [ modelo, setModelo ] = useState<string>("")
+    const [numeroDeSerie, setNumeroDeSerie] = useState<string>(""); 
+    const [fabricante, setFabricante] = useState<string>(""); 
+    const [consumo, setConsumo] = useState<string>(""); 
+    const [setor, setSetor] = useState<string>(""); 
+    const [anoDeFabricacao, setAnoDeFabricacao] = useState<string>(""); 
+    const [preco, setPreco] = useState<string>(""); 
+
+
+
+    function cadastrarEquipamento (event: any) {
+      event.preventDefault();
+
+      formData.append("modelo", modelo)
+      formData.append("numeroDeSerie", numeroDeSerie)
+      formData.append("fabricante", fabricante)
+      formData.append("consumo", consumo)
+      formData.append("setor", setor)
+      formData.append("anoDeFabricacao", anoDeFabricacao)
+      formData.append("preco", preco)
+
+    }
+
+
+
+
+
+
+
   return (
     <>
-     <main>   
+     <main className="main_cadastro">   
         <h1>Novos equipamentos</h1>     
 
         <h2> Cadastrar novos equipamentos </h2> 
 
       <div className="cadastro_de_equipamentos">
-        <form>
+        <form onSubmit={ cadastrarEquipamento } className="cad_formulario" method="POST">
 
 
-          <div className="inputs">
-          <div className="input-with-icon">
+        
 
-            <input placeholder="Modelo"  
-            type="text" 
-            id="campo-modelo" /> 
 
-            <input placeholder="Categoria"
+            <div className="inputs1"> 
+
+             <input placeholder="Modelo"  
              type="text" 
-             id="campo-categoria" />
+             id="campo-modelo" /> 
+
+             <input placeholder="Fabricante" 
+             type="text" 
+             id="campo-fabricante" />
+
+              <input
+              placeholder="Ano de Fabricação"
+              type="text"
+              id="campo-ano_de_fabricação" />
+
+            </div> 
+
+
+            <div className="inputs2">
+
+              <select
+                 name=""
+                 id="select-categoria"
+                 onChange={(e) => setSelect(e.target.value)}
+                 >
+                <option selected disabled value="">Categoria</option>
+                {
+                  categoria.map((tech: any, index: number) => {
+                  return <option key={index} value={tech}>{tech}</option>
+                 })
+                }
+              </select>
+
+              
+          
+              <input placeholder="Consumo" 
+              type="text" 
+              id="campo-consumo" />
+
+              <input placeholder="Preço" 
+              type="text" 
+              id="campo-preço" />
+           
+            </div>
 
             <input
               placeholder="Número de Série"
@@ -33,29 +110,14 @@ export default function CadastroEquipamento() {
               id="campo-numero_de_serie"
             />
             
-                <BsPcDisplay className="modelo-icon"/>
-                <BsArrowDownShort className="seta-icon"/>
 
-                
-            
-          </div>
-          </div>
-
-         
-
-
-          <div className="inputs">
-            <input placeholder="Fabricante" type="text" id="campo-fabricante" />
-            <input placeholder="Consumo" type="text" id="campo-consumo" />
-            <input placeholder="Setor" type="text" id="campo-setor" />
-          </div>
           <div className="inputs3">
-            <input
-              placeholder="Ano de Fabricação"
-              type="text"
-              id="campo-ano_de_fabricação"
-            />
-            <input placeholder="Preço" type="text" id="campo-preço" />
+
+          <input placeholder="Setor" 
+            type="text" 
+            id="campo-setor" />
+            
+            
             <button type="submit">Confirmar</button>
           </div>
         </form>
@@ -118,8 +180,10 @@ export default function CadastroEquipamento() {
         </div>
       </div>
    
-  </main>
+    </main>
 
     </>
   );
 }
+
+export default CadastroEquipamento 

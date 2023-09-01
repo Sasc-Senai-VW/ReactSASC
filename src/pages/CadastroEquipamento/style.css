@@ -17,10 +17,8 @@
     --font2: "Inter", sans-serif;
   }
   
-  main {
+  .main_cadastro {
     height: 100vh;
-    display: flex;
-    flex-direction: column;
   }
   
   h1 {
@@ -69,23 +67,52 @@
     margin-bottom: 20px;
   }
   
-  input {
+  /*input {
     border-radius: 15px;
     border: none;
     background-color: var(--verde-claro);
     margin-bottom: 20px;
     height: 50px;
-    width: 15%;
+    width: 17%;
     text-align: center;
     margin-right: 15px;
+  }
+
+  */
+
+   .main_cadastro #campo-modelo, #campo-fabricante, #campo-ano_de_fabricação{
+    
+    border-radius: 15px;
+    border: none;
+    background-color: var(--verde-claro);
+    margin-bottom: 20px;
+    height: 50px;
+    width: 238px;
+    text-align: center;
+    margin-right: 15px;
+
   }
 
   ::placeholder, .modelo-icon {
     color: var(--cinza_claro);
     font-size: 17px;
-  
-    
   }
+
+  .main_cadastro #select-categoria, #campo-consumo, #campo-preço {
+    border-radius: 15px;
+    border: none;
+    background-color: var(--verde-claro);
+    margin-bottom: 20px;
+    height: 50px;
+    width: 228px;
+    text-align: center;
+    margin-right: 15px;
+    color: var(--cinza_claro);
+    font-size: 17px;
+
+  }
+
+  
 
   .input-with-icon {
     position: relative;
