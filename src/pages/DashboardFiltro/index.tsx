@@ -1,75 +1,189 @@
+import React from "react";
+import ReactApexChart from "react-apexcharts";
+
 import "./style.css";
 
-import React from "react";
-import {
-  Chart as ChartJS,
-  CategoryScale,
-  LinearScale,
-  PointElement,
-  LineElement,
-  Title,
-  Tooltip,
-  Legend,
-} from "chart.js";
-import { Line } from "react-chartjs-2";
-import faker from "faker";
+interface MyComponentProps {}
 
-ChartJS.register(
-  CategoryScale,
-  LinearScale,
-  PointElement,
-  LineElement,
-  Title,
-  Tooltip,
-  Legend
-);
+const MyComponent: React.FC<MyComponentProps> = () => {
+  const chartOptionsLine = {
+    // Define your chart options here
+    chart: {
+      type: "line",
+      background: "#000",
+    },
 
-export const options = {
-  responsive: true,
-  plugins: {
-    legend: {
-      position: "bottom" as const,
+    series: [
+      {
+        name: "Label 1",
+        data: [30, 40, 35, 50, 49, 60, 70, 91, 125, 35, 54, 100],
+        color: "#CF4B83",
+      },
+      {
+        name: "Label 2",
+        data: [10, 20, 30, 40, 50, 60, 70, 80, 90, 100, 110, 120],
+        color: "#01B574",
+      },
+      {
+        name: "Label 3",
+        data: [50, 20, 75, 82, 93, 111, 122, 200, 100, 20, 50, 35],
+        color: "#999999",
+      },
+    ],
+
+    xaxis: {
+      categories: [
+        "jan",
+        "fev",
+        "mar",
+        "abr",
+        "mai",
+        "jun",
+        "jul",
+        "ago",
+        "set",
+        "out",
+        "nov",
+        "dez",
+      ],
     },
-    title: {
-      display: true,
-      text: "Controle de Energia",
+
+    markers: {
+      size: 5,
     },
-  },
+  };
+
+  const chartOptionsDonut = {
+    // Define your chart options here
+    chart: {
+      type: "donut",
+      background: "#fff",
+    },
+
+    series: [44, 55],
+    labels: ["Apple", "Mango"],
+  };
+
+  const chartOptionsColumn = {
+    // Define your chart options here
+    chart: {
+      type: "bar",
+      background: "#fff",
+    },
+
+    series: [
+      {
+        data: [
+          {
+            x: "category A",
+            y: 10,
+          },
+          {
+            x: "category B",
+            y: 18,
+          },
+          {
+            x: "category C",
+            y: 13,
+          },
+        ],
+      },
+    ],
+  };
+
+  const chartOptionsBar = {
+    // Define your chart options here
+    chart: {
+      type: "bar",
+      background: "#fff",
+    },
+
+    plotOptions: {
+      bar: {
+        horizontal: true,
+      },
+    },
+
+    series: [
+      {
+        data: [
+          {
+            x: "category A",
+            y: 20,
+          },
+          {
+            x: "category B",
+            y: 36,
+          },
+          {
+            x: "category C",
+            y: 26,
+          },
+        ],
+      },
+    ],
+  };
+
+  const chartOptionsDonut2 = {
+    // Define your chart options here
+    chart: {
+      type: "donut",
+      background: "#fff",
+    },
+
+    series: [44, 55],
+    labels: ["Apple", "Mango"],
+  };
+
+  return (
+    <main>
+      <div className="graficoLine grafico">
+        <ReactApexChart
+          options={chartOptionsLine}
+          series={chartOptionsLine.series}
+          type="line"
+          // height={350}
+          // width={1000}
+        />
+      </div>
+      <div className="graficoDonut grafico">
+        <ReactApexChart
+          options={chartOptionsDonut}
+          series={chartOptionsDonut.series}
+          type="donut"
+          // height={350}
+          // width={1000}
+        />
+      </div>
+      <div className="graficoColumn grafico">
+        <ReactApexChart
+          options={chartOptionsColumn}
+          series={chartOptionsColumn.series}
+          type="bar"
+          // height={350}
+          // width={1000}
+        />
+      </div>
+      <div className="graficoBar grafico">
+        <ReactApexChart
+          options={chartOptionsBar}
+          series={chartOptionsBar.series}
+          type="bar"
+          // height={350}
+          // width={1000}
+        />
+      </div>
+      <div className="graficoDonut2 grafico">
+        <ReactApexChart
+          options={chartOptionsDonut2}
+          series={chartOptionsDonut2.series}
+          type="donut"
+          // height={350}
+          // width={1000}
+        />
+      </div>
+    </main>
+  );
 };
 
-const labels = [
-  "Janeiro",
-  "Fevereiro",
-  "Março",
-  "Abril",
-  "Maio",
-  "Junho",
-  "Julho",
-  "Agosto",
-  "Setembro",
-  "Outubro",
-  "Novembro",
-  "Dezembro",
-];
-
-export const data = {
-  labels,
-  datasets: [
-    {
-      label: "Energia 1",
-      data: labels.map(() => faker.datatype.number({ min: 0, max: 1000 })),
-      borderColor: "rgb(255, 99, 132)",
-      backgroundColor: "rgba(255, 99, 132, 0.5)",
-    },
-    {
-      label: "Energia 2",
-      data: labels.map(() => faker.datatype.number({ min: 0, max: 1000 })),
-      borderColor: "rgb(53, 162, 235)",
-      backgroundColor: "rgba(53, 162, 235, 0.5)",
-    },
-  ],
-};
-
-export default function DashboardFiltro() {
-  return <Line options={options} data={data} />;
-}
+export default MyComponent;

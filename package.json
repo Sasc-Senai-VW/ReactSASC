@@ -10,9 +10,11 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "apexcharts": "^3.42.0",
     "chart.js": "^4.4.0",
     "faker": "^5.5.3",
     "react": "^18.2.0",
+    "react-apexcharts": "^1.4.1",
     "react-chartjs-2": "^5.2.0",
     "react-dom": "^18.2.0",
     "react-google-charts": "^4.0.1",
