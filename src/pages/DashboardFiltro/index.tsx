@@ -10,7 +10,10 @@ const MyComponent: React.FC<MyComponentProps> = () => {
     // Define your chart options here
     chart: {
       type: "line",
-      background: "#000",
+      background: "#4d4d4d",
+      fontFamily: "JetBrains Mono",
+      foreColor: "#fff",
+      width: "100%",
     },
 
     series: [
@@ -27,7 +30,7 @@ const MyComponent: React.FC<MyComponentProps> = () => {
       {
         name: "Label 3",
         data: [50, 20, 75, 82, 93, 111, 122, 200, 100, 20, 50, 35],
-        color: "#999999",
+        color: "#bcbcbc",
       },
     ],
 
@@ -51,51 +54,158 @@ const MyComponent: React.FC<MyComponentProps> = () => {
     markers: {
       size: 5,
     },
+
+    grid: {
+      row: {
+        colors: ["#333333", "transparent"],
+        opacity: 0.5,
+      },
+      column: {
+        colors: ["#191919"],
+      },
+      xaxis: {
+        lines: {
+          show: true,
+        },
+      },
+    },
+
+    legend: {
+      position: "top",
+    },
+
+    title: {
+      text: "Line Chart",
+      align: "center",
+      margin: 25,
+      offsetX: 0,
+      offsetY: 0,
+      floating: false,
+      style: {
+        fontSize: "18px",
+        fontWeight: "bold",
+        fontFamily: "JetBrains Mono",
+        color: "#fff",
+      },
+    },
   };
 
   const chartOptionsDonut = {
     // Define your chart options here
     chart: {
       type: "donut",
-      background: "#fff",
+      background: "#4d4d4d",
+      fontFamily: "JetBrains Mono",
+      foreColor: "#fff",
+      width: "100%",
     },
 
     series: [44, 55],
     labels: ["Apple", "Mango"],
+    colors: ["#01B574", "#CF4B83"],
+
+    legend: {
+      position: "bottom",
+    },
+
+    title: {
+      text: "Donut Chart",
+      align: "center",
+      margin: 25,
+      offsetX: 0,
+      offsetY: 0,
+      floating: false,
+      style: {
+        fontSize: "18px",
+        fontWeight: "bold",
+        fontFamily: "JetBrains Mono",
+        color: "#fff",
+      },
+    },
   };
 
   const chartOptionsColumn = {
     // Define your chart options here
     chart: {
       type: "bar",
-      background: "#fff",
+      background: "#4d4d4d",
+      fontFamily: "JetBrains Mono",
+      foreColor: "#fff",
+      width: "100%",
     },
 
     series: [
       {
         data: [
           {
-            x: "category A",
+            x: "category 1",
             y: 10,
           },
           {
-            x: "category B",
+            x: "category 2",
             y: 18,
           },
           {
-            x: "category C",
+            x: "category 3",
             y: 13,
           },
+          {
+            x: "category 4",
+            y: 25,
+          },
+          {
+            x: "category 5",
+            y: 16,
+          },
         ],
+
+        color: "#01B574",
       },
     ],
+
+    grid: {
+      row: {
+        colors: ["#333333", "transparent"],
+        opacity: 0.5,
+      },
+      column: {
+        colors: ["#191919"],
+      },
+      xaxis: {
+        lines: {
+          show: true,
+        },
+      },
+    },
+
+    legend: {
+      position: "bottom",
+    },
+
+    title: {
+      text: "Column Chart",
+      align: "center",
+      margin: 25,
+      offsetX: 0,
+      offsetY: 0,
+      floating: false,
+      style: {
+        fontSize: "18px",
+        fontWeight: "bold",
+        fontFamily: "JetBrains Mono",
+        color: "#fff",
+      },
+    },
   };
 
   const chartOptionsBar = {
     // Define your chart options here
     chart: {
       type: "bar",
-      background: "#fff",
+      background: "#4d4d4d",
+      fontFamily: "JetBrains Mono",
+      foreColor: "#fff",
+      width: "100%",
     },
 
     plotOptions: {
@@ -108,80 +218,146 @@ const MyComponent: React.FC<MyComponentProps> = () => {
       {
         data: [
           {
-            x: "category A",
+            x: "category a",
             y: 20,
           },
           {
-            x: "category B",
+            x: "category b",
             y: 36,
           },
           {
-            x: "category C",
+            x: "category c",
             y: 26,
           },
+          {
+            x: "category d",
+            y: 16,
+          },
+          {
+            x: "category e",
+            y: 6,
+          },
         ],
+
+        color: "#CF4B83",
       },
     ],
+
+    grid: {
+      row: {
+        colors: ["#333333", "transparent"],
+        opacity: 0.5,
+      },
+      column: {
+        colors: ["#191919"],
+      },
+      xaxis: {
+        lines: {
+          show: true,
+        },
+      },
+    },
+
+    title: {
+      text: "Bar Chart",
+      align: "center",
+      margin: 25,
+      offsetX: 0,
+      offsetY: 0,
+      floating: false,
+      style: {
+        fontSize: "18px",
+        fontWeight: "bold",
+        fontFamily: "JetBrains Mono",
+        color: "#fff",
+      },
+    },
   };
 
   const chartOptionsDonut2 = {
     // Define your chart options here
     chart: {
       type: "donut",
-      background: "#fff",
+      background: "#4d4d4d",
+      fontFamily: "JetBrains Mono",
+      foreColor: "#fff",
+      width: "100%",
     },
 
-    series: [44, 55],
+    series: [55, 44],
     labels: ["Apple", "Mango"],
+    colors: ["#01B574", "#CF4B83"],
+
+    legend: {
+      position: "bottom",
+    },
+
+    title: {
+      text: "Donut2 Chart",
+      align: "center",
+      margin: 25,
+      offsetX: 0,
+      offsetY: 0,
+      floating: false,
+      style: {
+        fontSize: "18px",
+        fontWeight: "bold",
+        fontFamily: "JetBrains Mono",
+        color: "#fff",
+      },
+    },
   };
 
   return (
     <main>
-      <div className="graficoLine grafico">
-        <ReactApexChart
-          options={chartOptionsLine}
-          series={chartOptionsLine.series}
-          type="line"
-          // height={350}
-          // width={1000}
-        />
-      </div>
-      <div className="graficoDonut grafico">
-        <ReactApexChart
-          options={chartOptionsDonut}
-          series={chartOptionsDonut.series}
-          type="donut"
-          // height={350}
-          // width={1000}
-        />
-      </div>
-      <div className="graficoColumn grafico">
-        <ReactApexChart
-          options={chartOptionsColumn}
-          series={chartOptionsColumn.series}
-          type="bar"
-          // height={350}
-          // width={1000}
-        />
-      </div>
-      <div className="graficoBar grafico">
-        <ReactApexChart
-          options={chartOptionsBar}
-          series={chartOptionsBar.series}
-          type="bar"
-          // height={350}
-          // width={1000}
-        />
-      </div>
-      <div className="graficoDonut2 grafico">
-        <ReactApexChart
-          options={chartOptionsDonut2}
-          series={chartOptionsDonut2.series}
-          type="donut"
-          // height={350}
-          // width={1000}
-        />
-      </div>
+      <section className="secaoGrafico">
+        <div className="graficoLine grafico">
+          <ReactApexChart
+            options={chartOptionsLine}
+            series={chartOptionsLine.series}
+            type="line"
+            // height={350}
+            // width={1000}
+          />
+        </div>
+        <div className="graficoDonut grafico">
+          <ReactApexChart
+            options={chartOptionsDonut}
+            series={chartOptionsDonut.series}
+            type="donut"
+            // height={350}
+            // width={1000}
+          />
+        </div>
+        <div className="graficoColumn grafico">
+          <ReactApexChart
+            options={chartOptionsColumn}
+            series={chartOptionsColumn.series}
+            type="bar"
+            // height={350}
+            // width={1000}
+          />
+        </div>
+
+        <div className="graficoBar grafico">
+          <ReactApexChart
+            options={chartOptionsBar}
+            series={chartOptionsBar.series}
+            type="bar"
+            // height={350}
+            // width={1000}
+          />
+        </div>
+        <div className="graficoDonut2 grafico">
+          <ReactApexChart
+            options={chartOptionsDonut2}
+            series={chartOptionsDonut2.series}
+            type="donut"
+            // height={350}
+            // width={1000}
+          />
+        </div>
+      </section>
     </main>
   );
 };

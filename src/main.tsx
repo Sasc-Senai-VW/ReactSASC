@@ -12,6 +12,7 @@ import Equipamentos from "./pages/Equipamentos";
 import EsqueceuSenha from "./pages/EsqueceuSenha";
 import Login from "./pages/Login";
 import NovoUsuario from "./pages/NovoUsuario";
+import VisaoGeral from "./pages/felipe";
 
 const rootElement = document.getElementById("root");
 createRoot(rootElement!).render(<DashboardFiltro />);
@@ -28,6 +29,7 @@ ReactDOM.createRoot(document.getElementById("root")!).render(
         <Route path="esqueceusenha" element={<EsqueceuSenha />} />
         <Route path="login" element={<Login />} />
         <Route path="novousuario" element={<NovoUsuario />} />
+        <Route path="visaogeral" element={<VisaoGeral />} />
       </Routes>
     </BrowserRouter>
   </React.StrictMode>
