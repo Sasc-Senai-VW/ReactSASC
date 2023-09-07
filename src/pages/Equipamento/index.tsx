@@ -38,33 +38,42 @@ function Equipamento() {
 
   function buscarPor(event: any) {
     event.preventDefault();
+    
+    let equipFiltrados = [];
 
-    const equipFiltrado = equip.filter((eq: any) => eq.id.includes(filtroDigitado.toLocaleUpperCase()))
-    if (equipFiltrado.length === 0) {
+    if (select == 'ID') {
+        equipFiltrados = equip.filter((eq: any) => eq.id.toString().includes(filtroDigitado.toLocaleUpperCase()))
+    } 
+    else if (select == 'MODELO') {
+      equipFiltrados = equip.filter((eq: any) => eq.modelo.includes(filtroDigitado.toLocaleUpperCase()))
+    } 
+    else if (select == 'FABRICANTE') {
+      equipFiltrados = equip.filter((eq: any) => eq.fabricante.includes(filtroDigitado.toLocaleUpperCase()))
+    } 
+    else if (select == 'DATA') {
+      equipFiltrados = equip.filter((eq: any) => eq.data.includes(filtroDigitado.toLocaleUpperCase()))
+    } 
+    else if (select == 'CONSUMO') {
+      equipFiltrados = equip.filter((eq: any) => eq.consumo.includes(filtroDigitado.toLocaleUpperCase()))
+    } 
+    else if (select == 'VALOR') {
+      equipFiltrados = equip.filter((eq: any) => eq.valor.includes(filtroDigitado.toLocaleUpperCase()))
+    }
+
+    // const equipFiltrado = equip.filter((eq: any) => eq.id.includes(filtroDigitado.toLocaleUpperCase()))
+
+    // console.log(filtroDigitado)
+    // console.log(equipFiltrados)
+
+    if (equipFiltrados.length === 0) {
       alert("Nenhum Id encontrado!!")
     }
-    else if (equipFiltrado == equip.filter((eq: any) => eq.id.includes(filtroDigitado.toLocaleUpperCase()))) {
-      setlistaBuscaFiltrado(equipFiltrado)
-    }
-    else if (equipFiltrado == equip.filter((eq: any) => eq.modelo.includes(filtroDigitado.toLocaleUpperCase()))) {
-      setlistaBuscaFiltrado(equipFiltrado)
-    }
-    else if (equipFiltrado == equip.filter((eq: any) => eq.fabricante.includes(filtroDigitado.toLocaleUpperCase()))) {
-      setlistaBuscaFiltrado(equipFiltrado)
-    }
-    else if (equipFiltrado == equip.filter((eq: any) => eq.data.includes(filtroDigitado.toLocaleUpperCase()))) {
-      setlistaBuscaFiltrado(equipFiltrado)
-    }
-    else if (equipFiltrado == equip.filter((eq: any) => eq.consumo.includes(filtroDigitado.toLocaleUpperCase()))) {
-      setlistaBuscaFiltrado(equipFiltrado)
-    }
-    else if (equipFiltrado == equip.filter((eq: any) => eq.valor.includes(filtroDigitado.toLocaleUpperCase()))) {
-      setlistaBuscaFiltrado(equipFiltrado)
-    }
+ 
     else {
-      setlistaBuscaFiltrado(equipFiltrado)
+      setlistaBuscaFiltrado(equipFiltrados)
     }
   }
+
 
   function retornoEquipGeral(event: any) {
     if (event.target.value === "") {
@@ -80,7 +89,26 @@ function Equipamento() {
     })
   }
 
-
+  // function isOdd(number: number): boolean {
+  //   return number % 2 !== 0;
+  // }
+  
+  // function changeTableBackgroundColor(number: number): void {
+  //   const tableElement = document.getElementById('yourTableId') as HTMLTableElement;
+    
+  //   if (tableElement) {
+  //     const backgroundColor = isOdd(number) ? 'red' : 'blue';
+  //     tableElement.style.backgroundColor = backgroundColor;
+  //   } else {
+  //     console.error('Table element not found.');
+  //   }
+  // }
+  
+  // // Example usage:
+  // const numberToCheck = 5; // Replace with your number
+  // changeTableBackgroundColor(numberToCheck);
+  
+  
 
   return (
     <>

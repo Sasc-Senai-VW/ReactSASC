@@ -14,26 +14,26 @@ export default function CardEquipamento(props:any){
     return(
         <>
                     <tbody>
-                        <tr className="linhaImpar">
-                            <td>{props.id}</td>
-                            <td>{props.modelo}</td>
-                            <td>{props.fabricante}</td>
-                            <td>{props.data}</td>
-                            <td>{props.consumo}(kWh)</td>
-                            <td>R$ {props.valor}</td>
+                        <tr className="linhaTabela">
+                            <td className='id'>{props.id}</td>
+                            <td className='modelo'>{props.modelo}</td>
+                            <td className='fabricante'>{props.fabricante}</td>
+                            <td className='data'>{props.data}</td>
+                            <td className='consumo'>{props.consumo}(kWh)</td>
+                            <td className='valor'>R$ {props.valor}</td>
                             
 
                         </tr>
-
+{/* 
                         <tr className="linhaPar">
-                            <td>{props.id}</td>
-                            <td>{props.modelo}</td>
-                            <td>{props.fabricante}</td>
-                            <td>{props.data}</td>
-                            <td>{props.consumo}(kWh)</td>
-                            <td>R$ {props.valor}</td>
+                            <td className='id2'>{props.id}</td>
+                            <td className='modelo2'>{props.modelo}</td>
+                            <td className='fabricante2'>{props.fabricante}</td>
+                            <td className='data2'>{props.data}</td>
+                            <td className='consumo2'>{props.consumo}(kWh)</td>
+                            <td className='valor2'>R$ {props.valor}</td>
 
-                        </tr>
+                        </tr> */}
                     </tbody>
         </>
     )
