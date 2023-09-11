@@ -19,24 +19,39 @@
   
   .main_cadastro {
     height: 100vh;
+
   }
   
-  h1 {
+  .main_cadastro h1 {
     font-family: var(--font2);
     padding: 20px;
     color: black;
   }
   
-  h2,
-  h3 {
+  .main_cadastro h2 {
     font-family: var(--font2);
     color: var(--cinza_claro);
     font-weight: 100;
     font-size: 20px;
     padding: 20px;
-   
+  }
+
+  .main_cadastro h3
+   {
+    font-family: var(--font2);
+    color: var(--cinza_claro);
+    font-weight: 100;
+    font-size: 20px;
+    padding: 30px;
+  }
+
+  .icon_user{
+    
     
   }
+
+
+
   
   /*
     .pseudo_btn_darkmode{
@@ -60,28 +75,15 @@
     flex-direction: column;
   }
   
-  form {
+  .main_cadastro form {
     position: relative;
     display: flex;
     flex-direction: column;
     margin-bottom: 20px;
+    margin-left: 25px;
   }
   
-  /*input {
-    border-radius: 15px;
-    border: none;
-    background-color: var(--verde-claro);
-    margin-bottom: 20px;
-    height: 50px;
-    width: 17%;
-    text-align: center;
-    margin-right: 15px;
-  }
-
-  */
-
-   .main_cadastro #campo-modelo, #campo-fabricante, #campo-ano_de_fabricação{
-    
+   .main_cadastro #campo-modelo, #campo-fabricante,  #campo-ano_de_fabricação {
     border-radius: 15px;
     border: none;
     background-color: var(--verde-claro);
@@ -93,12 +95,8 @@
 
   }
 
-  ::placeholder, .modelo-icon {
-    color: var(--cinza_claro);
-    font-size: 17px;
-  }
 
-  .main_cadastro #select-categoria, #campo-consumo, #campo-preço {
+  .main_cadastro  #select-categoria, #campo-consumo, #campo-preço {
     border-radius: 15px;
     border: none;
     background-color: var(--verde-claro);
@@ -112,27 +110,21 @@
 
   }
 
-  
 
-  .input-with-icon {
-    position: relative;
-    display: flex;
-    align-items: center;
+  .main_cadastro #campo-numero_de_serie , #campo-setor{
+    border-radius: 15px;
+    border: none;
+    background-color: var(--verde-claro);
+    margin-bottom: 20px;
+    height: 50px;
+    width: 228px;
+    text-align: center;
+    margin-right: 15px;
+    color: var(--cinza_claro);
+    font-size: 17px;
+
   }
-  
-  .modelo-icon {
-    position: absolute;
-    left: 25px; 
-    margin-top: -18px;
-    font-size: 22px;
-  }
-  
-   
 
-
-
-
-  
   .cadastro_de_equipamentos button {
     background-color: var(--verde);
     border: none;
@@ -142,13 +134,9 @@
     font-size: 16px;
     cursor: pointer;
     height: 50px;
-    width: 15%;
+    width: 228px;
   }
   
-  .inputs,
-  .inputs3 {
-    margin-left: 20px;
-  }
   
   .tabela {
     font-family: var(--font2);
@@ -171,13 +159,7 @@
     margin-bottom: 10px;
   }
   
-  td {
-    width: 100;
-  }
   
-  table {
-    width: 100%;
-  }
   
   /* -------------------------------- */
   
@@ -490,7 +472,7 @@
     }
   
     .cadastro_de_equipamentos button {
-      width: 17%;
+      width: 20%;
     }
   
     .tabela {

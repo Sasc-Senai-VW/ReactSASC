@@ -2,7 +2,8 @@ import "./style.css";
 
 import { useState } from "react";
 
-import { BsPcDisplay } from "react-icons/bs";
+import { BsPersonCircle } from "react-icons/bs";
+
 
 
 
@@ -16,44 +17,33 @@ function CadastroEquipamento() {
     ]
   );
 
-    const [ modelo, setModelo ] = useState<string>("")
-    const [numeroDeSerie, setNumeroDeSerie] = useState<string>(""); 
-    const [fabricante, setFabricante] = useState<string>(""); 
-    const [consumo, setConsumo] = useState<string>(""); 
-    const [setor, setSetor] = useState<string>(""); 
-    const [anoDeFabricacao, setAnoDeFabricacao] = useState<string>(""); 
-    const [preco, setPreco] = useState<string>(""); 
+  const [select, setSelect] = useState<string>(""); 
 
 
-
-    function cadastrarEquipamento (event: any) {
-      event.preventDefault();
-
-      formData.append("modelo", modelo)
-      formData.append("numeroDeSerie", numeroDeSerie)
-      formData.append("fabricante", fabricante)
-      formData.append("consumo", consumo)
-      formData.append("setor", setor)
-      formData.append("anoDeFabricacao", anoDeFabricacao)
-      formData.append("preco", preco)
-
-    }
-
-
-
+    
 
 
 
 
   return (
     <>
+
+
      <main className="main_cadastro">   
         <h1>Novos equipamentos</h1>     
 
         <h2> Cadastrar novos equipamentos </h2> 
 
+        <div className="icon_user">
+          <BsPersonCircle /> 
+        </div>
+
+       
+        
+        
+
       <div className="cadastro_de_equipamentos">
-        <form onSubmit={ cadastrarEquipamento } className="cad_formulario" method="POST">
+        <form className="cad_formulario" method="POST">
 
 
         
@@ -65,21 +55,7 @@ function CadastroEquipamento() {
              type="text" 
              id="campo-modelo" /> 
 
-             <input placeholder="Fabricante" 
-             type="text" 
-             id="campo-fabricante" />
-
-              <input
-              placeholder="Ano de Fabricação"
-              type="text"
-              id="campo-ano_de_fabricação" />
-
-            </div> 
-
-
-            <div className="inputs2">
-
-              <select
+             <select
                  name=""
                  id="select-categoria"
                  onChange={(e) => setSelect(e.target.value)}
@@ -92,36 +68,54 @@ function CadastroEquipamento() {
                 }
               </select>
 
+              <input
+              placeholder="Número de Série"
+              type="text"
+              id="campo-numero_de_serie" />
+
+            </div> 
+
+
+            <div className="inputs2">
               
-          
+              
+             <input placeholder="Fabricante" 
+             type="text" 
+             id="campo-fabricante" />
+
               <input placeholder="Consumo" 
               type="text" 
               id="campo-consumo" />
 
-              <input placeholder="Preço" 
+              <input placeholder="Setor" 
               type="text" 
-              id="campo-preço" />
-           
+              id="campo-setor" />
+
             </div>
 
-            <input
-              placeholder="Número de Série"
-              type="text"
-              id="campo-numero_de_serie"
-            />
+           
             
 
           <div className="inputs3">
 
-          <input placeholder="Setor" 
-            type="text" 
-            id="campo-setor" />
-            
-            
-            <button type="submit">Confirmar</button>
+            <input
+              placeholder="Ano de Fabricação"
+              type="text"
+              id="campo-ano_de_fabricação" />
+
+              <input placeholder="Preço" 
+              type="text" 
+              id="campo-preço" />
+
+              <button 
+              type="submit">
+              Confirmar
+              </button>
+
           </div>
         </form>
       </div>
+      
       <div className="maquinas_cadastradas">
         <h3>Máquinas Cadastradas</h3>
         <div className="tabela">
