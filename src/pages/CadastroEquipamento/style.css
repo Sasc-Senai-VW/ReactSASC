@@ -92,6 +92,8 @@
     width: 238px;
     text-align: center;
     margin-right: 15px;
+    color: var(--cinza_claro);
+    font-size: 17px;
 
   }
 

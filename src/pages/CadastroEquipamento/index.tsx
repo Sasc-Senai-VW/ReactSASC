@@ -34,14 +34,6 @@ function CadastroEquipamento() {
 
         <h2> Cadastrar novos equipamentos </h2> 
 
-        <div className="icon_user">
-          <BsPersonCircle /> 
-        </div>
-
-       
-        
-        
-
       <div className="cadastro_de_equipamentos">
         <form className="cad_formulario" method="POST">
 
