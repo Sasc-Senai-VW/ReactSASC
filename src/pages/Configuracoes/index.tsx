@@ -20,7 +20,9 @@ import { useState } from "react";
 
     <>
 
-        <main className="main_configuracoes">   
+        <main id="configuracoes">  
+
+    <div className="config_conteudo">
 
         <h1>Configurações</h1>     
 
@@ -28,7 +30,7 @@ import { useState } from "react";
 
 
 
-        <div className="inputs"> 
+          <div className="inputs"> 
 
              <input placeholder="Usuario"  
              type="text" 
@@ -55,7 +57,7 @@ import { useState } from "react";
              type="password" 
              id="campo-confirmar-senha" />          
 
-            </div>
+          </div>
 
             <div className="buttons">
 
@@ -73,12 +75,10 @@ import { useState } from "react";
 
               </div>
 
+    </div> 
 
+      
 
-
-       
-
-        
         </main>
 
 
