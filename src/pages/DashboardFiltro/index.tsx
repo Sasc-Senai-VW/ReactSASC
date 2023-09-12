@@ -309,7 +309,7 @@ const MyComponent: React.FC<MyComponentProps> = () => {
   };
 
   return (
-    <main>
+    <main id="dash">
       <section className="secaoGrafico">
         <div className="graficoLine grafico">
           <ReactApexChart
