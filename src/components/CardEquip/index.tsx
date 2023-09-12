@@ -9,6 +9,7 @@ export default function CardEquipamento(props:any){
             return props.id
         }
     }
+    
 
     
     return(
@@ -21,19 +22,8 @@ export default function CardEquipamento(props:any){
                             <td className='data'>{props.data}</td>
                             <td className='consumo'>{props.consumo}(kWh)</td>
                             <td className='valor'>R$ {props.valor}</td>
-                            
 
                         </tr>
-{/* 
-                        <tr className="linhaPar">
-                            <td className='id2'>{props.id}</td>
-                            <td className='modelo2'>{props.modelo}</td>
-                            <td className='fabricante2'>{props.fabricante}</td>
-                            <td className='data2'>{props.data}</td>
-                            <td className='consumo2'>{props.consumo}(kWh)</td>
-                            <td className='valor2'>R$ {props.valor}</td>
-
-                        </tr> */}
                     </tbody>
         </>
     )

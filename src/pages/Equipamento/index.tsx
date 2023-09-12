@@ -4,13 +4,12 @@ import { useEffect, useState } from "react"
 import './style.css'
 
 
-export default Equipamento;    
+export default Equipamento;   
 
 function Equipamento() {
+  const [equip, setEquip] = useState<any[]>([])
 
-  const [equip, setEquip] = useState<any[]>([
 
-  ])
 
   //state filtros com os filtros definidos
   const [filtros, setFiltros] = useState<string[]>(
@@ -60,13 +59,8 @@ function Equipamento() {
       equipFiltrados = equip.filter((eq: any) => eq.valor.includes(filtroDigitado.toLocaleUpperCase()))
     }
 
-    // const equipFiltrado = equip.filter((eq: any) => eq.id.includes(filtroDigitado.toLocaleUpperCase()))
-
-    // console.log(filtroDigitado)
-    // console.log(equipFiltrados)
-
     if (equipFiltrados.length === 0) {
-      alert("Nenhum Id encontrado!!")
+      alert("Nenhum resultado encontrado!!")
     }
  
     else {
@@ -89,26 +83,25 @@ function Equipamento() {
     })
   }
 
-  // function isOdd(number: number): boolean {
-  //   return number % 2 !== 0;
-  // }
+  function alternarCoresTabela() {
+    let linhas = document.getElementsByTagName("tr"); // Obtém todas as linhas da tabela
   
-  // function changeTableBackgroundColor(number: number): void {
-  //   const tableElement = document.getElementById('yourTableId') as HTMLTableElement;
-    
-  //   if (tableElement) {
-  //     const backgroundColor = isOdd(number) ? 'red' : 'blue';
-  //     tableElement.style.backgroundColor = backgroundColor;
-  //   } else {
-  //     console.error('Table element not found.');
-  //   }
-  // }
+    for (let i = 0; i < linhas.length; i++) {
+      if (i % 2 === 0) { // Se o índice da linha for par
+        linhas[i].style.backgroundColor = "#dceee8 "; // Define a cor de fundo como branco
+      } else { // Se o índice da linha for ímpar
+        linhas[i].style.backgroundColor = "#01b574"; // Define a cor de fundo como verde
+      }
   
-  // // Example usage:
-  // const numberToCheck = 5; // Replace with your number
-  // changeTableBackgroundColor(numberToCheck);
+      // Verifica se a linha possui a classe "tabelaEquip"
+      if (linhas[i].classList.contains("tabelaEquip")) {
+        linhas[i].style.backgroundColor = "white"; // usa a cor desejada
+      }
+    }
+  }
   
-  
+  alternarCoresTabela();
+
 
   return (
     <>
@@ -149,7 +142,7 @@ function Equipamento() {
                 <button>Editar</button>
               </a>
               <a className="btnExcluir" href="">
-                <button>Excluir</button>
+              <button>Excluir</button>
               </a>
             </div>
             <table className="tabelaEqpm">
@@ -178,8 +171,13 @@ function Equipamento() {
                               data={equip.data}
                               consumo={equip.consumo}
                               valor={equip.valor}
+                              
+                              
 
                             />
+
+
+
                           </td>
             }) : listaBuscaFiltrado.map((equip: any, index: number) => {
                             return <td  key={index}>
