@@ -22,6 +22,9 @@
 
  .main_configuracoes{
     height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
  .main_configuracoes h1 {
@@ -72,13 +75,19 @@
   }
 
   .main_configuracoes .button2{
-    background-color: var(--verde-claro);
-    border: none;
+    background-color: white;
+    border-style: double;
+    border-color: #01b574;
     border-radius: 17px;
-    color: var(--branco);
+    color: black;
     font-family: var(--font2);
     font-size: 16px;
     cursor: pointer;
     height: 50px;
     width: 228px;
+  }
+
+  .main_configuracoes .buttons {
+    margin: 0 20px;
+
   }

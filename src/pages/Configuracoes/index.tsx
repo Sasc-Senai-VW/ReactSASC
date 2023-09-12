@@ -57,6 +57,10 @@ import { useState } from "react";
 
             </div>
 
+            <div className="buttons">
+
+           
+
             <button className="button1"
               type="submit">
               Confirmar
@@ -66,6 +70,8 @@ import { useState } from "react";
               type="submit">
               Cancelar
               </button>
+
+              </div>
 
 
 
