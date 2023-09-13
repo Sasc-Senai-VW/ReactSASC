@@ -11,6 +11,8 @@ import { Route, Routes, BrowserRouter } from "react-router-dom";
 import Home from "../../pages/Home";
 
 function Menu() {
+  function ChangeColor() {}
+
   return (
     <>
       <main id="menuSasc">
