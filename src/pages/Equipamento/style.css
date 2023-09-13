@@ -14,13 +14,13 @@
   --font1: "Tajawal", sans-serif;
 }
 
-main {
+main #equip {
   display: flex;
   background-color: rgb(209, 209, 209);
   width: 100%;
 }
 
-.equipamentos {
+#equip .equipamentos {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -28,29 +28,24 @@ main {
   height: 100vh;
 }
 
-.painelEqpm {
-  width: 95%;
+#equip .painelEqpm {
+  margin-left: 15%;
+  width: 75%;
   height: 90%;
   background-color: white;
   border-radius: 20px;
 }
 
-.size1 {
+#equip .size1 {
   font-size: 90%;
 }
 
-.size2 {
+#equip .size2 {
   font-size: 150%;
 }
 
-.painelEqpm {
-  width: 95%;
-  height: 90%;
-  /* background-color: white; */
-  border-radius: 20px;
-}
 
-.buscarInput {
+#equip .buscarInput {
   border-radius: 8px;
   background-color: #e1e0e0;
   border: none;
@@ -61,11 +56,11 @@ main {
   color: black;
 }
 
-.menu2Bbtn a {
+#equip .menu2Bbtn a {
   text-decoration: none;
 }
 
-button {
+#equip button {
   margin-left: 1%;
   width: 5%;
 
@@ -79,7 +74,7 @@ button {
   cursor: pointer;
 }
 
-.btnNovoEqpm button {
+#equip .btnNovoEqpm button {
   text-align: center;
   border-radius: 8px;
   background-color: #cf4b83;
@@ -94,7 +89,7 @@ button {
   cursor: pointer;
 }
 
-.btnEditar button {
+#equip .btnEditar button {
   border-radius: 8px;
   background-color: #dceee8;
   color: rgb(95, 95, 95);
@@ -106,7 +101,7 @@ button {
   cursor: pointer;
 }
 
-.btnExcluir button {
+#equip .btnExcluir button {
   border-radius: 8px;
   background-color: #dceee8;
   color: rgb(95, 95, 95);
@@ -118,7 +113,7 @@ button {
   cursor: pointer;
 }
 
-.tabelaEqpm {
+#equip .tabelaEqpm {
   margin-top: 5%;
   margin-left: 5%;
   border: none;
@@ -129,33 +124,35 @@ button {
   text-align: center;
 }
 
-.tabelaEqpm th {
+#equip .tabelaEqpm th {
   border-radius: 25px 25px 25px 0px;
 }
 
-.tabelaEqpm thead tr {
+#equip .tabelaEqpm thead tr {
   color: black;
   text-align: center;
   font-weight: bold;
 }
 
 
-tr {
-  width: 85vw;
+#equip tr {
+  margin-top: 1%;
+  margin-left: 1%;
+  width: 65vw;
   display: flex;
   border-radius: 10px;
   justify-content: space-evenly;
   align-items: start;
 }
-.tabelaEquip {
+#equip .tabelaEquip {
    flex: 1;
    display: flex;
    flex-direction: column;
    justify-content: space-evenly;
 }
 
-select {
-  margin-left: -40vw;
+#equip select {
+  margin-left: -30vw;
   /* flex: 2; */
   padding: 8px;
   border-radius: 20px;
@@ -167,121 +164,121 @@ select {
   font-size: 16px;
 }
 
-form {
+#equip form {
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
 @media screen and (max-width: 1300px) {
-  .size1 {
+  #equip .size1 {
     font-size: 85%;
   }
 
-  .size2 {
+  #equip .size2 {
     font-size: 100%;
   }
 }
 
 @media screen and (max-width: 1100px) {
-  .size1 {
+  #equip .size1 {
     font-size: 75%;
   }
 
-  .size2 {
+  #equip .size2 {
     font-size: 100%;
   }
 
-  .btnNovoEqpm button {
+  #equip .btnNovoEqpm button {
     font-size: 70%;
   }
 }
 
 @media screen and (max-width: 990px) {
-  .size1 {
+  #equip .size1 {
     font-size: 68%;
   }
 
-  .size2 {
+  #equip .size2 {
     font-size: 100%;
   }
 
-  .btnNovoEqpm button {
+  #equip .btnNovoEqpm button {
     font-size: 60%;
   }
 
-  .tabelaEqpm thead {
+  #equip .tabelaEqpm thead {
     font-size: 80%;
   }
 }
 
 @media screen and (max-width: 890px) {
-  .size1 {
+  #equip .size1 {
     font-size: 58%;
   }
 
-  .size2 {
+  #equip .size2 {
     font-size: 90%;
   }
 
-  .btnNovoEqpm button {
+  #equip .btnNovoEqpm button {
     font-size: 50%;
   }
 
-  .tabelaEqpm thead {
+  #equip .tabelaEqpm thead {
     font-size: 60%;
   }
 }
 
 @media screen and (max-width: 790px) {
-  .size1 {
+  #equip .size1 {
     font-size: 49%;
   }
 
-  .size2 {
+  #equip .size2 {
     font-size: 85%;
   }
 
-  .tabelaEqpm {
+  #equip .tabelaEqpm {
     font-size: 90%;
   }
 }
 
 @media screen and (max-width: 680px) {
-  main {
+  #equip main {
     display: flex;
     flex-direction: column;
   }
 
-  .menu {
+  #equip .menu {
     width: 100%;
     height: 10vh;
     position: fixed;
     bottom: 0;
   }
 
-  .menu_lateral {
+  #equip .menu_lateral {
     padding: 0;
     height: 10vh;
     width: 100%;
     border-radius: 25px 25px 0 0;
   }
 
-  .menu_conteudo {
+  #equip .menu_conteudo {
     align-items: center;
     padding: 0;
     width: 100%;
     height: 10vh;
   }
 
-  .menu_conteudo ul {
+  #equip .menu_conteudo ul {
     display: flex;
     align-items: center;
     width: 100%;
     height: 10vh;
   }
 
-  .item_menu {
+  #equip .item_menu {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -289,7 +286,7 @@ form {
     height: 10vh;
   }
 
-  .item_menu a {
+  #equip .item_menu a {
     padding-left: 0;
     display: flex;
     justify-content: center;
@@ -298,87 +295,92 @@ form {
     padding: 0;
   }
 
-  .pagAtual {
+  #equip .pagAtual {
     margin-left: 0;
     background-color: transparent;
   }
 
-  .IconAtual {
+  #equip .IconAtual {
     color: #cf4b83;
   }
 
-  .btnSair {
+  #equip .btnSair {
     display: none;
   }
 
-  .btn_expandir {
+  #equip .btn_expandir {
     display: none;
   }
 
-  .size1 {
+  #equip .size1 {
     font-size: 55%;
   }
 
-  .size2 {
+  #equip .size2 {
     font-size: 80%;
   }
 
-  .txt_link {
+  #equip .txt_link {
     display: none;
   }
 
-  hr {
+  #equip hr {
     display: none;
   }
 
-  .espaco2 {
+  #equip .espaco2 {
     margin-top: 0;
     width: 20%;
   }
 
-  .painelEqpm {
+  #equip .painelEqpm {
     height: 85%;
     margin-top: -10%;
   }
 }
 
 @media screen and (max-width: 550px) {
-  .tabelaEqpm {
+  #equip .tabelaEqpm {
     font-size: 80%;
   }
 }
 
 @media screen and (max-width: 550px) {
-  .tabelaEqpm {
+  #equip .tabelaEqpm {
     font-size: 70%;
   }
 }
 
 @media screen and (max-width: 450px) {
-  .painelEqpm {
+  #equip .painelEqpm {
     margin-top: -15%;
   }
 
-  .tabelaEqpm {
+  #equip .tabelaEqpm {
     font-size: 60%;
   }
 
-  .btnNovoEqpm button {
+  #equip .btnNovoEqpm button {
     font-size: 35%;
     width: 25%;
   }
 }
 
 @media screen and (max-width: 385px) {
-  .painelEqpm {
+  #equip .painelEqpm {
     margin-top: -20%;
   }
 
-  .tabelaEqpm {
+  #equip .tabelaEqpm {
     font-size: 50%;
   }
 
-  .tabelaEqpm thead {
+  #equip .tabelaEqpm thead {
     font-size: 40%;
   }
+}
+
+
+#equip .linhaFiltro {
+  background-color: none;
 }

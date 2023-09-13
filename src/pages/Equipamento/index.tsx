@@ -86,7 +86,7 @@ function Equipamento() {
   function alternarCoresTabela() {
     let linhas = document.getElementsByTagName("tr"); // Obtém todas as linhas da tabela
   
-    for (let i = 0; i < linhas.length; i++) {
+    for (let i = 1 ; i < linhas.length; i++) {
       if (i % 2 === 0) { // Se o índice da linha for par
         linhas[i].style.backgroundColor = "#dceee8 "; // Define a cor de fundo como branco
       } else { // Se o índice da linha for ímpar
@@ -105,7 +105,7 @@ function Equipamento() {
 
   return (
     <>
-      <main>
+      <main id="equip">
         
         <section className="equipamentos">
           
@@ -146,8 +146,8 @@ function Equipamento() {
               </a>
             </div>
             <table className="tabelaEqpm">
-              <thead>
-                <tr>
+              <thead className="linhaFiltro">
+                <tr className="linhaFiltro">
                   <th scope="col">Id</th>
                   <th scope="col">Modelo</th>
                   <th scope="col">Fabricante</th>

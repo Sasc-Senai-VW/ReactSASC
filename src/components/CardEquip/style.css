@@ -1,55 +1,55 @@
 
-  .tabelaEqpm td {
+  #menuSasc .tabelaEqpm td {
     padding: 1% 2.5%;
     display: flex;
     align-items: center;
     justify-content: left;
   }
 
-  .tabelaEqpm th {
+  #menuSasc .tabelaEqpm th {
     padding: 1% 2.5%;
     display: flex;
     align-items: center;
     justify-content: center;
   }
 
-  .linhaTabela {
+  #menuSasc .linhaTabela {
     /* display: flex; */
-    width: 82vw;
+    width: 60vw;
     background-color: #dceee8;
   }
 
 
-   .id {
+  #menuSasc .id {
     margin-left: -5%;
     font-weight: bold;
     }
 
-  .modelo {
+    #menuSasc .modelo {
     margin-left: 4%;
   }
   
-  .fabricante {
+  #menuSasc .fabricante {
     margin-left: 5%;
   }
   
-  .data {
+  #menuSasc .data {
     width: 10vw;
     /* margin-right: -4%; */
   }
 
-  .consumo {
+  #menuSasc .consumo {
     margin-right: -3%;
   }
   
-  .valor {
+  #menuSasc .valor {
     margin-right: -2%;
   }
-  .check {
+  #menuSasc .check {
     margin-left: -3%;
   }
 
-  input {
+  #menuSasc input {
     display: flex;
     align-items: center;
     justify-content: center;

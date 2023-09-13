@@ -11,9 +11,11 @@ import Equipamento from "./pages/Equipamento";
 import EsqueceuSenha from "./pages/EsqueceuSenha";
 import Login from "./pages/Login";
 import NovoUsuario from "./pages/NovoUsuario";
+import Menu from "./components/Menu";
 
 ReactDOM.createRoot(document.getElementById("root")!).render(
   <React.StrictMode>
+  <Menu />
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Home />} />
