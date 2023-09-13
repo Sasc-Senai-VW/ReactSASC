@@ -55,15 +55,10 @@ import { useState } from "react";
 
              <input placeholder="Confirmar senha"  
              type="password" 
-             id="campo-confirmar-senha" />          
+             id="campo-confirmar-senha" />     
 
-          </div>
-
-            <div className="buttons">
-
-           
-
-            <button className="button1"
+             <div id="buttons">
+             <button className="button1"
               type="submit">
               Confirmar
               </button>
@@ -73,11 +68,13 @@ import { useState } from "react";
               Cancelar
               </button>
 
-              </div>
+             </div>
+           
 
+          </div>
     </div> 
 
-      
+           
 
         </main>
 

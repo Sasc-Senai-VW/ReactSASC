@@ -21,15 +21,19 @@
 
 
  main#configuracoes{
-  width: 100vh;
-    
+  height: 100vh;
+  
 }
 
 .config_conteudo{
   display: flex;
   align-items: center;
   flex-direction: column;
+  padding: 40px;
+  
 }
+
+
 
  #configuracoes h1 {
     font-family: var(--font2);
@@ -49,6 +53,8 @@
     display: flex;
     flex-direction: column;
     margin-left: 40px;
+    align-items: center;
+    text-align: center;
     
   }
 
@@ -91,6 +97,10 @@
     width: 228px;
   }
 
-  #configuracoes .buttons {
+  #buttons {
+    
+    display: flex;
+    justify-content: space-between;
+   
 
   }
