@@ -18,22 +18,14 @@
     --font2: "Inter", sans-serif;
   }
 
-
-
  main#configuracoes{
   height: 100vh;
-  
 }
 
 .config_conteudo{
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  padding: 40px;
+  
   
 }
-
-
 
  #configuracoes h1 {
     font-family: var(--font2);
@@ -49,12 +41,9 @@
     padding: 20px;
   }
 
-  #configuracoes .inputs{
+  #configuracoes input{
     display: flex;
     flex-direction: column;
-    margin-left: 40px;
-    align-items: center;
-    text-align: center;
     
   }
 
@@ -98,7 +87,6 @@
   }
 
   #buttons {
-    
     display: flex;
     justify-content: space-between;
    

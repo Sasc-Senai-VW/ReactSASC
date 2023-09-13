@@ -29,8 +29,8 @@ import { useState } from "react";
         <h2>Configurações de Perfil</h2> 
 
 
-
-          <div className="inputs"> 
+        <form action="">
+         
 
              <input placeholder="Usuario"  
              type="text" 
@@ -71,7 +71,8 @@ import { useState } from "react";
              </div>
            
 
-          </div>
+          
+        </form>
     </div> 
 
            
