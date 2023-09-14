@@ -1,8 +1,12 @@
 import "./style.css";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 import { BsPersonCircle } from "react-icons/bs";
+
+import axios from "axios";
+
+import api from "../../api";
 
 
 
@@ -17,12 +21,19 @@ function CadastroEquipamento() {
     ]
   );
 
-  const [select, setSelect] = useState<string>(""); 
+  const [select, setSelect] = useState<string>("");
+  
+  const [equipamentos, setEquipamentos] = useState([]);
 
-
-    
-
-
+  useEffect(() => {
+    axios.get("/equipamentos")
+      .then((response) => {
+        setEquipamentos(response.data);
+      })
+      .catch((error) => {
+        console.error(error);
+      });
+  }, []);
 
 
   return (
@@ -36,10 +47,6 @@ function CadastroEquipamento() {
 
       <div className="cadastro_de_equipamentos">
         <form className="cad_formulario" method="POST">
-
-
-        
-
 
             <div className="inputs1"> 
 
@@ -112,56 +119,22 @@ function CadastroEquipamento() {
         <h3>Máquinas Cadastradas</h3>
         <div className="tabela">
           <table>
+
+          <thead>
+          <tr>
+            <th>ID</th>
+            <th>Modelo</th>
+            <th>Fabricante</th>
+            <th>Setor</th>
+            <th>Data</th>
+            <th>Valor</th>
+            <th>Watts</th>
             <tbody>
-              <tr>
-                <th>Codigo:1</th>
-                <td>Modelo 1</td>
-                <td>Fabricante 1</td>
-                <td>Categoria 1</td>
-                <td>Setor 1</td>
-                <td>00/00/00</td>
-                <td>R$9,999</td>
-                <td>
-                  1,200 watts/Hr <button>Alterar</button>{" "}
-                </td>
-              </tr>
-              <tr>
-                <th>Codigo:2</th>
-                <td>Modelo 2</td>
-                <td>Fabricante 2</td>
-                <td>Categoria 2</td>
-                <td>Setor 2</td>
-                <td>00/00/00</td>
-                <td>R$9,999</td>
-                <td>
-                  1,200 watts/Hr <button>Alterar</button>{" "}
-                </td>
-              </tr>
-              <tr>
-                <th>Codigo:3</th>
-                <td>Modelo 3</td>
-                <td>Fabricante 3</td>
-                <td>Categoria 3</td>
-                <td>Setor 3</td>
-                <td>00/00/00</td>
-                <td>R$9,999</td>
-                <td>
-                  1,200 watts/Hr <button>Alterar</button>{" "}
-                </td>
-              </tr>
-              <tr>
-                <th>Codigo:4</th>
-                <td>Modelo 4</td>
-                <td>Fabricante 4</td>
-                <td>Categoria 4</td>
-                <td>Setor 4</td>
-                <td>00/00/00</td>
-                <td>R$9,999</td>
-                <td>
-                  1,200 watts/Hr <button>Alterar</button>{" "}
-                </td>
-              </tr>
+
             </tbody>
+          </tr>
+        </thead>
+            
           </table>
         </div>
       </div>

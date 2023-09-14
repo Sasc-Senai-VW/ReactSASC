@@ -19,6 +19,7 @@
   
   .main_cadastro {
     height: 100vh;
+    width: 80%;
 
   }
   
@@ -70,9 +71,11 @@
     
     */
   
+    
   .cadastro_de_equipamentos {
     display: flex;
     flex-direction: column;
+    
   }
   
   .main_cadastro form {
