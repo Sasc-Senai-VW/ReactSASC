@@ -18,9 +18,6 @@
   --cinza: #8f8f8f;
   --font1: "Tajawal", sans-serif;
 }
-.inputFoto {
-  margin-right: -80%;
-}
 
 header {
   position: absolute;
@@ -212,10 +209,10 @@ hr {
 }
 
 .section_1 {
+
   display: flex;
-  justify-content: left;
-  margin-left: 16%;
-  margin-top: 1%;
+  justify-content: center;
+  width: 70vw;
 }
 
 .section_1 input {
@@ -240,12 +237,16 @@ hr {
 }
 
 .section_1 button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   font-size: 100%;
-  margin-left: 10%;
+  margin-top: 10%;
+  margin-left: 30%;
+  border-radius: 25px;
   background-color: var(--cor_verde);
   border: none;
-  border-radius: 30%;
-  width: 10%;
+  width: 20%;
   height: 50px;
   color: white;
   font-weight: 1000;
@@ -311,6 +312,7 @@ hr {
 }
 
 .ultimo_acesso > p {
+  /* margin-top: 15%; */
   color: var(--cinza);
   display: flex;
   margin-left: 10%;
@@ -466,6 +468,7 @@ hr {
   margin: 10px;
 }
 
+
 /*tabela*/
 
 section {
@@ -481,7 +484,7 @@ section {
   display: flex;
   justify-content: center;
   width: 90%;
-  margin-top: 2%;
+  margin-top: 1%;
   margin-left: 5%;
   padding: 10px 10px 10px 10px;
 }
@@ -635,247 +638,3 @@ th {
   }
 }
 
-/* Mobile */
-
-@media screen and (max-width: 680px) {
-  .nome_usuario_m {
-    display: flex;
-  }
-  .controle_usuario_itens {
-    display: flex;
-  }
-  .mobile {
-    display: flex;
-  }
-  .hr_mobile {
-    display: flex;
-  }
-  .tabela_container_mobile {
-    display: flex;
-  }
-}
-
-@media screen and (max-width: 680px) {
-  .Controle_usuario {
-    width: 100%;
-    height: 100%;
-    border-radius: 0%;
-  }
-  .container {
-    display: none;
-  }
-  .novo_usuario {
-    display: none;
-  }
-  .ultimo_acesso {
-    display: none;
-  }
-
-  .section_1 {
-    display: none;
-  }
-  .section_2 {
-    display: none;
-  }
-
-  .foto {
-    display: none;
-  }
-
-  .nome_usuario {
-    display: none;
-  }
-
-  .tabela_container {
-    display: none;
-  }
-
-  .Controle_usuario {
-    display: none;
-  }
-
-  .Container_usuario {
-    display: none;
-  }
-
-  .equipamentos {
-    display: none;
-  }
-}
-
-@media screen and (max-width: 680px) {
-  main {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .menu {
-    width: 100%;
-    height: 10vh;
-    position: fixed;
-    bottom: 0;
-  }
-
-  .menu_lateral {
-    padding: 0;
-    height: 10vh;
-    width: 100%;
-    border-radius: 25px 25px 0 0;
-  }
-
-  .menu_conteudo {
-    align-items: center;
-    padding: 0;
-    width: 100%;
-    height: 10vh;
-  }
-
-  .menu_conteudo ul {
-    display: flex;
-    align-items: center;
-    width: 100%;
-    height: 10vh;
-  }
-
-  .item_menu {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    width: 100%;
-    height: 10vh;
-  }
-
-  .item_menu a {
-    padding-left: 0;
-    display: flex;
-    justify-content: center;
-    font-size: 30px;
-    width: 100%;
-    padding: 0;
-  }
-
-  .pagAtual {
-    margin-left: 0;
-    background-color: transparent;
-  }
-
-  .IconAtual {
-    color: #cf4b83;
-  }
-
-  .btnSair {
-    display: none;
-  }
-
-  .btn_expandir {
-    display: none;
-  }
-
-  .size1 {
-    font-size: 55%;
-  }
-
-  .size2 {
-    font-size: 80%;
-  }
-
-  .txt_link {
-    display: none;
-  }
-
-  .espaco2 {
-    margin-top: 0;
-    width: 20%;
-  }
-
-  .painelEqpm {
-    height: 85%;
-    margin-top: -10%;
-  }
-}
-
-@media screen and (max-width: 569px) {
-  .conteudo_esquerda > button {
-    font-size: 10px;
-  }
-  .nome_usuario {
-    margin-right: 12%;
-  }
-}
-
-@media screen and (max-width: 530px) {
-  .mobile hr {
-    margin-top: 20%;
-  }
-}
-
-@media screen and (max-width: 470px) {
-  .conteudo_esquerda > input {
-    width: 80%;
-  }
-}
-
-@media screen and (max-width: 459px) {
-  .nome_usuario {
-    margin-right: 18%;
-  }
-}
-
-@media screen and (max-width: 452px) {
-  .conteudo_esquerda > button {
-    font-size: 8px;
-  }
-}
-
-@media screen and (max-width: 440px) {
-  .tabela_container_mobile {
-    width: 85%;
-    font-size: 10px;
-  }
-
-  .botao1 {
-    font-size: 8px;
-  }
-}
-
-@media screen and (max-width: 425px) {
-  .mobile hr {
-    margin-top: 25%;
-  }
-}
-
-@media screen and (max-width: 420px) {
-  .painelEqpm {
-    margin-top: -15%;
-  }
-}
-
-@media screen and (max-width: 375px) {
-  .nome_usuario {
-    margin-right: 22%;
-  }
-}
-
-@media screen and (max-width: 369px) {
-  .mobile hr {
-    margin-top: 30%;
-  }
-}
-
-@media screen and (max-width: 359px) {
-  .conteudo_esquerda select {
-    font-size: 10px;
-  }
-}
-
-@media screen and (max-width: 329px) {
-  .nome_usuario {
-    margin-right: 25%;
-  }
-}
-
-@media screen and (max-width: 325px) {
-  .painelEqpm {
-    margin-top: -20%;
-  }
-}
