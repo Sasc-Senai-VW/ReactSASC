@@ -12,7 +12,8 @@ function NovoUsuario() {
 
 return(
 
-<main>
+<main className="novoUsuarioMain">
+
 
     <section className="equipamentos">
       {/*Conteudo Novo usuario*/}
