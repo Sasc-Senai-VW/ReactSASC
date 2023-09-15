@@ -3,13 +3,13 @@ import { Link } from "react-router-dom";
 import Logo from "../../assets/img/Design_sem_nome-removebg-preview.png";
 import Fundo from "../../assets/img/img_fundo-removebg-preview.png";
 
-export default function EsqueceuSenha() {
+export default function NovaSenha() {
   return (
     <>
       <header>
         <div className="cabecalho">
           <img src={Logo} alt="logo" />
-          <label onClick="claroEscuro()">
+          <label onclick="claroEscuro()">
             <input type="checkbox" id="checkbox" className="checkbox" />
             <span id="checkbox2">
               <i />
@@ -17,7 +17,7 @@ export default function EsqueceuSenha() {
           </label>
         </div>
       </header>
-      <main>
+      <main id="novasenha">
         <section className="esquerdinha">
           <div className="pagina_esquerda">
             <Link className="return" to="/login">
@@ -26,20 +26,22 @@ export default function EsqueceuSenha() {
             </Link>
             <h2>Esqueceu a Senha ?</h2>
             <p className="texto">
-              Informe o e-mail, número de celular ou nome de usuário associado à
-              sua conta para alterar sua senha.
+              Insira a sua nova senha, repita sua senha e confirme para
+              finalizar.
             </p>
             <input
               className="caixa_1"
-              type="text"
-              placeholder="U s u á r i o"
+              type="password"
+              placeholder="n o v a   s e n h a"
             />
-
-            <button>
-              <Link to="/novasenha" className="linkavanca">
-                Avançar
-              </Link>
-            </button>
+            <input
+              className="caixa_2"
+              type="password"
+              placeholder="c o n f i r m e   a   s e n h a"
+            />
+            <Link className="confmSenha1" to="/login">
+              <button className="confmSenha2">Avançar</button>
+            </Link>
           </div>
         </section>
         <section className="ladoDireito">
