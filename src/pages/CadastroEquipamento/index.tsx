@@ -10,30 +10,77 @@ import api from "../../api";
 
 
 
+   function CadastroEquipamento() {
 
-function CadastroEquipamento() {
+    const [categorias, setCategorias] = useState<string[]>(
+      [
+          "Categoria1",
+          "Categoria2",
+          "Categoria3"
+      ]
+      );
 
-  const [categoria, Setcategoria] = useState<string[]>(
-    [
-        "Categoria1",
-        "Categoria2",
-        "Categoria3"
-    ]
-  );
+   const [ modelo, setModelo] = useState<string>("")
+   const [ fabricante, setFabricante ] = useState<string>("")
+   const [ ano, setAno ] = useState<string>("")
+   const [ setor, setSetor] = useState<string>("")
+   const [ consumo, setConsumo ] = useState<string>("")
+   const [ preco, setPreco ] = useState<string>("")
+   const [ serie, setSerie ] = useState<string>("")
+  
+   const [select, setSelect] = useState<string>(""); //equipamento selecionado
+  
+ 
+    function cadastrarEquipamento (event: any) {
+      event.prevent.default();
 
-  const [select, setSelect] = useState<string>("");
+     const formdata = new FormData ()
+
+     formdata.append("modelo", modelo)
+     formdata.append("fabricante", fabricante)
+     formdata.append("ano", ano)
+     formdata.append("setor", setor)
+     formdata.append("consumo", consumo)
+     formdata.append("preco", preco)
+     formdata.append("serie", serie)
+   }
+ }
   
   const [equipamentos, setEquipamentos] = useState([]);
 
-  useEffect(() => {
-    axios.get("/equipamentos")
-      .then((response) => {
-        setEquipamentos(response.data);
-      })
-      .catch((error) => {
-        console.error(error);
-      });
-  }, []);
+  const handleSubmit = async (event: any) => {
+    event.preventDefault();
+
+  const formData = new FormData(event.target);
+  }
+
+  const [categoriaSelecionadas, setCategoriaSelecionadas] = useState<string[]>([]); 
+
+  const [select, setSelect] = useState<string>(""); 
+
+
+  function adicionarCategoria() {
+   
+    if (select === "") {
+      
+        alert("Selecione uma categoria para adicionar");
+    } else {
+       
+        if (categoriaSelecionadas.includes(select)) {
+            
+            alert("Essa categoria já foi selecionada");
+        }
+        else {
+
+            let novaCategoriaSelecionadas = [...categoriaSelecionadas];
+
+            novaCategoriaSelecionadas.push(select);
+
+           
+            setCategoriaSelecionadas(novaCategoriaSelecionadas);
+        }
+    }
+}
 
 
   return (
@@ -46,12 +93,13 @@ function CadastroEquipamento() {
         <h2> Cadastrar novos equipamentos </h2> 
 
       <div className="cadastro_de_equipamentos">
-        <form className="cad_formulario" method="POST">
+        <form onSubmit={cadastrarEquipamento} className="cad_formulario"  method="POST">
 
             <div className="inputs1"> 
 
              <input placeholder="Modelo"  
              type="text" 
+             onChange={ (event) => { setModelo(event.target.value) } }
              id="campo-modelo" /> 
 
              <select
@@ -61,8 +109,8 @@ function CadastroEquipamento() {
                  >
                 <option selected disabled value="">Categoria</option>
                 {
-                  categoria.map((tech: any, index: number) => {
-                  return <option key={index} value={tech}>{tech}</option>
+                  categoria.map((categoria: any, index: number) => {
+                  return <option key={index} value={categoria}>{categoria}</option>
                  })
                 }
               </select>
@@ -70,6 +118,7 @@ function CadastroEquipamento() {
               <input
               placeholder="Número de Série"
               type="text"
+              onChange={ (event) => { set(event.target.value) } }
               id="campo-numero_de_serie" />
 
             </div> 
@@ -122,7 +171,7 @@ function CadastroEquipamento() {
 
           <thead>
           <tr>
-            <th>ID</th>
+           
             <th>Modelo</th>
             <th>Fabricante</th>
             <th>Setor</th>
@@ -130,9 +179,21 @@ function CadastroEquipamento() {
             <th>Valor</th>
             <th>Watts</th>
             <tbody>
+          {equipamentos.map((equipamento: any) => (
+            <tr key={equipamento.modelo}>
+              <td>{equipamento.fabricante}</td>
+              <td>{equipamento.setor}</td>
+              <td>{equipamento.data}</td>
+              <td>{equipamento.valor}</td>
+              <td>{equipamento.watts}</td>
+                <button onClick={() => (equipamento.id)}>
+                  Editar
+                </button>
+              </tr>
+            
+          ))}
+        </tbody>
 
-            </tbody>
-          </tr>
         </thead>
             
           </table>
