@@ -1,7 +1,7 @@
 import React from 'react'
 import './style.css'
 import { useState } from 'react';
-import api from '../utils/api';
+import api from '../../utils/api';
 import { useEffect } from 'react';
 
 
@@ -30,7 +30,7 @@ export default function Modal({isOpen, setModalFechado}) {
         formData.append('email', email) 
         formData.append('password', senha) 
         formData.append('user_img', foto) 
-        // formData.append('hardSkills', JSON.stringify(skillsSelecionadas))
+        formData.append('tipo_user', select) 
 
         api.post('users', formData).then( (response) => {
             console.log(response)
