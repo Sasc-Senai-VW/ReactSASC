@@ -12,12 +12,19 @@ import EsqueceuSenha from "./pages/EsqueceuSenha";
 import Login from "./pages/Login";
 import NovoUsuario from "./pages/NovoUsuario";
 import Menu from "./components/Menu";
+<<<<<<< HEAD
 
+=======
+>>>>>>> feature/configuracoes
 
 ReactDOM.createRoot(document.getElementById("root")!).render(
   <React.StrictMode>
     <BrowserRouter>
+<<<<<<< HEAD
       
+=======
+    <Menu />
+>>>>>>> feature/configuracoes
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="cadastroequipamento" element={<CadastroEquipamento />} />

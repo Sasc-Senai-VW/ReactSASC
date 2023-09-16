@@ -1,0 +1,94 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Tajawal", sans-serif;
+  }
+
+
+  :root {
+    --background-menu: #1f1f1f;
+    --verde: #01b574;
+    --verde-claro: #3ba8801c;
+    --branco: #f4f4f4;
+    --cinza_claro: #8f8f8f;
+    --rosa: #cf4b83;
+  
+    --font1: "Tajawal", sans-serif;
+    --font2: "Inter", sans-serif;
+  }
+
+ main#configuracoes{
+  height: 100vh;
+}
+
+.config_conteudo{
+  
+  
+}
+
+ #configuracoes h1 {
+    font-family: var(--font2);
+    padding: 20px;
+    color: black;
+  }
+  
+  #configuracoes h2 {
+    font-family: var(--font2);
+    color: var(--cinza_claro);
+    font-weight: 100;
+    font-size: 20px;
+    padding: 20px;
+  }
+
+  #configuracoes input{
+    display: flex;
+    flex-direction: column;
+    
+  }
+
+   #select-user,  #campo-usuario, #campo-senha, #campo-confirmar-senha {
+    border-radius: 15px;
+    border: none;
+    background-color: var(--verde-claro);
+    margin-bottom: 20px;
+    height: 50px;
+    width: 400px;
+    text-align: center;
+    margin-right: 15px;
+    color: var(--cinza_claro);
+    font-size: 17px;
+    
+  }
+
+  #configuracoes .button1{
+    background-color: var(--verde);
+    border: none;
+    border-radius: 17px;
+    color: white;
+    font-family: var(--font2);
+    font-size: 16px;
+    cursor: pointer;
+    height: 50px;
+    width: 228px;
+  }
+
+  #configuracoes .button2{
+    background-color: white;
+    border-style: double;
+    border-color: #01b574;
+    border-radius: 17px;
+    color: black;
+    font-family: var(--font2);
+    font-size: 16px;
+    cursor: pointer;
+    height: 50px;
+    width: 228px;
+  }
+
+  #buttons {
+    display: flex;
+    justify-content: space-between;
+   
+
+  }
