@@ -1,0 +1,644 @@
+   * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Tajawal", sans-serif;
+  }
+  
+  :root {
+    --background-menu: #1f1f1f;
+    --verde: #01b574;
+    --verde-claro: #3ba8801c;
+    --branco: #f4f4f4;
+    --cinza_claro: #8f8f8f;
+    --rosa: #cf4b83;
+  
+    --font1: "Tajawal", sans-serif;
+    --font2: "Inter", sans-serif;
+  }
+  
+  .main_cadastro {
+    height: 100vh;
+    width: 80%;
+
+  }
+  
+  .main_cadastro h1 {
+    font-family: var(--font2);
+    padding: 20px;
+    color: black;
+    font-size: 35px;
+  }
+  
+  .main_cadastro h2 {
+    font-family: var(--font2);
+    color: var(--cinza_claro);
+    font-weight: 100;
+    font-size: 25px;
+    padding: 20px;
+  }
+
+  .main_cadastro h3
+   {
+    font-family: var(--font2);
+    color: var(--cinza_claro);
+    font-weight: 100;
+    font-size: 22px;
+    padding: 30px;
+  }
+
+  .icon_user{
+    
+    
+  }
+
+
+
+  
+  /*
+    .pseudo_btn_darkmode{
+    border-radius: 20px;
+    background-color: var(--verde);
+    width: 112px;
+    height: 43px;
+    }
+    
+    
+    
+    .pseudo_btn_darkmode > i{
+    color: var(--branco);
+    font-size: 30px;
+    }
+    
+    */
+  
+    
+  .cadastro_de_equipamentos {
+    display: flex;
+    flex-direction: row;
+    
+  }
+  
+  .main_cadastro form {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    margin-left: 25px;
+  }
+  
+   .main_cadastro #campo-ID, #select-categoria,  #campo-modelo{
+    border-radius: 15px;
+    border: none;
+    background-color: var(--verde-claro);
+    margin-bottom: 20px;
+    height: 50px;
+    width: 450px;
+    text-align: center;
+    margin-right: 15px;
+    color: var(--cinza_claro);
+    font-size: 17px;
+
+  }
+
+
+  .main_cadastro  #campo-fabricante, #campo-ano, #campo-setor {
+    border-radius: 15px;
+    border: none;
+    background-color: var(--verde-claro);
+    margin-bottom: 20px;
+    height: 50px;
+    width: 450px;
+    text-align: center;
+    margin-right: 15px;
+    color: var(--cinza_claro);
+    font-size: 17px;
+
+  }
+
+
+  .main_cadastro #campo-data , #campo-consumo{
+    border-radius: 15px;
+    border: none;
+    background-color: var(--verde-claro);
+    margin-bottom: 20px;
+    height: 50px;
+    width: 450px;
+    text-align: center;
+    margin-right: 15px;
+    color: var(--cinza_claro);
+    font-size: 17px;
+
+  }
+
+  .cadastro_de_equipamentos button {
+    background-color: var(--verde);
+    border: none;
+    border-radius: 17px;
+    color: white;
+    font-family: var(--font2);
+    font-size: 16px;
+    cursor: pointer;
+    height: 50px;
+    width: 450px;
+  }
+  
+  
+  .tabela {
+    font-family: var(--font2);
+    font-size: 15px;
+  }
+  
+  .maquinas_cadastradas button {
+    border-radius: 10px;
+    background-color: var(--rosa);
+    color: white;
+    font-weight: bold;
+    font-family: var(--font2);
+    cursor: pointer;
+    text-transform: uppercase;
+    height: 25px;
+    width: 100px;
+    font-size: 16px;
+    border: 0;
+    margin-left: 30px;
+    margin-bottom: 10px;
+  }
+
+  .inpust1{
+    
+    
+  }
+  
+  
+  
+  /* -------------------------------- */
+  
+  .menu {
+    position: fixed;
+    width: 15%;
+    font-weight: 700;
+  }
+  
+  .menu_lateral {
+    background-color: var(--background-menu);
+    padding: 40px 0 40px 0;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+  }
+  
+  .btn_expandir {
+    width: 100%;
+    padding-left: 10%;
+    color: var(--branco);
+    cursor: pointer;
+  }
+  
+  .menu_conteudo {
+    padding-top: 30%;
+  }
+  
+  li a {
+    padding: 5% 0 5% 5%;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    color: var(--branco);
+    text-decoration: none;
+    padding-left: 8%;
+  }
+  
+  .menu_conteudo ul {
+    height: 80vh;
+    width: 100%;
+    list-style-type: none;
+    font-family: var(--font1);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .item_menu {
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .primeiros_itens,
+  .segundos_itens,
+  .terceiros_itens {
+    margin-bottom: 40%;
+  }
+  
+  .txt_link {
+    color: var(--branco);
+    margin-left: 2%;
+    position: fixed;
+  }
+  
+  hr {
+    width: 90%;
+  }
+  
+  .pagAtual {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    border-radius: 10px;
+    background-color: var(--verde);
+    width: 80%;
+    margin-left: 5%;
+  }
+  
+  .espaco2 {
+    margin-top: 10%;
+  }
+  
+  .equipamentos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    margin-left: 250px;
+    margin-top: -20px;
+  }
+  
+  .painelEqpm {
+    width: 95%;
+    height: 90%;
+    background-color: white;
+    border-radius: 20px;
+  }
+  
+  .size1 {
+    color: var(--branco);
+    font-size: 90%;
+  }
+  
+  .size2 {
+    color: var(--branco);
+    font-size: 150%;
+  }
+  
+  .bi {
+    color: var(--branco);
+  }
+  
+  /* ----------------------------------------------- */
+  
+  @media screen and (max-width: 1300px) {
+    .size1 {
+      font-size: 85%;
+    }
+  
+    .size2 {
+      font-size: 100%;
+    }
+  }
+  
+  @media screen and (max-width: 1100px) {
+    .size1 {
+      font-size: 75%;
+    }
+  
+    .size2 {
+      font-size: 100%;
+    }
+  }
+  
+  @media screen and (max-width: 990px) {
+    .size1 {
+      font-size: 68%;
+    }
+  
+    .size2 {
+      font-size: 100%;
+    }
+  }
+  
+  @media screen and (max-width: 890px) {
+    .size1 {
+      font-size: 58%;
+    }
+  
+    .size2 {
+      font-size: 90%;
+    }
+  }
+  
+  @media screen and (max-width: 780px) {
+    .size1 {
+      font-size: 49%;
+    }
+  
+    .size2 {
+      font-size: 85%;
+    }
+  }
+  
+  @media screen and (max-width: 680px) {
+    main {
+      width: 100%;
+      display: flex;
+  
+      text-align: center;
+      justify-content: center;
+      flex-direction: column;
+      height: 90%;
+    }
+  
+    .menu {
+      position: fixed;
+      width: 100%;
+      height: 10%;
+      bottom: 0;
+    }
+  
+    .menu_lateral {
+      padding: 0;
+      /* height: 10vh; */
+      width: 100%;
+      border-radius: 25px 25px 0 0;
+    }
+  
+    .menu_conteudo {
+      align-items: center;
+      padding: 0;
+      width: 100%;
+      /* height: 10vh; */
+    }
+  
+    .menu_conteudo ul {
+      display: flex;
+      align-items: center;
+      width: 100%;
+      /* height: 10vh; */
+    }
+  
+    .item_menu {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      width: 100%;
+      height: 10vh;
+    }
+  
+    .item_menu a {
+      padding-left: 0;
+      display: flex;
+      justify-content: center;
+      font-size: 30px;
+      width: 100%;
+      padding: 0;
+    }
+  
+    .pagAtual {
+      margin-left: 0;
+      background-color: transparent;
+    }
+  
+    .IconAtual {
+      color: var(--verde);
+    }
+  
+    .btnSair {
+      display: none;
+    }
+  
+    .btn_expandir {
+      display: none;
+    }
+  
+    .size1 {
+      font-size: 55%;
+    }
+  
+    .size2 {
+      font-size: 80%;
+    }
+  
+    .txt_link {
+      display: none;
+    }
+  
+    hr {
+      display: none;
+    }
+  
+    .espaco2 {
+      margin-top: 0;
+      width: 20%;
+    }
+  
+    .painelEqpm {
+      height: 85%;
+      margin-top: -10%;
+    }
+  
+    .equipamentos {
+      margin-left: 0px;
+    }
+  }
+  
+  @media screen and (max-width: 420px) {
+    .painelEqpm {
+      margin-top: -15%;
+    }
+  }
+  
+  @media screen and (max-width: 325px) {
+    .painelEqpm {
+      margin-top: -20%;
+    }
+  }
+  
+  /* cadastro --------------------------------------------- */
+  
+  @media screen and (max-width: 1300px) {
+    form {
+      margin-bottom: 10px;
+    }
+  
+    .tabela {
+      font-size: 14px;
+    }
+  
+    .maquinas_cadastradas button {
+      margin-bottom: 5px;
+      height: 20px;
+      font-size: 13px;
+    }
+  }
+  
+  @media screen and (max-width: 1100px) {
+    .equipamentos {
+      margin-left: 200px;
+    }
+  
+    input {
+      width: 17%;
+    }
+  
+    .cadastro_de_equipamentos button {
+      width: 20%;
+    }
+  
+    .tabela {
+      font-size: 13px;
+    }
+  
+    h3 {
+      padding-left: 10px;
+    }
+  }
+  
+  @media screen and (max-width: 990px) {
+    .equipamentos {
+      margin-left: 150px;
+    }
+  
+    .tabela {
+      font-size: 12px;
+    }
+  
+    .maquinas_cadastradas button {
+      height: 18px;
+      font-size: 12px;
+    }
+  }
+  
+  @media screen and (max-width: 780px) {
+    input {
+      width: 20%;
+    }
+  
+    .cadastro_de_equipamentos button {
+      width: 20%;
+    }
+  
+    .equipamentos {
+      margin-left: 130px;
+    }
+  
+    .tabela {
+      font-size: 11px;
+    }
+  
+    .maquinas_cadastradas button {
+      height: 16px;
+      font-size: 10px;
+      width: 70px;
+    }
+  }
+  
+  /*mobile --------------------------------------------- */
+  
+  @media screen and (max-width: 680px) {
+    h1 {
+      display: none;
+    }
+  
+    .equipamentos {
+      display: flex;
+      align-items: center;
+      margin-left: 0;
+      padding-top: -20px;
+    }
+  
+    input {
+      width: 25%;
+    }
+  
+    .cadastro_de_equipamentos button {
+      width: 27%;
+    }
+  
+    .tabela {
+      font-size: 11px;
+    }
+  
+    td {
+      width: 100;
+      padding-left: 7px;
+    }
+  }
+  
+  @media screen and (max-width: 420px) {
+    h2 {
+      font-size: 15px;
+    }
+  
+    h3 {
+      font-size: 15px;
+    }
+  
+    input {
+      width: 26%;
+      font-size: 11px;
+    }
+  
+    .cadastro_de_equipamentos button {
+      width: 29%;
+      font-size: 12px;
+    }
+  
+    .tabela {
+      font-size: 8px;
+    }
+  
+    .maquinas_cadastradas button {
+      height: 12px;
+      font-size: 8px;
+      width: 40px;
+      margin-left: 10px;
+    }
+  
+    td {
+      width: 100;
+      padding-left: 4px;
+    }
+  }
+  
+  @media screen and (max-width: 325px) {
+    h2 {
+      font-size: 12px;
+    }
+  
+    h3 {
+      font-size: 12px;
+    }
+  
+    input {
+      width: 26%;
+      font-size: 9px;
+    }
+  
+    .cadastro_de_equipamentos button {
+      width: 28%;
+      font-size: 8px;
+    }
+  
+    .tabela {
+      font-size: 6px;
+    }
+  
+    .maquinas_cadastradas button {
+      height: 10px;
+      font-size: 6px;
+      width: 35px;
+      margin-left: 5px;
+    }
+  
+    td {
+      width: 100;
+      padding: 0;
+    }
+  }
+
+
+
+    
+
