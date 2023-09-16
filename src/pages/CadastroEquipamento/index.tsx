@@ -4,7 +4,6 @@ import { useEffect, useState } from "react";
 
 import axios from "axios";
 
-import api from "../../utils/api";
 
 
 function CadastroEquipamento() {
@@ -51,12 +50,6 @@ function CadastroEquipamento() {
       console.log(error)
     })
   }
-
-  
- 
-
-
-
 
 return (
   <>
@@ -122,7 +115,7 @@ return (
               id="campo-consumo" />
 
                <input
-              placeholder="modelo"
+              placeholder="Modelo"
               type="text"
               onChange={(event) => { setModelo(event.target.value) }}
               id="campo-modelo" />
