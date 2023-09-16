@@ -1,0 +1,386 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Tajawal", sans-serif;
+  /* font-weight: 700; */
+}
+
+:root {
+  --background-menu: #1f1f1f;
+  --verde: #01b574;
+  --branco: #f4f4f4;
+
+  --font1: "Tajawal", sans-serif;
+}
+
+main #equip {
+  display: flex;
+  background-color: rgb(209, 209, 209);
+  width: 100%;
+}
+
+#equip .equipamentos {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+}
+
+#equip .painelEqpm {
+  margin-left: 15%;
+  width: 75%;
+  height: 90%;
+  background-color: white;
+  border-radius: 20px;
+}
+
+#equip .size1 {
+  font-size: 90%;
+}
+
+#equip .size2 {
+  font-size: 150%;
+}
+
+
+#equip .buscarInput {
+  border-radius: 8px;
+  background-color: #e1e0e0;
+  border: none;
+  width: 25vw;
+  height: 7vh;
+  margin-left: 5%;
+  margin-top: 2%;
+  color: black;
+}
+
+#equip .menu2Bbtn a {
+  text-decoration: none;
+}
+
+#equip button {
+  margin-left: 1%;
+  width: 5%;
+
+  border: 2px solid;
+  border-radius: 30%;
+
+  background-color: transparent;
+  color: black;
+  font-family: var(--font1);
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+#equip .btnNovoEqpm button {
+  text-align: center;
+  border-radius: 8px;
+  background-color: #cf4b83;
+  color: #1f1f1f;
+  border: none;
+  width: 12%;
+  height: 3.5vh;
+  margin-left: 5%;
+  margin-top: 2%;
+  font-weight: 600;
+  font-size: 80%;
+  cursor: pointer;
+}
+
+#equip .btnEditar button {
+  border-radius: 8px;
+  background-color: #dceee8;
+  color: rgb(95, 95, 95);
+  border: none;
+  width: 8%;
+  height: 2.8vh;
+  margin-left: 5%;
+  margin-top: 2%;
+  cursor: pointer;
+}
+
+#equip .btnExcluir button {
+  border-radius: 8px;
+  background-color: #dceee8;
+  color: rgb(95, 95, 95);
+  border: none;
+  width: 8%;
+  height: 2.8vh;
+  margin-left: 5%;
+  margin-top: 2%;
+  cursor: pointer;
+}
+
+#equip .tabelaEqpm {
+  margin-top: 5%;
+  margin-left: 5%;
+  border: none;
+  font-size: 100%;
+  min-width: 90%;
+  border-radius: 25px;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.25);
+  text-align: center;
+}
+
+#equip .tabelaEqpm th {
+  border-radius: 25px 25px 25px 0px;
+}
+
+#equip .tabelaEqpm thead tr {
+  color: black;
+  text-align: center;
+  font-weight: bold;
+}
+
+
+#equip tr {
+  margin-top: 1%;
+  margin-left: 1%;
+  width: 65vw;
+  display: flex;
+  border-radius: 10px;
+  justify-content: space-evenly;
+  align-items: start;
+}
+#equip .tabelaEquip {
+   flex: 1;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-evenly;
+}
+
+#equip select {
+  margin-left: -30vw;
+  /* flex: 2; */
+  padding: 8px;
+  border-radius: 20px;
+  border: 1px solid #000000;
+  background: linear-gradient(136deg, #0000001a 0%, #ffffff0b 100%);
+  /* box-shadow: 30px 30px 60px 0px #00000090; */
+  backdrop-filter: blur(15px);
+  color: #000000fb;
+  font-size: 16px;
+}
+
+#equip form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media screen and (max-width: 1300px) {
+  #equip .size1 {
+    font-size: 85%;
+  }
+
+  #equip .size2 {
+    font-size: 100%;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  #equip .size1 {
+    font-size: 75%;
+  }
+
+  #equip .size2 {
+    font-size: 100%;
+  }
+
+  #equip .btnNovoEqpm button {
+    font-size: 70%;
+  }
+}
+
+@media screen and (max-width: 990px) {
+  #equip .size1 {
+    font-size: 68%;
+  }
+
+  #equip .size2 {
+    font-size: 100%;
+  }
+
+  #equip .btnNovoEqpm button {
+    font-size: 60%;
+  }
+
+  #equip .tabelaEqpm thead {
+    font-size: 80%;
+  }
+}
+
+@media screen and (max-width: 890px) {
+  #equip .size1 {
+    font-size: 58%;
+  }
+
+  #equip .size2 {
+    font-size: 90%;
+  }
+
+  #equip .btnNovoEqpm button {
+    font-size: 50%;
+  }
+
+  #equip .tabelaEqpm thead {
+    font-size: 60%;
+  }
+}
+
+@media screen and (max-width: 790px) {
+  #equip .size1 {
+    font-size: 49%;
+  }
+
+  #equip .size2 {
+    font-size: 85%;
+  }
+
+  #equip .tabelaEqpm {
+    font-size: 90%;
+  }
+}
+
+@media screen and (max-width: 680px) {
+  #equip main {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #equip .menu {
+    width: 100%;
+    height: 10vh;
+    position: fixed;
+    bottom: 0;
+  }
+
+  #equip .menu_lateral {
+    padding: 0;
+    height: 10vh;
+    width: 100%;
+    border-radius: 25px 25px 0 0;
+  }
+
+  #equip .menu_conteudo {
+    align-items: center;
+    padding: 0;
+    width: 100%;
+    height: 10vh;
+  }
+
+  #equip .menu_conteudo ul {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 10vh;
+  }
+
+  #equip .item_menu {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    height: 10vh;
+  }
+
+  #equip .item_menu a {
+    padding-left: 0;
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+    width: 100%;
+    padding: 0;
+  }
+
+  #equip .pagAtual {
+    margin-left: 0;
+    background-color: transparent;
+  }
+
+  #equip .IconAtual {
+    color: #cf4b83;
+  }
+
+  #equip .btnSair {
+    display: none;
+  }
+
+  #equip .btn_expandir {
+    display: none;
+  }
+
+  #equip .size1 {
+    font-size: 55%;
+  }
+
+  #equip .size2 {
+    font-size: 80%;
+  }
+
+  #equip .txt_link {
+    display: none;
+  }
+
+  #equip hr {
+    display: none;
+  }
+
+  #equip .espaco2 {
+    margin-top: 0;
+    width: 20%;
+  }
+
+  #equip .painelEqpm {
+    height: 85%;
+    margin-top: -10%;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  #equip .tabelaEqpm {
+    font-size: 80%;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  #equip .tabelaEqpm {
+    font-size: 70%;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  #equip .painelEqpm {
+    margin-top: -15%;
+  }
+
+  #equip .tabelaEqpm {
+    font-size: 60%;
+  }
+
+  #equip .btnNovoEqpm button {
+    font-size: 35%;
+    width: 25%;
+  }
+}
+
+@media screen and (max-width: 385px) {
+  #equip .painelEqpm {
+    margin-top: -20%;
+  }
+
+  #equip .tabelaEqpm {
+    font-size: 50%;
+  }
+
+  #equip .tabelaEqpm thead {
+    font-size: 40%;
+  }
+}
+
+
+#equip .linhaFiltro {
+  background-color: none;
+}
