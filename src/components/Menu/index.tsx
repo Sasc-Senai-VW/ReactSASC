@@ -11,11 +11,17 @@ import { Route, Routes, BrowserRouter } from "react-router-dom";
 import Home from "../../pages/Home";
 
 function Menu() {
+<<<<<<< HEAD
   function ChangeColor() {}
 
   return (
     <>
       <main id="menuSasc">
+=======
+  return (
+    <>
+      <main>
+>>>>>>> feature/home
         <section className="menu">
           <nav className="menu_lateral">
             <div className="btn_expandir">

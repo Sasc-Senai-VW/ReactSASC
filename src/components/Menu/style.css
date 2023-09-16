@@ -12,6 +12,7 @@
   --font1: "Tajawal", sans-serif;
 }
 
+<<<<<<< HEAD
 #menuSasc .header_logo {
   width: 25%;
 }
@@ -34,6 +35,24 @@
 }
 
 #menuSasc .menu_lateral {
+=======
+.header_logo {
+  width: 25%;
+}
+
+main {
+  display: flex;
+  background-color: rgb(209, 209, 209);
+  width: 100vw;
+}
+
+.menu {
+  width: 15%;
+  position: fixed;
+}
+
+.menu_lateral {
+>>>>>>> feature/home
   background-color: var(--background-menu);
   padding: 40px 0 40px 0;
   display: flex;
@@ -42,7 +61,11 @@
   border-radius: 0 23% 23% 0;
 }
 
+<<<<<<< HEAD
 #menuSasc .btn_expandir {
+=======
+.btn_expandir {
+>>>>>>> feature/home
   width: 100%;
   padding-left: 10%;
   color: var(--branco);
@@ -51,17 +74,29 @@
   align-items: center;
 }
 
+<<<<<<< HEAD
 #menuSasc .menu_conteudo {
   padding-top: 10%;
 }
 
 #menuSasc .item_menu li {
+=======
+.menu_conteudo {
+  padding-top: 10%;
+}
+
+.item_menu li {
+>>>>>>> feature/home
   display: flex;
   align-items: center;
   text-align: center;
 }
 
+<<<<<<< HEAD
 #menuSasc li a {
+=======
+li a {
+>>>>>>> feature/home
   padding: 5% 0 5% 5%;
   display: flex;
   justify-content: space-between;
@@ -72,7 +107,11 @@
   padding-left: 8%;
 }
 
+<<<<<<< HEAD
 #menuSasc .menu_conteudo ul {
+=======
+.menu_conteudo ul {
+>>>>>>> feature/home
   height: 80vh;
   width: 100%;
   list-style-type: none;
@@ -82,39 +121,67 @@
   justify-content: space-between;
 }
 
+<<<<<<< HEAD
 #menuSasc .item_menu {
+=======
+.item_menu {
+>>>>>>> feature/home
   height: 50vh;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
 
+<<<<<<< HEAD
 #menuSasc .primeiros_itens,
+=======
+.primeiros_itens,
+>>>>>>> feature/home
 .segundos_itens,
 .terceiros_itens {
   margin-bottom: 40%;
 }
 
+<<<<<<< HEAD
 #menuSasc .txt_link {
+=======
+.txt_link {
+>>>>>>> feature/home
   margin-left: 2%;
   position: fixed;
 }
 
+<<<<<<< HEAD
 #menuSasc hr {
   width: 90%;
 }
 
 #menuSasc .espaco2 {
+=======
+hr {
+  width: 90%;
+}
+
+.espaco2 {
+>>>>>>> feature/home
   margin-top: 10%;
   display: flex;
   align-items: center;
 }
 
+<<<<<<< HEAD
 #menuSasc .size1 {
   font-size: 90%;
 }
 
 #menuSasc .icon {
+=======
+.size1 {
+  font-size: 90%;
+}
+
+.icon {
+>>>>>>> feature/home
   /* background-color: white; */
   border-radius: 50%;
   /* color: #F4F4F4; */
@@ -122,17 +189,29 @@
   align-items: center;
 }
 
+<<<<<<< HEAD
 #menuSasc .visaoGeral {
+=======
+.visaoGeral {
+>>>>>>> feature/home
   font-family: monospace;
   font-size: 130%;
   font-weight: 900;
 }
 
+<<<<<<< HEAD
 #menuSasc .size2 {
   font-size: 150%;
 }
 
 #menuSasc .pagAtual {
+=======
+.size2 {
+  font-size: 150%;
+}
+
+.pagAtual {
+>>>>>>> feature/home
   display: flex;
   align-items: center;
 
@@ -143,61 +222,106 @@
   margin-left: 5%;
 }
 
+<<<<<<< HEAD
 #menuSasc .pagAtual span {
+=======
+.pagAtual span {
+>>>>>>> feature/home
   text-align: center;
 }
 
 @media screen and (max-width: 1300px) {
+<<<<<<< HEAD
   #menuSasc .size1 {
     font-size: 85%;
   }
 
   #menuSasc .size2 {
+=======
+  .size1 {
+    font-size: 85%;
+  }
+
+  .size2 {
+>>>>>>> feature/home
     font-size: 100%;
   }
 }
 
 @media screen and (max-width: 1100px) {
+<<<<<<< HEAD
   #menuSasc .size1 {
     font-size: 75%;
   }
 
   #menuSasc .size2 {
+=======
+  .size1 {
+    font-size: 75%;
+  }
+
+  .size2 {
+>>>>>>> feature/home
     font-size: 100%;
   }
 }
 
 @media screen and (max-width: 990px) {
+<<<<<<< HEAD
   #menuSasc .size1 {
     font-size: 68%;
   }
 
   #menuSasc .size2 {
+=======
+  .size1 {
+    font-size: 68%;
+  }
+
+  .size2 {
+>>>>>>> feature/home
     font-size: 100%;
   }
 }
 
 @media screen and (max-width: 890px) {
+<<<<<<< HEAD
   #menuSasc .size1 {
     font-size: 58%;
   }
 
   #menuSasc .size2 {
+=======
+  .size1 {
+    font-size: 58%;
+  }
+
+  .size2 {
+>>>>>>> feature/home
     font-size: 90%;
   }
 }
 
 @media screen and (max-width: 780px) {
+<<<<<<< HEAD
   #menuSasc .size1 {
     font-size: 49%;
   }
 
   #menuSasc .size2 {
+=======
+  .size1 {
+    font-size: 49%;
+  }
+
+  .size2 {
+>>>>>>> feature/home
     font-size: 85%;
   }
 }
 
 @media screen and (max-width: 680px) {
+<<<<<<< HEAD
   #menuSasc .eqipamentos {
     height: 100vh;
   }
@@ -207,11 +331,26 @@
   }
 
   #menuSasc main {
+=======
+  .eqipamentos {
+    height: 100vh;
+  }
+
+  .painelEqpm {
+    height: 80vh;
+  }
+
+  main {
+>>>>>>> feature/home
     display: flex;
     flex-direction: column;
   }
 
+<<<<<<< HEAD
   #menuSasc .menu {
+=======
+  .menu {
+>>>>>>> feature/home
     width: 100%;
     height: 10vh;
     position: fixed;
@@ -219,28 +358,44 @@
     z-index: 1;
   }
 
+<<<<<<< HEAD
   #menuSasc .menu_lateral {
+=======
+  .menu_lateral {
+>>>>>>> feature/home
     padding: 0;
     height: 10vh;
     width: 100%;
     border-radius: 25px 25px 0 0;
   }
 
+<<<<<<< HEAD
   #menuSasc .menu_conteudo {
+=======
+  .menu_conteudo {
+>>>>>>> feature/home
     align-items: center;
     padding: 0;
     width: 100%;
     height: 10vh;
   }
 
+<<<<<<< HEAD
   #menuSasc .menu_conteudo ul {
+=======
+  .menu_conteudo ul {
+>>>>>>> feature/home
     display: flex;
     align-items: center;
     width: 100%;
     height: 10vh;
   }
 
+<<<<<<< HEAD
   #menuSasc .item_menu {
+=======
+  .item_menu {
+>>>>>>> feature/home
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -248,7 +403,11 @@
     height: 10vh;
   }
 
+<<<<<<< HEAD
   #menuSasc .item_menu a {
+=======
+  .item_menu a {
+>>>>>>> feature/home
     padding-left: 0;
     display: flex;
     justify-content: center;
@@ -257,11 +416,16 @@
     padding: 0;
   }
 
+<<<<<<< HEAD
   #menuSasc .pagAtual {
+=======
+  .pagAtual {
+>>>>>>> feature/home
     margin-left: 0;
     background-color: transparent;
   }
 
+<<<<<<< HEAD
   #menuSasc .IconAtual {
     color: #cf4b83;
   }
@@ -291,11 +455,46 @@
   }
 
   #menuSasc .espaco2 {
+=======
+  .IconAtual {
+    color: #cf4b83;
+  }
+
+  .btnSair {
+    display: none;
+  }
+
+  .btn_expandir {
+    display: none;
+  }
+
+  .size1 {
+    font-size: 55%;
+  }
+
+  .size2 {
+    font-size: 80%;
+  }
+
+  .txt_link {
+    display: none;
+  }
+
+  hr {
+    display: none;
+  }
+
+  .espaco2 {
+>>>>>>> feature/home
     margin-top: 0;
     width: 20%;
   }
 
+<<<<<<< HEAD
   #menuSasc .painelEqpm {
+=======
+  .painelEqpm {
+>>>>>>> feature/home
     height: 85%;
     margin-top: -10%;
     width: 85%;
@@ -304,7 +503,11 @@
 }
 
 @media screen and (max-width: 420px) {
+<<<<<<< HEAD
   #menuSasc .painelEqpm {
+=======
+  .painelEqpm {
+>>>>>>> feature/home
     margin-top: -15%;
     height: 100%;
     margin-top: 15%;

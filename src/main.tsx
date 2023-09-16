@@ -16,6 +16,7 @@ import Menu from "./components/Menu";
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 >>>>>>> feature/configuracoes
@@ -26,11 +27,15 @@ createRoot(rootElement!).render(<DashboardFiltro />);
 >>>>>>> feature/dashboardFiltro
 =======
 >>>>>>> feature/equipamentos
+=======
+import Header from "./components/Header";
+>>>>>>> feature/home
 
 ReactDOM.createRoot(document.getElementById("root")!).render(
   <React.StrictMode>
   <Menu />
     <BrowserRouter>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
       
@@ -40,6 +45,10 @@ ReactDOM.createRoot(document.getElementById("root")!).render(
 =======
       <Menu />
 >>>>>>> feature/dashboardFiltro
+=======
+      <Header />
+      <Menu />
+>>>>>>> feature/home
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="cadastroequipamento" element={<CadastroEquipamento />} />
