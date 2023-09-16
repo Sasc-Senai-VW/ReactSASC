@@ -13,6 +13,7 @@ import EsqueceuSenha from "./pages/EsqueceuSenha";
 import Login from "./pages/Login";
 import NovoUsuario from "./pages/NovoUsuario";
 <<<<<<< HEAD
+<<<<<<< HEAD
 import Menu from "./components/Menu";
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -34,11 +35,15 @@ import Header from "./components/Header";
 =======
 import NovaSenha from "./pages/NovaSenha";
 >>>>>>> feature/login
+=======
+import Menu from "./components/Menu";
+>>>>>>> feature/novoUsuario
 
 ReactDOM.createRoot(document.getElementById("root")!).render(
   <React.StrictMode>
   <Menu />
     <BrowserRouter>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -53,6 +58,9 @@ ReactDOM.createRoot(document.getElementById("root")!).render(
       <Header />
       <Menu />
 >>>>>>> feature/home
+=======
+    <Menu />
+>>>>>>> feature/novoUsuario
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="cadastroequipamento" element={<CadastroEquipamento />} />

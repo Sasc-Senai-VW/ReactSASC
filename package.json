@@ -13,6 +13,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     "axios": "^1.5.0",
 =======
     "apexcharts": "^3.42.0",
@@ -25,10 +26,14 @@
 =======
     "prop-types": "^15.8.1",
 >>>>>>> feature/home
+=======
+    "axios": "^1.5.0",
+>>>>>>> feature/novoUsuario
     "react": "^18.2.0",
     "react-apexcharts": "^1.4.1",
     "react-chartjs-2": "^5.2.0",
     "react-dom": "^18.2.0",
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -41,6 +46,10 @@
 >>>>>>> feature/home
     "react-icons": "^4.11.0",
     "react-router-dom": "^6.15.0"
+=======
+    "react-icons": "^4.11.0",
+    "react-router-dom": "^6.16.0"
+>>>>>>> feature/novoUsuario
   },
   "devDependencies": {
     "@types/faker": "^6.6.9",
