@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Tajawal", sans-serif;
+  font-family: "Tajawal", sans- rif;
   /* font-weight: 700; */
 }
 
@@ -14,38 +14,91 @@
   --font1: "Tajawal", sans-serif;
 }
 
-main #equip {
+main {
   display: flex;
   background-color: rgb(209, 209, 209);
   width: 100%;
 }
 
-#equip .equipamentos {
+.tabelaEqpm td {
+  padding: 1% 2.5%;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+}
+
+.table__header {
+  margin-top: 2%;
+  width: 100%;
+  height: 10%;
+  background-color: #fff4;
+  padding: .8rem 1rem;
+
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.table__header .input-group {
+  width: 35%;
+  height: 100%;
+  background-color: rgba(18, 18, 18, 0.403);
+  padding: 0 .8rem;
+  border-radius: 2rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  transition: .2s;
+}
+
+.table__header .input-group:hover {
+  width: 45%;
+  background-color: #fff8;
+  box-shadow: 0 .1rem .4rem #0002;
+}
+
+.table__header .input-group img {
+  width: 1.2rem;
+  height: 1.2rem;
+  cursor: pointer;
+}
+
+.table__header .input-group input {
+  width: 100%;
+  padding: 0 .5rem 0 .3rem;
+  background-color: transparent;
+  border: none;
+  outline: none;
+}
+
+
+.equipamentos {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 100%;
+  width: 80%;
   height: 100vh;
 }
 
-#equip .painelEqpm {
-  margin-left: 15%;
-  width: 75%;
+.painelEqpm {
+  width: 80%;
   height: 90%;
   background-color: white;
   border-radius: 20px;
 }
 
-#equip .size1 {
+.size1 {
   font-size: 90%;
 }
 
-#equip .size2 {
+.size2 {
   font-size: 150%;
 }
 
 
-#equip .buscarInput {
+.buscarInput {
   border-radius: 8px;
   background-color: #e1e0e0;
   border: none;
@@ -56,15 +109,15 @@ main #equip {
   color: black;
 }
 
-#equip .menu2Bbtn a {
+.menu2Bbtn a {
   text-decoration: none;
 }
 
-#equip button {
+button {
   margin-left: 1%;
   width: 5%;
 
-  border: 2px solid;
+  border: none;
   border-radius: 30%;
 
   background-color: transparent;
@@ -74,7 +127,7 @@ main #equip {
   cursor: pointer;
 }
 
-#equip .btnNovoEqpm button {
+.btnNovoEqpm button {
   text-align: center;
   border-radius: 8px;
   background-color: #cf4b83;
@@ -89,7 +142,7 @@ main #equip {
   cursor: pointer;
 }
 
-#equip .btnEditar button {
+.btnEditar button {
   border-radius: 8px;
   background-color: #dceee8;
   color: rgb(95, 95, 95);
@@ -101,7 +154,7 @@ main #equip {
   cursor: pointer;
 }
 
-#equip .btnExcluir button {
+.btnExcluir button {
   border-radius: 8px;
   background-color: #dceee8;
   color: rgb(95, 95, 95);
@@ -113,46 +166,44 @@ main #equip {
   cursor: pointer;
 }
 
-#equip .tabelaEqpm {
+.tabelaEqpm {
   margin-top: 5%;
   margin-left: 5%;
   border: none;
   font-size: 100%;
-  min-width: 90%;
+  min-width: 70%;
   border-radius: 25px;
   box-shadow: 0 0 30px rgba(0, 0, 0, 0.25);
   text-align: center;
 }
 
-#equip .tabelaEqpm th {
+.tabelaEqpm th {
   border-radius: 25px 25px 25px 0px;
 }
 
-#equip .tabelaEqpm thead tr {
+.tabelaEqpm thead tr {
   color: black;
   text-align: center;
   font-weight: bold;
 }
 
 
-#equip tr {
-  margin-top: 1%;
-  margin-left: 1%;
-  width: 65vw;
+tr {
+  width: 85vw;
   display: flex;
   border-radius: 10px;
   justify-content: space-evenly;
   align-items: start;
 }
-#equip .tabelaEquip {
+.tabelaEquip {
    flex: 1;
    display: flex;
    flex-direction: column;
    justify-content: space-evenly;
 }
 
-#equip select {
-  margin-left: -30vw;
+select {
+  margin-right: -15vw;
   /* flex: 2; */
   padding: 8px;
   border-radius: 20px;
@@ -161,124 +212,202 @@ main #equip {
   /* box-shadow: 30px 30px 60px 0px #00000090; */
   backdrop-filter: blur(15px);
   color: #000000fb;
-  font-size: 16px;
+  font-size: 12px;
 }
 
-#equip form {
+form {
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
+
+.export__file {
+  position: relative;
+}
+
+.export__file .export__file-btn {
+  display: inline-block;
+  width: 2rem;
+  height: 2rem;
+  background: #fff6 url(../../assets/img/export.png) center / 80% no-repeat;
+  border-radius: 50%;
+  transition: .2s ease-in-out;
+}
+
+.export__file .export__file-btn:hover { 
+  background-color: #fff;
+  transform: scale(1.15);
+  cursor: pointer;
+}
+
+.export__file input {
+  display: none;
+}
+
+.export__file .export__file-options {
+  position: absolute;
+  right: 0;
+  
+  width: 12rem;
+  border-radius: .5rem;
+  overflow: hidden;
+  text-align: center;
+
+  opacity: 0;
+  transform: scale(.8);
+  transform-origin: top right;
+  
+  box-shadow: 0 .2rem .5rem #0004;
+  
+  transition: .2s;
+}
+
+.export__file input:checked + .export__file-options {
+  opacity: 1;
+  transform: scale(1);
+  z-index: 100;
+}
+
+.export__file .export__file-options label{
+  display: block;
+  width: 100%;
+  padding: .6rem 0;
+  background-color: #f2f2f2;
+  
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  transition: .2s ease-in-out;
+}
+
+.export__file .export__file-options label:first-of-type{
+  padding: 1rem 0;
+  background-color: #86e49d !important;
+}
+
+.export__file .export__file-options label:hover{
+  transform: scale(1.05);
+  background-color: #fff;
+  cursor: pointer;
+}
+
+.export__file .export__file-options img{
+  width: 2rem;
+  height: auto;
+}
+
+
 @media screen and (max-width: 1300px) {
-  #equip .size1 {
+  .size1 {
     font-size: 85%;
   }
 
-  #equip .size2 {
+  .size2 {
     font-size: 100%;
   }
 }
 
 @media screen and (max-width: 1100px) {
-  #equip .size1 {
+  .size1 {
     font-size: 75%;
   }
 
-  #equip .size2 {
+  .size2 {
     font-size: 100%;
   }
 
-  #equip .btnNovoEqpm button {
+  .btnNovoEqpm button {
     font-size: 70%;
   }
 }
 
 @media screen and (max-width: 990px) {
-  #equip .size1 {
+  .size1 {
     font-size: 68%;
   }
 
-  #equip .size2 {
+  .size2 {
     font-size: 100%;
   }
 
-  #equip .btnNovoEqpm button {
+  .btnNovoEqpm button {
     font-size: 60%;
   }
 
-  #equip .tabelaEqpm thead {
+  .tabelaEqpm thead {
     font-size: 80%;
   }
 }
 
 @media screen and (max-width: 890px) {
-  #equip .size1 {
+  .size1 {
     font-size: 58%;
   }
 
-  #equip .size2 {
+  .size2 {
     font-size: 90%;
   }
 
-  #equip .btnNovoEqpm button {
+  .btnNovoEqpm button {
     font-size: 50%;
   }
 
-  #equip .tabelaEqpm thead {
+  .tabelaEqpm thead {
     font-size: 60%;
   }
 }
 
 @media screen and (max-width: 790px) {
-  #equip .size1 {
+  .size1 {
     font-size: 49%;
   }
 
-  #equip .size2 {
+  .size2 {
     font-size: 85%;
   }
 
-  #equip .tabelaEqpm {
+  .tabelaEqpm {
     font-size: 90%;
   }
 }
 
 @media screen and (max-width: 680px) {
-  #equip main {
+  main {
     display: flex;
     flex-direction: column;
   }
 
-  #equip .menu {
+  .menu {
     width: 100%;
     height: 10vh;
     position: fixed;
     bottom: 0;
   }
 
-  #equip .menu_lateral {
+  .menu_lateral {
     padding: 0;
     height: 10vh;
     width: 100%;
     border-radius: 25px 25px 0 0;
   }
 
-  #equip .menu_conteudo {
+  .menu_conteudo {
     align-items: center;
     padding: 0;
     width: 100%;
     height: 10vh;
   }
 
-  #equip .menu_conteudo ul {
+  .menu_conteudo ul {
     display: flex;
     align-items: center;
     width: 100%;
     height: 10vh;
   }
 
-  #equip .item_menu {
+  .item_menu {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -286,7 +415,7 @@ main #equip {
     height: 10vh;
   }
 
-  #equip .item_menu a {
+  .item_menu a {
     padding-left: 0;
     display: flex;
     justify-content: center;
@@ -295,92 +424,87 @@ main #equip {
     padding: 0;
   }
 
-  #equip .pagAtual {
+  .pagAtual {
     margin-left: 0;
     background-color: transparent;
   }
 
-  #equip .IconAtual {
+  .IconAtual {
     color: #cf4b83;
   }
 
-  #equip .btnSair {
+  .btnSair {
     display: none;
   }
 
-  #equip .btn_expandir {
+  .btn_expandir {
     display: none;
   }
 
-  #equip .size1 {
+  .size1 {
     font-size: 55%;
   }
 
-  #equip .size2 {
+  .size2 {
     font-size: 80%;
   }
 
-  #equip .txt_link {
+  .txt_link {
     display: none;
   }
 
-  #equip hr {
+  hr {
     display: none;
   }
 
-  #equip .espaco2 {
+  .espaco2 {
     margin-top: 0;
     width: 20%;
   }
 
-  #equip .painelEqpm {
+  .painelEqpm {
     height: 85%;
     margin-top: -10%;
   }
 }
 
 @media screen and (max-width: 550px) {
-  #equip .tabelaEqpm {
+  .tabelaEqpm {
     font-size: 80%;
   }
 }
 
 @media screen and (max-width: 550px) {
-  #equip .tabelaEqpm {
+  .tabelaEqpm {
     font-size: 70%;
   }
 }
 
 @media screen and (max-width: 450px) {
-  #equip .painelEqpm {
+  .painelEqpm {
     margin-top: -15%;
   }
 
-  #equip .tabelaEqpm {
+  .tabelaEqpm {
     font-size: 60%;
   }
 
-  #equip .btnNovoEqpm button {
+  .btnNovoEqpm button {
     font-size: 35%;
     width: 25%;
   }
 }
 
 @media screen and (max-width: 385px) {
-  #equip .painelEqpm {
+  .painelEqpm {
     margin-top: -20%;
   }
 
-  #equip .tabelaEqpm {
+  .tabelaEqpm {
     font-size: 50%;
   }
 
-  #equip .tabelaEqpm thead {
+  .tabelaEqpm thead {
     font-size: 40%;
   }
-}
-
-
-#equip .linhaFiltro {
-  background-color: none;
 }
