@@ -16,8 +16,17 @@
   width: 25%;
 }
 
+<<<<<<< HEAD
 
 
+=======
+/* main {
+  display: flex;
+  background-color: rgb(209, 209, 209);
+  width: 100vw;
+} */
+
+>>>>>>> feature/dashboardFiltro
 #menuSasc .menu {
   width: 15%;
   position: fixed;

@@ -2,6 +2,7 @@ import "./index.css";
 import React from "react";
 import ReactDOM from "react-dom/client";
 import { Route, Routes, BrowserRouter } from "react-router-dom";
+import { createRoot } from "react-dom/client";
 
 import Home from "./pages/Home";
 import CadastroEquipamento from "./pages/CadastroEquipamento";
@@ -13,18 +14,28 @@ import Login from "./pages/Login";
 import NovoUsuario from "./pages/NovoUsuario";
 import Menu from "./components/Menu";
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 >>>>>>> feature/configuracoes
+=======
+
+const rootElement = document.getElementById("root");
+createRoot(rootElement!).render(<DashboardFiltro />);
+>>>>>>> feature/dashboardFiltro
 
 ReactDOM.createRoot(document.getElementById("root")!).render(
   <React.StrictMode>
     <BrowserRouter>
 <<<<<<< HEAD
+<<<<<<< HEAD
       
 =======
     <Menu />
 >>>>>>> feature/configuracoes
+=======
+      <Menu />
+>>>>>>> feature/dashboardFiltro
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="cadastroequipamento" element={<CadastroEquipamento />} />
