@@ -12,6 +12,7 @@ import Equipamento from "./pages/Equipamento";
 import EsqueceuSenha from "./pages/EsqueceuSenha";
 import Login from "./pages/Login";
 import NovoUsuario from "./pages/NovoUsuario";
+<<<<<<< HEAD
 import Menu from "./components/Menu";
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -30,6 +31,9 @@ createRoot(rootElement!).render(<DashboardFiltro />);
 =======
 import Header from "./components/Header";
 >>>>>>> feature/home
+=======
+import NovaSenha from "./pages/NovaSenha";
+>>>>>>> feature/login
 
 ReactDOM.createRoot(document.getElementById("root")!).render(
   <React.StrictMode>
@@ -58,6 +62,7 @@ ReactDOM.createRoot(document.getElementById("root")!).render(
         <Route path="esqueceusenha" element={<EsqueceuSenha />} />
         <Route path="login" element={<Login />} />
         <Route path="novousuario" element={<NovoUsuario />} />
+        <Route path="novasenha" element={<NovaSenha />} />
       </Routes>
     </BrowserRouter>
   </React.StrictMode>
