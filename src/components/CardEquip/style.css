@@ -14,7 +14,6 @@
   }
 
   #menuSasc .linhaTabela {
-    /* display: flex; */
     width: 60vw;
     background-color: #dceee8;
   }
@@ -35,7 +34,7 @@
   
   #menuSasc .data {
     width: 10vw;
-    /* margin-right: -4%; */
+    margin-right: -4%;
   }
 
   #menuSasc .consumo {

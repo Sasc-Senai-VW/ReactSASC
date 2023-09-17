@@ -174,10 +174,10 @@ function Equipamento() {
 
                             id={equip.id}
                             modelo={equip.modelo}
-                            valor={equip.valor}
+                            fabricante={equip.fabricante}
                             data={equip.data}
                             consumo={equip.consumo}
-                            fabricante={equip.fabricante}
+                            valor={equip.valor}
 
 
 
@@ -193,10 +193,10 @@ function Equipamento() {
 
                             id={equip.id}
                             modelo={equip.modelo}
-                            valor={equip.valor}
+                            fabricante={equip.fabricante}
                             data={equip.data}
                             consumo={equip.consumo}
-                            fabricante={equip.fabricante}
+                            valor={equip.valor}
 
                           />
                         </td>
