@@ -205,7 +205,7 @@ hr {
 .novo_usuario hr {
   display: flex;
   justify-content: center;
-  width: 50%;
+  width: 100%;
   color: var(--cinza);
   margin-top: 2%;
 }
@@ -253,7 +253,7 @@ hr {
   border-radius: 25px;
   background-color: var(--cor_verde);
   border: none;
-  width: 150px;
+  width: 180px;
   height: 50px;
   color: white;
   font-weight: 1000;
@@ -316,7 +316,7 @@ hr {
 .ultimo_acesso hr {
   display: flex;
   justify-content: center;
-  width: 50%;
+  width: 100%;
   color: var(--cinza);
   margin-top: 4%;
 }
