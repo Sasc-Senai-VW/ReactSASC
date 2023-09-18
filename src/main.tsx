@@ -16,6 +16,7 @@ import Menu from "./components/Menu";
 
 const rootElement = document.getElementById("root");
 createRoot(rootElement!).render(<DashboardFiltro />);
+import NovaSenha from "./pages/NovaSenha";
 
 ReactDOM.createRoot(document.getElementById("root")!).render(
   <React.StrictMode>
@@ -30,6 +31,7 @@ ReactDOM.createRoot(document.getElementById("root")!).render(
         <Route path="esqueceusenha" element={<EsqueceuSenha />} />
         <Route path="login" element={<Login />} />
         <Route path="novousuario" element={<NovoUsuario />} />
+        <Route path="novasenha" element={<NovaSenha />} />
       </Routes>
     </BrowserRouter>
   </React.StrictMode>
