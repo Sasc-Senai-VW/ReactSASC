@@ -17,7 +17,7 @@ export default function EsqueceuSenha() {
           </label>
         </div>
       </header>
-      <main>
+      <main id="esqueceusenha">
         <section className="esquerdinha">
           <div className="pagina_esquerda">
             <Link className="return" to="/login">
