@@ -12,12 +12,12 @@
   --verdeclaro: rgba(1, 181, 116, 0.1);
 }
 
-#esqueceusenha body {
+/* #esqueceusenha body {
   background-image: url(../../assets/img/Background1.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
-}
+} */
 
 #esqueceusenha .cabecalho {
   width: 1400px auto;
@@ -184,6 +184,13 @@
   width: 55%;
 }
 
+body {
+  background-image: url(../../assets/img/Background1.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
 @media screen and (max-width: 1180px) {
   #esqueceusenha .cabecalho {
     height: 58px;
@@ -222,13 +229,6 @@
     justify-content: center;
     align-items: center;
     width: 100%;
-  }
-
-  #esqueceusenha body {
-    background-image: url(../../assets/img/Background2.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
   }
 
   #esqueceusenha main {

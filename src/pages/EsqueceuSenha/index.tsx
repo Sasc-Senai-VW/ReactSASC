@@ -6,7 +6,7 @@ import Fundo from "../../assets/img/img_fundo-removebg-preview.png";
 export default function EsqueceuSenha() {
   return (
     <>
-      <header>
+      <header id="headlogin">
         <div className="cabecalho">
           <img src={Logo} alt="logo" />
           <label onClick="claroEscuro()">
