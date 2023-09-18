@@ -51,7 +51,6 @@ if (isOpen) {
                 <div className="cad_conteudo">
                 <div className='botaoFechar' onClick={setModalFechado}>X</div>
                     <h1>Cadastro</h1>
-                    <hr />
                     <form onSubmit={ cadastrarUsuario } className="cad_formulario" method="POST">
                         <div className="cad_box_input">
                             <label htmlFor="nome">Nome Completo:</label>

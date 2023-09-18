@@ -351,17 +351,7 @@ hr {
 
 /* Página Mobile */
 
-/* .tabela_container_mobile {
-  position: relative;
-  border-radius: 30px;
-  background-color: #3ba8801c;
-  display: none;
-  justify-content: center;
-  width: 90%;
-  top: -120px;
-  padding: 10px;
-  margin-left: 5%;
-} */
+
 
 .mobile {
   width: 100%;
@@ -395,15 +385,7 @@ hr {
   font-size: 30px;
 }
 
-hr {
-  margin-left: 25%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 1px;
-  width: 50%;
-  color: #1f1f1f;
-}
+
 
 .conteudo_esquerda {
   margin-top: -15%;
