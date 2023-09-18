@@ -6,7 +6,6 @@ import { createRoot } from "react-dom/client";
 
 import Home from "./pages/Home";
 import CadastroEquipamento from "./pages/CadastroEquipamento";
-import Configuracoes from "./pages/Configuracoes";
 import DashboardFiltro from "./pages/DashboardFiltro";
 import Equipamentos from "./pages/Equipamentos";
 import EsqueceuSenha from "./pages/EsqueceuSenha";
@@ -25,7 +24,6 @@ ReactDOM.createRoot(document.getElementById("root")!).render(
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="cadastroequipamento" element={<CadastroEquipamento />} />
-        <Route path="configuracoes" element={<Configuracoes />} />
         <Route path="dashboardfiltro" element={<DashboardFiltro />} />
         <Route path="equipamentos" element={<Equipamentos />} />
         <Route path="esqueceusenha" element={<EsqueceuSenha />} />
