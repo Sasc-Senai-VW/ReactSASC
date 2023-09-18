@@ -9,6 +9,7 @@
     bottom: 0;
     left: 0;
     right: 0;
+    width: 100%;
     background-color: rgb(0,0,0, 0.7);
     /* min-height: calc(100vh - 339px); */
     background-size: cover;
@@ -24,7 +25,7 @@
     justify-content: right;
     color: white;
     margin-left: 85%;
-    margin-top: -9%;
+    margin-top: -2%;
     cursor: pointer;
 }
 .main_cadastro .container_cad {
@@ -36,17 +37,15 @@
 .main_cadastro .cad_conteudo {
     background: linear-gradient(114.61deg, #8dbe8d6a 1.08%, #f2f1f12a 99.26%);
     box-shadow: 30px 30px 60px #00000080;
-    /* border: 1px solid #ffffffcc; */
     backdrop-filter: blur(10px);
     border-radius: 20px;
     width: 100%;
-    max-width: 700px;
+    height: 90%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 50px 0;
+    padding: 10px;
     color: var(--branco);
-    margin: 100px 0;
 }
 
 .main_cadastro h1 {
@@ -58,7 +57,7 @@
 .main_cadastro hr {
     margin: 20px auto;
     width: 80%;
-    height: 4px;
+    height: 10%;
     background-color: var(--rosa);
     border: none;
     border-radius: 50%;
@@ -67,7 +66,8 @@
 
 
 .main_cadastro .cad_formulario {
-    width: 95%;
+    width: auto;
+    height: auto;
     max-width: 460px;
     display: flex;
     flex-direction: column;
@@ -105,7 +105,8 @@
 
 .main_cadastro .cad_box_input2>input,
 .main_cadastro .cad_box_input>input {
-    width: 100%;
+    width: auto;
+    height: auto;
     padding: 8px;
     border-radius: 20px;
     border: 1px solid #b5b5b5;
@@ -124,7 +125,7 @@
 
 /* Cor de fundo do autocomplete */
 .main_cadastro input:-webkit-autofill {
-    -webkit-box-shadow: 0 0 0 30px #524569 inset;
+    -webkit-box-shadow: 0 0 0 30px var(--verde) inset;
 }
 
 /* Cor do texto do autocomplete */
@@ -136,6 +137,7 @@
 .main_cadastro .cad_box_input>input::placeholder {
     color: #ffffff80;
     font-size: 15px;
+    text-align: center;
 }
 
 .main_cadastro .cad_linha_select {
@@ -167,3 +169,22 @@
     cursor: pointer;
     transform: scale(0.95);
 }
+
+@media screen and (max-width: 680px) {
+.main_cadastro    .cad_conteudo {
+      width: 60%;
+      height: 100%;
+      padding: 10px;
+      
+    }
+    .main_cadastro .cad_formulario{
+        width: 50%;
+    }
+    .main_cadastro .container_cad {
+        align-items: normal;
+        margin-bottom: 13%;
+    }
+    .main_cadastro {
+        z-index: 0;
+    }
+  }

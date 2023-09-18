@@ -26,7 +26,7 @@ return(
           </div>
           {/*Botões / Usuario - Tipo de conta - Enviar */}
           <div className="section_1">
-            <button onClick={() => setModalAberto (true)}>Novo usuário</button>
+            <button onClick={() => setModalAberto (true)}>Cadastrar usuário</button>
           </div>
           <Modal isOpen={modalAberto} setModalFechado={() => setModalAberto(!setModalAberto)} />
           {/*Botões / Senha - Confirme a Senha */}
@@ -35,8 +35,8 @@ return(
           
           {/*Ultimo Acesso*/}
           <div className="ultimo_acesso">
+            <hr/>
             <p>Usuários cadastrados:</p>
-            <hr />
           </div>
 
 
