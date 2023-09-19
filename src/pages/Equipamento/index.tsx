@@ -3,6 +3,7 @@ import api from "../../utils/api";
 import { useEffect, useState } from "react"
 import './style.css'
 import search from '../../assets/img/search.png'
+import Modal from "../../components/ModalEquipamento";
 
 
 export default Equipamento;
@@ -29,6 +30,8 @@ function Equipamento() {
   const [filtroDigitado, setfiltroDigitado] = useState<string>("");
 
   const [listaBuscaFiltrado, setlistaBuscaFiltrado] = useState<any[]>(equip);
+
+  const   [modalEquipamentoAberto, setModalEquipamentoAberto] = useState(false)
 
   useEffect(() => {
     document.title = "Lista de Equipamentos"
@@ -148,7 +151,8 @@ function Equipamento() {
                 className="btnNovoEqpm"
                 href="../CadastramentoDeEquipamentos/index.html"
               >
-                <button>+ Novo Equipamento</button>
+                <button onClick={() => setModalEquipamentoAberto (true)}>+ Novo Equipamento</button>
+                <Modal isOpen={modalEquipamentoAberto} setModalEquipamentoFechado={() => setModalEquipamentoAberto(!setModalEquipamentoAberto)} />
               </a>
 
             </div>
