@@ -37,7 +37,6 @@ label {
   position: relative;
   width: 120px;
   height: 30px;
-  cursor: pointer;
 }
 
 label input {
@@ -206,8 +205,8 @@ hr {
   display: flex;
   justify-content: center;
   width: 100%;
-  color: var(--cinza);
   margin-top: 2%;
+  color: var(--cinza);
 }
 .novo_usuario > p {
   color: var(--cinza);
@@ -253,7 +252,7 @@ hr {
   border-radius: 25px;
   background-color: var(--cor_verde);
   border: none;
-  width: 180px;
+  width: 150px;
   height: 50px;
   color: white;
   font-weight: 1000;
@@ -513,6 +512,8 @@ th {
 .cor_verde {
   color: var(--cor_verde);
 }
+
+
 
 /* Media Web */
 

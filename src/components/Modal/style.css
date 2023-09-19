@@ -96,7 +96,7 @@
     display: flex;
     flex-direction: column;
     width: 100%;
-    margin: 2px 0;
+    margin: 8px 0;
 }
 
 .main_cadastro label {
@@ -168,6 +168,30 @@
 .enviarCadastro:hover {
     cursor: pointer;
     transform: scale(0.95);
+}
+
+.inputFoto[type='file'] {
+    display: none;
+}
+.cameraInput {
+    cursor: pointer;
+    border-radius: 20px;
+    width: 20%;
+    height: 80%;
+}
+.cameraInput:active {
+    transform: scale(0.9);
+}
+
+.labelFoto{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+.labelImgFoto{
+    width: 100%;
+    display: flex;
+    justify-content: center;
 }
 
 @media screen and (max-width: 680px) {
