@@ -1,0 +1,625 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Tajawal", sans-serif;
+}
+
+:root {
+  --verde: #aed9a7;
+  --branco: #f4f4f4;
+  --cinza: #8f8f8f;
+  --bg-fundo: #dfdfdf;
+  --bg-verde: rgba(1, 181, 116, 13%);
+  --fundo-botao1: #d99a9a;
+  --cor_verde: #01b574;
+  --background-menu: #1f1f1f;
+  --branco: #f4f4f4;
+  --cinza: #8f8f8f;
+  --font1: "Tajawal", sans-serif;
+}
+
+#newuser .equipamentos {
+  margin-left: 200px;
+}
+
+#newuser header {
+  position: absolute;
+  width: 100%;
+  display: flex;
+  justify-content: end;
+}
+
+#newuser label {
+  margin-top: 1%;
+  margin-right: 3%;
+  position: relative;
+  width: 120px;
+  height: 30px;
+}
+
+#newuser label input {
+  position: relative;
+  z-index: 1;
+  appearance: none;
+}
+
+#newuser label span {
+  position: absolute;
+  left: 70px;
+  width: 40px;
+  height: 23px;
+  background: #01b574;
+  border-radius: 80px;
+  transition: 0, 5s;
+}
+
+#newuser label input:checked ~ span {
+  background: #d99a9a;
+}
+
+#newuser label span i {
+  transition: 0, 5s;
+  top: 3.8px;
+  left: 2px;
+  position: absolute;
+  width: 20px;
+  height: 15px;
+  background: white;
+  border-radius: 50%;
+}
+
+#newuser label input:checked ~ span i {
+  left: 18px;
+  background: #393939;
+}
+
+#newuser main {
+  display: flex;
+  background-color: rgb(209, 209, 209);
+  width: 100%;
+}
+
+#newuser .menu {
+  width: 15%;
+  font-weight: 700;
+}
+
+#newuser .menu_lateral {
+  background-color: var(--background-menu);
+  padding: 40px 0 40px 0;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+#newuser .btn_expandir {
+  width: 100%;
+  padding-left: 10%;
+  color: var(--branco);
+  cursor: pointer;
+}
+
+#newuser .menu_conteudo {
+  padding-top: 30%;
+}
+
+#newuser li a {
+  padding: 5% 0 5% 5%;
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  color: var(--branco);
+  text-decoration: none;
+  padding-left: 8%;
+}
+
+#newuser .menu_conteudo ul {
+  height: 80vh;
+  width: 100%;
+  list-style-type: none;
+  font-family: var(--font1);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+#newuser .item_menu {
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+#newuser .primeiros_itens,
+.segundos_itens,
+.terceiros_itens {
+  margin-bottom: 40%;
+}
+
+#newuser .txt_link {
+  margin-left: 2%;
+  position: fixed;
+}
+
+#newuser hr {
+  width: 90%;
+}
+
+#newuser .pagAtual {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  border-radius: 10px;
+  background-color: #01b574;
+  width: 80%;
+  margin-left: 5%;
+}
+
+#newuser .espaco2 {
+  margin-top: 10%;
+}
+
+#newuser .equipamentos {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+}
+
+#newuser .Container_usuario {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+}
+
+#newuser .Controle_usuario {
+  width: 80%;
+  height: 90%;
+  background-color: white;
+  border-radius: 20px;
+}
+
+#newuser .container p {
+  color: var(--cinza);
+  /* margin-top: 2%; */
+  margin-left: 4%;
+  font-size: 30px;
+}
+
+#newuser .nome_usuario img {
+  margin-left: 88%;
+  width: 100px;
+}
+
+#newuser .novo_usuario {
+  margin-top: 2%;
+  width: 100%;
+  font-size: 150%;
+}
+#newuser .novo_usuario hr {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-top: 2%;
+  color: var(--cinza);
+}
+#newuser .novo_usuario > p {
+  color: var(--cinza);
+  display: flex;
+  justify-content: center;
+}
+
+#newuser .section_1 {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+#newuser .section_1 input {
+  font-size: 100%;
+  background-color: #3ba8801c;
+  border: none;
+  border-radius: 30%;
+  width: 25%;
+  height: 50px;
+  text-align: center;
+}
+#newuser .section_1 select {
+  font-size: 100%;
+  color: var(--cinza);
+  margin-left: 10%;
+  text-align: center;
+  background-color: #3ba8801c;
+  border: none;
+  border-radius: 30%;
+  width: 18%;
+  height: 50px;
+}
+
+#newuser .section_1 button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 100%;
+  margin-top: 10%;
+  border-radius: 25px;
+  background-color: var(--cor_verde);
+  border: none;
+  width: 150px;
+  height: 50px;
+  color: white;
+  font-weight: 1000;
+  cursor: pointer;
+}
+
+#newuser .section_2 {
+  display: flex;
+  justify-content: left;
+  margin-left: 16%;
+  margin-top: 2%;
+}
+
+#newuser .section_2 > .input_senha {
+  font-size: 100%;
+  text-align: center;
+  background-color: #3ba8801c;
+  border: none;
+  border-radius: 30%;
+  width: 25%;
+  height: 50px;
+}
+
+#newuser .section_2 > .input_confirmeasenha {
+  font-size: 100%;
+  margin-left: 10%;
+  text-align: center;
+  background-color: #3ba8801c;
+  border: none;
+  border-radius: 30%;
+  width: 25%;
+  height: 50px;
+}
+
+#newuser .foto {
+  width: 100%;
+  height: 20%;
+  margin-left: 34%;
+  width: 15%;
+  /* margin-top: 5%; */
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+}
+
+#newuser .foto a {
+  font-weight: 800;
+  font-size: 15px;
+  text-decoration: none;
+  color: #8f8f8f;
+}
+
+#newuser .ultimo_acesso {
+  width: 100%;
+  font-size: 150%;
+}
+#newuser .ultimo_acesso hr {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  color: var(--cinza);
+  margin-top: 4%;
+}
+
+#newuser .ultimo_acesso > p {
+  color: var(--cinza);
+  display: flex;
+  justify-content: center;
+  margin-top: 5%;
+}
+
+#newuser .painelEqpm {
+  width: 95%;
+  height: 90%;
+  background-color: white;
+  border-radius: 20px;
+}
+
+#newuser .size1 {
+  font-size: 90%;
+}
+
+#newuser .size2 {
+  font-size: 150%;
+}
+
+#newuser .btn_expandir hr {
+  display: block;
+  margin: 0px;
+  width: 90%;
+}
+
+/* Página Mobile */
+
+#newuser .mobile {
+  width: 100%;
+  height: 600px;
+}
+
+#newuser .mobile hr {
+  width: 1px;
+  height: 300px;
+  color: var(--cinza);
+  margin-right: 30%;
+  margin: 10%;
+}
+
+#newuser .nome_usuario_m {
+  display: flex;
+  justify-content: right;
+  margin-top: 10%;
+  margin-left: -3%;
+  width: 100%;
+}
+
+#newuser .nome_usuario_m img {
+  display: flex;
+  width: 15%;
+}
+#newuser .controle_usuario_itens {
+  color: var(--cinza);
+  display: flex;
+  justify-content: center;
+  font-size: 30px;
+}
+
+#newuser .conteudo_esquerda {
+  margin-top: -15%;
+  width: 50%;
+  height: 600px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#newuser .conteudo_esquerda > input {
+  margin-top: 12px;
+  font-size: 12px;
+  background-color: #3ba8801c;
+  border: none;
+  border-radius: 30%;
+  width: 80%;
+  height: 50px;
+  text-align: center;
+}
+#newuser .conteudo_esquerda > select {
+  color: var(--cinza);
+  font-size: 12px;
+  margin-top: 14px;
+  text-align: center;
+  background-color: #3ba8801c;
+  border: none;
+  border-radius: 30%;
+  width: 80%;
+  height: 50px;
+}
+
+#newuser .conteudo_esquerda > button {
+  font-size: 12px;
+  margin-top: 30px;
+  background-color: var(--cor_verde);
+  border: none;
+  border-radius: 30%;
+  width: 50%;
+  height: 50px;
+  color: white;
+  font-weight: 1000;
+  cursor: pointer;
+}
+
+#newuser .conteudo_direita {
+  margin-top: -20%;
+  color: var(--cinza);
+  width: 50%;
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#newuser .conteudo_direita > img {
+  margin: 10px;
+  width: 100px;
+}
+
+#newuser .conteudo_direita > a {
+  color: #8f8f8f;
+  text-decoration: none;
+  margin: 10px;
+}
+
+#newuser .conteudo_direita > p {
+  margin: 10px;
+}
+
+/*tabela*/
+
+#newuser section {
+  /* border: 8px solid hotpink; */
+  display: flex;
+  flex-direction: column;
+}
+
+#newuser .tabela_container {
+  border-radius: 30px;
+  box-shadow: 2px 2px 2px 2px rgba(0.5, 0.5, 0.5, 0.2);
+  background-color: #3ba8801c;
+  display: flex;
+  justify-content: center;
+  width: 90%;
+  margin-top: 2%;
+  margin-left: 5%;
+  padding: 10px 10px 10px 10px;
+}
+
+#newuser table {
+  font-family: "Titillium Web", sans-serif;
+}
+
+#newuser .img1 {
+  width: 25%;
+}
+
+#newuser .linha_impar button {
+  cursor: pointer;
+  font-size: 90%;
+}
+
+#newuser .linha_impar {
+  background-color: var(--bg-verde);
+}
+
+#newuser tr {
+  display: flex;
+  height: 40px;
+  border-radius: 10px;
+}
+
+#newuser td,
+th {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#newuser .cor_verde {
+  color: var(--cor_verde);
+}
+
+/* Media Web */
+
+@media screen and (max-width: 2560px) {
+  #newuser .nome_usuario_m {
+    display: none;
+  }
+  #newuser .controle_usuario_itens {
+    display: none;
+  }
+  #newuser .mobile {
+    display: none;
+  }
+  #newuser .hr_mobile {
+    display: none;
+  }
+  #newuser .tabela_container_mobile {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1300px) {
+  #newuser .size1 {
+    font-size: 85%;
+  }
+
+  #newuser .size2 {
+    font-size: 100%;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  #newuser .size1 {
+    font-size: 75%;
+  }
+
+  #newuser .size2 {
+    font-size: 100%;
+  }
+}
+
+@media screen and (max-width: 1002px) {
+  #newuser .nome_usuario {
+    margin-right: 3%;
+  }
+}
+
+@media screen and (max-width: 990px) {
+  #newuser .size1 {
+    font-size: 68%;
+  }
+
+  #newuser .size2 {
+    font-size: 100%;
+  }
+}
+
+@media screen and (max-width: 890px) {
+  #newuser .size1 {
+    font-size: 58%;
+  }
+
+  #newuser .size2 {
+    font-size: 90%;
+  }
+}
+
+@media screen and (max-width: 813px) {
+  #newuser .nome_usuario {
+    margin-right: 5%;
+  }
+}
+
+@media screen and (max-width: 780px) {
+  #newuser .size1 {
+    font-size: 49%;
+  }
+
+  #newuser .size2 {
+    font-size: 85%;
+  }
+}
+
+@media screen and (max-width: 752px) {
+  #newuser .section_2 .input_confirmeasenha {
+    font-size: 90%;
+  }
+}
+
+@media screen and (max-width: 719px) {
+  #newuser .nome_usuario {
+    margin-right: 7%;
+  }
+}
+
+@media screen and (max-width: 710px) {
+  #newuser .section_1 select {
+    font-size: 90%;
+  }
+}
+
+@media screen and (max-width: 680px) {
+  #newuser .equipamentos {
+    margin-left: 0;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  #newuser .novo_usuario > p {
+    font-size: 70%;
+  }
+  #newuser .ultimo_acesso > p {
+    font-size: 70%;
+  }
+  #newuser .section_1 button {
+    width: 100px;
+    font-size: 70%;
+  }
+}

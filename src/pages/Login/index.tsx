@@ -37,7 +37,7 @@ export default function Login() {
               placeholder="s  e  n  h  a"
             />
             <Link to="/esqueceusenha">Esqueceu Senha?</Link>
-            <Link className="btnAvan1" to="/home">
+            <Link className="btnAvan1" to="/">
               <button className="btnEsq" id="btnEsq">
                 Conecte-se
               </button>
