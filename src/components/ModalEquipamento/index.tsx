@@ -3,6 +3,17 @@ import './style.css'
 import { useState } from 'react';
 import api from '../../utils/api';
 import { useEffect } from 'react';
+import CardEquipamento from '../CardEquip';
+
+
+interface Equipamentos {
+    id: string;
+    modelo: string;
+    valor: string;
+    data: string;
+    tipo_user: string;
+  }
+
 
 
 
@@ -13,6 +24,9 @@ export default function ModalEquipamento({isOpen, setModalEquipamentoFechado}) {
         const [valor, setValor] = useState<string>('')
         const [data, setData ] = useState<any>('')
         const [select, setSelect] = useState<string>(""); // state que contém a opção de tipo de usuario selecionado
+        const [fabricante, setFabricante] = useState<string>("");
+        const [consumo, setConsumo] = useState<string>("");
+        const [equipamentos, setEquipamentos] = useState<Equipamentos[]>([]);
 
         // verificar o que tem dentro do input de arquivo
         // pega tudo que acontece dentro de algo ex: input
@@ -28,18 +42,38 @@ export default function ModalEquipamento({isOpen, setModalEquipamentoFechado}) {
         formData.append('valor', valor) 
         formData.append('data', data) 
         formData.append('tipo_user', select) 
+        formData.append('fabricante', fabricante) 
+        formData.append('consumo', consumo) 
 
-        api.post('users', formData).then( (response) => {
+        api.post('equipamentos', formData).then( (response) => {
             console.log(response)
-            alert('Usuario cadastrado com sucesso!')
+            alert('Equipamento cadastrado com sucesso!')
             // Navegaçao para login // catch serve para pegar o erro
         }).catch((error) => {
             console.log(error)
-            alert('Algo está errado')
+            alert('Algo está errado, por favor verifique se os campos foram preenchidos corretamente e tente novamente!')
 
         })
 
+        const novoEquipamento: Equipamentos = {
+            id: id,
+            modelo: modelo,
+            valor: valor,
+            data: data,
+            tipo_user: select
+          };
+  
+          setEquipamentos([...equipamentos, novoEquipamento]);       
+
+
+        
     }
+
+    
+
+   
+
+    
 
 if (isOpen) {
     return (
@@ -47,7 +81,7 @@ if (isOpen) {
             <div className="container_cad">
                 <div className="cad_conteudo">
                 <div className='botaoFechar' onClick={setModalEquipamentoFechado}>X</div>
-                    <h1>Cadastro</h1>
+                    <h1>Cadastro de Equipamento</h1>
                     <form onSubmit={ cadastrarEquipamento } className="cad_formulario" method="POST">
                         <div className="cad_box_input">
                             <label htmlFor="id">Id:</label>
@@ -90,6 +124,30 @@ if (isOpen) {
                                 required
                             />
                         </div>
+
+                        
+                        <div className="cad_box_input">
+                            <label htmlFor="fabricante">fabricante:</label>
+                            <input
+                                type="text"
+                                id="fabricante"
+                                onChange={ (event) => { setFabricante(event.target.value) } }
+                                placeholder="Digite aqui o fabricante:"
+                                required
+                            />
+                        </div>
+
+                        
+                        <div className="cad_box_input">
+                            <label htmlFor="consumo">consumo:</label>
+                            <input
+                                type="text"
+                                id="consumo"
+                                onChange={ (event) => { setConsumo(event.target.value) } }
+                                placeholder="Digite aqui o consumo:"
+                                required
+                            />
+                        </div>
                         
                         <div className="cad_linha_select">
                         <label htmlFor="categoria">Tipo de categoria:</label>
@@ -107,16 +165,15 @@ if (isOpen) {
                                                                                     
                         </div>
 
-                        <div className="cad_box_input">
-                            {/* Passar primeiro como exemplo */}
-                            <input 
-                            value='Cadastrar'
-                            className='enviarCadastro'
-                            type="submit"
-                            />
-                        </div>   
+                        <a className="cad_box_input">
+                        <button onClick={() => CardEquipamento (true)}>Cadastrar</button>
+
+                        </a>   
                      </form>
+
                 </div>
+
+                
             </div>
         </main>
       )

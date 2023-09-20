@@ -149,7 +149,6 @@ function Equipamento() {
             <div className="menu2Bbtn">
               <a
                 className="btnNovoEqpm"
-                href="../CadastramentoDeEquipamentos/index.html"
               >
                 <button onClick={() => setModalEquipamentoAberto (true)}>+ Novo Equipamento</button>
                 <Modal isOpen={modalEquipamentoAberto} setModalEquipamentoFechado={() => setModalEquipamentoAberto(!setModalEquipamentoAberto)} />
