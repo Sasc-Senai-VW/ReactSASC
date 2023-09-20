@@ -7,11 +7,24 @@ import { IoMdStats } from "react-icons/io";
 import { IoMdCube } from "react-icons/io";
 import { IoMdCalendar } from "react-icons/io";
 import logo from "../../assets/img/Design_sem_nome-removebg-preview.png";
-import { Route, Routes, BrowserRouter } from "react-router-dom";
+import { Route, Routes, BrowserRouter, Navigate } from "react-router-dom";
 import Home from "../../pages/Home";
 
+import { Link, useNavigate } from "react-router-dom";
+
+import { useLocation } from "react-router-dom";
+import * as React from "react";
+
 function Menu() {
-  function ChangeColor() {}
+  const navigate = useNavigate();
+
+  const login = () => {
+    navigate("/login");
+  };
+
+  const equipamento = () => {
+    navigate("/equipamento");
+  };
 
   return (
     <>
@@ -39,12 +52,12 @@ function Menu() {
                   </li>
 
                   <li className="pagAtual espaco2">
-                    <a href="#">
+                    <Link to="/equipamento">
                       <span className="icon size1 IconAtual">
                         <IoMdDesktop />
                       </span>
                       <span className="txt_link size1">Equipamentos</span>
-                    </a>
+                    </Link>
                   </li>
 
                   <li className="espaco2">
@@ -66,22 +79,24 @@ function Menu() {
                   </li>
 
                   <li className="espaco2">
-                    <a href="#">
+                    <Link to="/configuracoes">
                       <span className="icon size1">
                         <IoMdSettings />
                       </span>
                       <span className="txt_link size1">Configurações</span>
-                    </a>
+                    </Link>
                   </li>
                 </div>
 
                 <li className="espaco2 btnSair ">
-                  <a href="#">
+                  {/* <button onClick={login}> */}
+                  <Link to="/login">
                     <span className="icon size1">
                       <IoMdExit />
                     </span>
                     <span className="txt_link size1">Sair</span>
-                  </a>
+                  </Link>
+                  {/* </button> */}
                 </li>
               </ul>
             </div>
