@@ -99,12 +99,12 @@ if (isOpen) {
                                 type="text"
                                 id="modelo"
                                 onChange={ (event) => { setModelo(event.target.value) } }
-                                placeholder="Digite aqui o modelo:"
+                                placeholder="Digite aqui o Modelo:"
                                 required
                             />
                         </div>
                         <div className="cad_box_input">
-                            <label htmlFor="valor">valor:</label>
+                            <label htmlFor="valor">Valor:</label>
                             <input
                                 type="text"
                                 id="valor"
@@ -115,7 +115,7 @@ if (isOpen) {
                         </div>
 
                         <div className="cad_box_input">
-                            <label htmlFor="data">data:</label>
+                            <label htmlFor="data">Data:</label>
                             <input
                                 type="text"
                                 id="data"
@@ -127,7 +127,7 @@ if (isOpen) {
 
                         
                         <div className="cad_box_input">
-                            <label htmlFor="fabricante">fabricante:</label>
+                            <label htmlFor="fabricante">Fabricante:</label>
                             <input
                                 type="text"
                                 id="fabricante"
@@ -139,7 +139,7 @@ if (isOpen) {
 
                         
                         <div className="cad_box_input">
-                            <label htmlFor="consumo">consumo:</label>
+                            <label htmlFor="consumo">Consumo:</label>
                             <input
                                 type="text"
                                 id="consumo"
@@ -150,16 +150,16 @@ if (isOpen) {
                         </div>
                         
                         <div className="cad_linha_select">
-                        <label htmlFor="categoria">Tipo de categoria:</label>
+                        <label htmlFor="categoria">Tipo de Categoria:</label>
                                             <select
                                                 name=""
                                                 id="cad_select_skill"
                                                 onChange={(e) => setSelect(e.target.value)}
                                             >
                                                 <option selected disabled value="">Selecione</option>
-                                                <option value="categoria">categoria1</option>
-                                                <option value="categoria">categoria2</option>
-                                                <option value="categoria">categoria3</option>
+                                                <option value="categoria">Categoria1</option>
+                                                <option value="categoria">Categoria2</option>
+                                                <option value="categoria">Categoria3</option>
 
                                             </select>
                                                                                     
