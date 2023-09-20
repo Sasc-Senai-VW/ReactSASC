@@ -43,12 +43,12 @@ function Menu() {
               <ul>
                 <div className="item_menu">
                   <li className="espaco2">
-                    <a href="#">
+                    <Link to="/">
                       <span className="icon size1 visaoGeral">
                         <IoMdCalendar />
                       </span>
                       <span className="txt_link size1">Visão Geral</span>
-                    </a>
+                    </Link>
                   </li>
 
                   <li className="pagAtual espaco2">
@@ -61,21 +61,21 @@ function Menu() {
                   </li>
 
                   <li className="espaco2">
-                    <a href="#">
+                    <Link to="/dashboardfiltro">
                       <span className="icon size1">
                         <IoMdStats />
                       </span>
                       <span className="txt_link size1">Dashboards</span>
-                    </a>
+                    </Link>
                   </li>
 
                   <li className="espaco2">
-                    <a href="#">
+                    <Link to="/novousuario">
                       <span className="icon size1">
                         <IoMdContact />
                       </span>
                       <span className="txt_link size1">Usuários</span>
-                    </a>
+                    </Link>
                   </li>
 
                   <li className="espaco2">
