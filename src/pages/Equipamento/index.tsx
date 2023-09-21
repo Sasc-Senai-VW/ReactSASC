@@ -6,6 +6,12 @@ import search from '../../assets/img/search.png'
 import Modal from "../../components/ModalEquipamento";
 
 
+interface DeleteButtonProps {
+  id: number;
+  onDelete: () => void;
+}
+
+
 export default Equipamento;
 
 function Equipamento() {
@@ -88,11 +94,14 @@ function Equipamento() {
   }
 
   function listarEquipamentos() {
-    api.get('users').then((resposta: any) => {
+    api.get('equipamentos').then((resposta: any) => {
       console.log(resposta.data);
       setEquip(resposta.data)
     })
   }
+
+  
+  
 
   function alternarCoresTabela() {
     let linhas = document.getElementsByTagName("tr"); // Obtém todas as linhas da tabela
@@ -153,6 +162,9 @@ function Equipamento() {
                 <button onClick={() => setModalEquipamentoAberto (true)}>+ Novo Equipamento</button>
                 <Modal isOpen={modalEquipamentoAberto} setModalEquipamentoFechado={() => setModalEquipamentoAberto(!setModalEquipamentoAberto)} />
               </a>
+                   
+                   
+                     
 
             </div>
             <table className="tabelaEqpm">

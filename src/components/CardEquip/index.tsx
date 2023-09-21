@@ -1,5 +1,9 @@
 import './style.css'
 
+import api from '../../utils/api'
+
+import Equipamento from '../../pages/Equipamento'
+
 export default function CardEquipamento(props:any){
 
     function parseListaEquipamento () {
@@ -9,6 +13,8 @@ export default function CardEquipamento(props:any){
             return props.id
         }
     }
+
+   
     
 
     
@@ -22,7 +28,7 @@ export default function CardEquipamento(props:any){
                             <td>{props.data}</td>
                             <td>{props.consumo}(kWh)</td>
                             <td>{props.fabricante}</td>
-
+       
 
                         </tr>
                     </tbody>
