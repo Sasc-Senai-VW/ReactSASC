@@ -140,7 +140,7 @@
   margin-bottom: 14%;
 }
 
-#login label {
+#labellogin {
   margin-top: 5%;
   position: relative;
   width: 120px;
@@ -148,13 +148,13 @@
   cursor: pointer;
 }
 
-#login label input {
+#labellogin input {
   position: relative;
   z-index: 1;
   appearance: none;
 }
 
-#login label span {
+#labellogin span {
   position: absolute;
   left: 70px;
   width: 40px;
@@ -164,10 +164,10 @@
   transition: 0, 5s;
 }
 
-#login label input:checked ~ span {
+#labellogin input:checked ~ span {
   background: #cf4b83;
 }
-#login label span i {
+#labellogin span i {
   transition: 0, 5s;
   top: 3.8px;
   left: 2px;
@@ -178,7 +178,7 @@
   border-radius: 50%;
 }
 
-#login label input:checked ~ span i {
+#labellogin input:checked ~ span i {
   left: 18px;
   background: #393939;
 }

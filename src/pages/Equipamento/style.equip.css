@@ -674,3 +674,7 @@ input {
     width: 48vw;
   }
 }
+
+#divequip {
+  background-color: white;
+}

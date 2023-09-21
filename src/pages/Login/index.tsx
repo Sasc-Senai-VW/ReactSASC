@@ -8,7 +8,7 @@ export default function Login() {
     <>
       <div className="cabecalho">
         <img src={Logo} alt="logo" />
-        <label onClick="claroEscuro()">
+        <label onClick="claroEscuro()" id="labellogin">
           <input type="checkbox" id="checkbox" className="checkbox" />
           <span id="checkbox2">
             <i />

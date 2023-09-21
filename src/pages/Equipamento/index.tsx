@@ -122,104 +122,106 @@ function Equipamento() {
 
   return (
     <>
-      <main>
-        <section className="equipamentos">
-          <div className="painelEqpm">
-            <form method="post" onSubmit={buscarPor}>
-              <section className="table__header">
-                <h1>Lista de equipamentos</h1>
-                <select
-                  defaultValue={"DEFAULT"}
-                  name=""
-                  id="cad_select_skill"
-                  onChange={(e) => setSelect(e.target.value)}
-                >
-                  <option selected value="DEFAULT" disabled>
-                    Selecione
-                  </option>
-                  {filtros.map((equip: any, index: number) => {
-                    return (
-                      <option key={index} value={equip}>
-                        {equip}
-                      </option>
-                    );
-                  })}
-                </select>
+      <div id="divequip">
+        <main>
+          <section className="equipamentos">
+            <div className="painelEqpm">
+              <form method="post" onSubmit={buscarPor}>
+                <section className="table__header">
+                  <h1>Lista de equipamentos</h1>
+                  <select
+                    defaultValue={"DEFAULT"}
+                    name=""
+                    id="cad_select_skill"
+                    onChange={(e) => setSelect(e.target.value)}
+                  >
+                    <option selected value="DEFAULT" disabled>
+                      Selecione
+                    </option>
+                    {filtros.map((equip: any, index: number) => {
+                      return (
+                        <option key={index} value={equip}>
+                          {equip}
+                        </option>
+                      );
+                    })}
+                  </select>
 
-                <div className="input-group">
-                  <input
-                    type="search"
-                    placeholder="Procurar "
-                    onChange={retornoEquipGeral}
-                  />
-                  <button type="submit">
-                    <img src={search} alt="" />
+                  <div className="input-group">
+                    <input
+                      type="search"
+                      placeholder="Procurar "
+                      onChange={retornoEquipGeral}
+                    />
+                    <button type="submit">
+                      <img src={search} alt="" />
+                    </button>
+                  </div>
+                </section>
+              </form>
+
+              <div className="menu2Bbtn">
+                <a className="btnNovoEqpm">
+                  <button onClick={() => setModalEquipamentoAberto(true)}>
+                    + Novo Equipamento
                   </button>
-                </div>
-              </section>
-            </form>
-
-            <div className="menu2Bbtn">
-              <a className="btnNovoEqpm">
-                <button onClick={() => setModalEquipamentoAberto(true)}>
-                  + Novo Equipamento
-                </button>
-                <Modal
-                  isOpen={modalEquipamentoAberto}
-                  setModalEquipamentoFechado={() =>
-                    setModalEquipamentoAberto(!setModalEquipamentoAberto)
-                  }
-                />
-              </a>
+                  <Modal
+                    isOpen={modalEquipamentoAberto}
+                    setModalEquipamentoFechado={() =>
+                      setModalEquipamentoAberto(!setModalEquipamentoAberto)
+                    }
+                  />
+                </a>
+              </div>
+              <table className="tabelaEqpm">
+                <thead>
+                  <tr>
+                    <th scope="col">Id</th>
+                    <th scope="col">Modelo</th>
+                    <th scope="col">Valor</th>
+                    <th scope="col">Data</th>
+                    <th scope="col">Consumo</th>
+                    <th scope="col">Fabricante</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr className="tabelaEquip">
+                    {listaBuscaFiltrado.length === 0
+                      ? equip.map((equip: any, index: number) => {
+                          return (
+                            <td key={index}>
+                              <CardEquipamento
+                                id={equip.id}
+                                modelo={equip.modelo}
+                                fabricante={equip.fabricante}
+                                data={equip.data}
+                                consumo={equip.consumo}
+                                valor={equip.valor}
+                              />
+                            </td>
+                          );
+                        })
+                      : listaBuscaFiltrado.map((equip: any, index: number) => {
+                          return (
+                            <td key={index}>
+                              <CardEquipamento
+                                id={equip.id}
+                                modelo={equip.modelo}
+                                fabricante={equip.fabricante}
+                                data={equip.data}
+                                consumo={equip.consumo}
+                                valor={equip.valor}
+                              />
+                            </td>
+                          );
+                        })}
+                  </tr>
+                </tbody>
+              </table>
             </div>
-            <table className="tabelaEqpm">
-              <thead>
-                <tr>
-                  <th scope="col">Id</th>
-                  <th scope="col">Modelo</th>
-                  <th scope="col">Valor</th>
-                  <th scope="col">Data</th>
-                  <th scope="col">Consumo</th>
-                  <th scope="col">Fabricante</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr className="tabelaEquip">
-                  {listaBuscaFiltrado.length === 0
-                    ? equip.map((equip: any, index: number) => {
-                        return (
-                          <td key={index}>
-                            <CardEquipamento
-                              id={equip.id}
-                              modelo={equip.modelo}
-                              fabricante={equip.fabricante}
-                              data={equip.data}
-                              consumo={equip.consumo}
-                              valor={equip.valor}
-                            />
-                          </td>
-                        );
-                      })
-                    : listaBuscaFiltrado.map((equip: any, index: number) => {
-                        return (
-                          <td key={index}>
-                            <CardEquipamento
-                              id={equip.id}
-                              modelo={equip.modelo}
-                              fabricante={equip.fabricante}
-                              data={equip.data}
-                              consumo={equip.consumo}
-                              valor={equip.valor}
-                            />
-                          </td>
-                        );
-                      })}
-                </tr>
-              </tbody>
-            </table>
-          </div>
-        </section>
-      </main>
+          </section>
+        </main>
+      </div>
     </>
   );
 }
