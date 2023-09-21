@@ -1,52 +1,52 @@
-#cardequip .tabelaEqpm td {
+#menuSasc .tabelaEqpm td {
   padding: 1% 2.5%;
   display: flex;
   align-items: center;
   justify-content: left;
 }
 
-#cardequip .tabelaEqpm th {
+#menuSasc .tabelaEqpm th {
   padding: 1% 2.5%;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-#cardequip .linhaTabela {
+#menuSasc .linhaTabela {
   width: 60vw;
   background-color: #dceee8;
 }
 
-#cardequip .id {
+#menuSasc .id {
   margin-left: -5%;
   font-weight: bold;
 }
 
-#cardequip .modelo {
+#menuSasc .modelo {
   margin-left: 4%;
 }
 
-#cardequip .fabricante {
+#menuSasc .fabricante {
   margin-left: 5%;
 }
 
-#cardequip .data {
+#menuSasc .data {
   width: 10vw;
   margin-right: -4%;
 }
 
-#cardequip .consumo {
+#menuSasc .consumo {
   margin-right: -3%;
 }
 
-#cardequip .valor {
+#menuSasc .valor {
   margin-right: -2%;
 }
-#cardequip .check {
+#menuSasc .check {
   margin-left: -3%;
 }
 
-#cardequip input {
+#menuSasc input {
   display: flex;
   align-items: center;
   justify-content: center;

@@ -1,10 +1,14 @@
 import CardEquipamento from "../../components/CardEquip";
 import api from "../../utils/api";
 import { useEffect, useState } from "react";
-import "./style.css";
+import "./style.equip.css";
 import search from "../../assets/img/search.png";
 import Modal from "../../components/ModalEquipamento";
-import axios from "axios";
+
+interface DeleteButtonProps {
+  id: number;
+  onDelete: () => void;
+}
 
 export default Equipamento;
 
@@ -114,9 +118,11 @@ function Equipamento() {
     }
   }
 
+  alternarCoresTabela();
+
   return (
     <>
-      <main id="equipamento">
+      <main>
         <section className="equipamentos">
           <div className="painelEqpm">
             <form method="post" onSubmit={buscarPor}>
@@ -158,7 +164,6 @@ function Equipamento() {
                 <button onClick={() => setModalEquipamentoAberto(true)}>
                   + Novo Equipamento
                 </button>
-
                 <Modal
                   isOpen={modalEquipamentoAberto}
                   setModalEquipamentoFechado={() =>

@@ -1,4 +1,4 @@
-import "./style.css";
+import "./style.newpass.css";
 import { Link } from "react-router-dom";
 import Logo from "../../assets/img/Design_sem_nome-removebg-preview.png";
 import Fundo from "../../assets/img/img_fundo-removebg-preview.png";

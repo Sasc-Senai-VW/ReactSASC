@@ -12,14 +12,14 @@
   --verdeclaro: rgba(1, 181, 116, 0.1);
 }
 
-/* #esqueceusenha body {
+body {
   background-image: url(../../assets/img/Background1.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
-} */
+}
 
-#esqueceusenha .cabecalho {
+.cabecalho {
   width: 1400px auto;
   height: 80px;
   margin: 0;
@@ -28,25 +28,25 @@
   align-items: center;
 }
 
-#esqueceusenha .cabecalho img {
+.cabecalho img {
   width: 5%;
 }
 
-#esqueceusenha main {
+#novasenha main {
   margin: 0 auto;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   display: flex;
   justify-content: space-between;
 }
 
-#esqueceusenha .esquerdinha {
+.esquerdinha {
   display: flex;
   align-items: center;
   justify-content: center;
   width: 50%;
 }
 
-#esqueceusenha .pagina_esquerda {
+.pagina_esquerda {
   background: linear-gradient(
     150deg,
     rgba(255, 255, 255, 0.356) 100%,
@@ -63,31 +63,30 @@
   justify-content: center;
   box-shadow: 2px 2px 70px rgb(0, 0, 0);
 }
-
-#esqueceusenha .return {
+.return {
   color: var(--cinza);
-  margin-top: 1%;
+  margin-top: 10px;
   font-size: 200%;
   width: 80%;
   text-align: start;
   text-decoration: none;
 }
 
-#esqueceusenha h2 {
+#novasenha h2 {
   margin-bottom: 20px;
   color: var(--verde);
   font-size: 20px;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 
-#esqueceusenha .texto {
+#novasenha .texto {
   text-align: justify;
   color: var(--verde);
   margin-top: 1%;
   width: 75%;
 }
 
-#esqueceusenha .pagina_esquerda input {
+#novasenha .pagina_esquerda input {
   color: white;
   text-align: center;
   margin-top: 8%;
@@ -98,11 +97,11 @@
   border-radius: 30px;
 }
 
-#esqueceusenha .avancar {
+#novasenha .confmSenha1 {
   width: 100%;
 }
 
-#esqueceusenha .pagina_esquerda button {
+#novasenha .confmSenha2 {
   cursor: pointer;
   margin: 10%;
   color: white;
@@ -115,13 +114,13 @@
   text-transform: uppercase;
 }
 
-#esqueceusenha .ladoDireito {
+#novasenha .ladoDireito {
   display: flex;
   align-items: end;
   width: 50%;
 }
 
-#esqueceusenha .pagina_direita {
+#novasenha .pagina_direita {
   width: 100%;
   display: flex;
   justify-content: center;
@@ -129,7 +128,7 @@
   flex-direction: column;
 }
 
-#esqueceusenha .pagina_direita p {
+#novasenha .pagina_direita p {
   color: white;
   text-align: center;
   font-size: 50px;
@@ -137,7 +136,7 @@
   margin-bottom: 14%;
 }
 
-#esqueceusenha label {
+#novasenha label {
   margin-top: 5%;
   position: relative;
   width: 120px;
@@ -145,13 +144,13 @@
   cursor: pointer;
 }
 
-#esqueceusenha label input {
+#novasenha label input {
   position: relative;
   z-index: 1;
   appearance: none;
 }
 
-#esqueceusenha label span {
+#novasenha label span {
   position: absolute;
   left: 70px;
   width: 40px;
@@ -161,10 +160,10 @@
   transition: 0, 5s;
 }
 
-#esqueceusenha label input:checked ~ span {
+#novasenha label input:checked ~ span {
   background: #cf4b83;
 }
-#esqueceusenha label span i {
+#novasenha label span i {
   transition: 0, 5s;
   top: 3.8px;
   left: 2px;
@@ -175,63 +174,59 @@
   border-radius: 50%;
 }
 
-#esqueceusenha label input:checked ~ span i {
+#novasenha label input:checked ~ span i {
   left: 18px;
   background: #393939;
 }
 
-#esqueceusenha .pagina_direita img {
+#novasenha .pagina_direita img {
   width: 55%;
 }
 
-#esqueceusenha body {
-  background-image: url(../../assets/img/Background1.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center center;
-}
-
 @media screen and (max-width: 1180px) {
-  #esqueceusenha .cabecalho {
+  #novasenha .cabecalho {
     height: 58px;
   }
 
-  #esqueceusenha .pagina_direita p {
+  #novasenha .pagina_direita p {
     font-size: 30px;
   }
 }
 
 @media screen and (max-width: 685px) {
-  #esqueceusenha .return {
-    margin-top: 0%;
-  }
-
-  #esqueceusenha .esquerdinha {
+  #novasenha .esquerdinha {
     width: 100%;
   }
 
-  #esqueceusenha .ladoDireito {
+  #novasenha .ladoDireito {
     width: 100%;
   }
 
-  #esqueceusenha .pagina_direita p {
+  #novasenha .pagina_direita p {
     font-size: 35px;
     margin-top: 30%;
   }
 
-  #esqueceusenha .pagina_esquerda button {
+  #novasenha .pagina_esquerda button {
     font-size: 70%;
     width: 45%;
   }
 
-  #esqueceusenha .pagina_direita {
+  #novasenha .pagina_direita {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
   }
 
-  #esqueceusenha main {
+  #novasenha body {
+    background-image: url(../../assets/img/Background2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+
+  #novasenha main {
     flex-direction: column;
     display: flex;
     margin: 0 auto;
@@ -239,32 +234,21 @@
       sans-serif;
   }
 
-  #esqueceusenha .pagina_direita img {
+  #novasenha .pagina_direita img {
     width: 75%;
   }
 
-  #esqueceusenha .cabecalho img {
+  #novasenha .cabecalho img {
     width: 15%;
   }
 
-  #esqueceusenha .texto {
+  #novasenha .texto {
     font-size: smaller;
   }
 }
 
 @media screen and (max-width: 684px) {
-  #esqueceusenha .cabecalho img {
+  #novasenha .cabecalho img {
     width: 10%;
   }
-}
-
-@media screen and (max-width: 850px) {
-  #esqueceusenha .return {
-    margin-top: 8%;
-  }
-}
-
-#esqueceusenha .linkavanca {
-  text-decoration: none;
-  color: white;
 }

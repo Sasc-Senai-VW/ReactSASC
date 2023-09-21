@@ -18,15 +18,50 @@ ReactDOM.createRoot(document.getElementById("root")!).render(
   <React.StrictMode>
     {/* <Menu /> */}
     <BrowserRouter>
-      <Menu />
       <Routes>
-        <Route path="/" element={<Home />} />
+        <Route
+          path="/"
+          element={
+            <div>
+              {" "}
+              <Menu />
+              <Home />
+            </div>
+          }
+        />
 
-        <Route path="dashboardfiltro" element={<DashboardFiltro />} />
-        <Route path="equipamento" element={<Equipamento />} />
+        <Route
+          path="dashboardfiltro"
+          element={
+            <div>
+              {" "}
+              <Menu />
+              <DashboardFiltro />
+            </div>
+          }
+        />
+        <Route
+          path="equipamento"
+          element={
+            <div>
+              {" "}
+              <Menu />
+              <Equipamento />
+            </div>
+          }
+        />
         <Route path="esqueceusenha" element={<EsqueceuSenha />} />
         <Route path="login" element={<Login />} />
-        <Route path="novousuario" element={<NovoUsuario />} />
+        <Route
+          path="novousuario"
+          element={
+            <div>
+              {" "}
+              <Menu />
+              <NovoUsuario />
+            </div>
+          }
+        />
         <Route path="novasenha" element={<NovaSenha />} />
       </Routes>
     </BrowserRouter>

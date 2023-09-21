@@ -1,4 +1,4 @@
-import "./style.css";
+import "./style.youtube.css";
 
 import PropTypes from "prop-types";
 

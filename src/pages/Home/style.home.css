@@ -55,7 +55,6 @@
 }
 
 #geralzao .Donutleft {
-  background-image: url(../img/Banner-Climas.png);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: left;
@@ -88,7 +87,6 @@
   border-radius: 0 25px 25px 25px;
   background-color: #1f1f1fd0;
   background-color: transparent;
-  background-image: url(../img/servicos-de-armazenamento-em-nuvem2.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;

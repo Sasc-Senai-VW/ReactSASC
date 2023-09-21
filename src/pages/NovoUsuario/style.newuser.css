@@ -76,7 +76,7 @@
 
 #newuser main {
   display: flex;
-  background-color: rgb(209, 209, 209);
+  /* background-color: rgb(209, 209, 209); */
   width: 100%;
 }
 

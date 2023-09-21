@@ -1,5 +1,5 @@
 import { useState } from "react";
-import "./style.css";
+import "./style.newuser.css";
 import Modal from "../../components/Modal/modal";
 
 export default NovoUsuario;

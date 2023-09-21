@@ -127,17 +127,6 @@
   font-size: 150%;
 }
 
-/* #menuSasc .pagAtual {
-  display: flex;
-  align-items: center;
-
-  border-radius: 10px;
-  background-color: var(--verde);
-  width: 80%;
-  height: 10%;
-  margin-left: 5%;
-} */
-
 #menuSasc .pagAtual span {
   text-align: center;
 }

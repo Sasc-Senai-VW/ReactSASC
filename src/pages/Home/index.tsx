@@ -1,4 +1,4 @@
-import "./style.css";
+import "./style.home.css";
 
 import img1 from "../../assets/img/ximagem_sustentabilidade_como-funciona-a-comercializacao-de-credito-de-carbono_ecotax_5.jpg.pagespeed.ic.YlejGfzOy8.jpg";
 import img2 from "../../assets/img/gestão-offseting.png";

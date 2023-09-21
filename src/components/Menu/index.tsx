@@ -1,4 +1,4 @@
-import "./style.css";
+import "./style.menu.css";
 import { IoMdSettings } from "react-icons/io";
 import { IoMdContact } from "react-icons/io";
 import { IoMdExit } from "react-icons/io";

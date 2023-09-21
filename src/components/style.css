@@ -1,53 +1,53 @@
-#equipamento .tabelaEqpm td {
+.tabelaEqpm td {
   padding: 1% 2.5%;
   display: flex;
   align-items: center;
   justify-content: left;
 }
 
-#equipamento .tabelaEqpm th {
+.tabelaEqpm th {
   padding: 1% 2.5%;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-#equipamento .linhaTabela {
+.linhaTabela {
   /* display: flex; */
   width: 82vw;
   background-color: #dceee8;
 }
 
-#equipamento .id {
+.id {
   margin-left: -5%;
   font-weight: bold;
 }
 
-#equipamento .modelo {
+.modelo {
   margin-left: 4%;
 }
 
-#equipamento .fabricante {
+.fabricante {
   margin-left: 5%;
 }
 
-#equipamento .data {
+.data {
   width: 10vw;
   /* margin-right: -4%; */
 }
 
-#equipamento .consumo {
+.consumo {
   margin-right: -3%;
 }
 
-#equipamento .valor {
+.valor {
   margin-right: -2%;
 }
-#equipamento .check {
+.check {
   margin-left: -3%;
 }
 
-#equipamento input {
+input {
   display: flex;
   align-items: center;
   justify-content: center;

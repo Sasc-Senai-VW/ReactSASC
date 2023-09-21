@@ -32,7 +32,7 @@ body {
   width: 5%;
 }
 
-main {
+#forgetpass main {
   margin: 0 auto;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   display: flex;
@@ -63,30 +63,31 @@ main {
   justify-content: center;
   box-shadow: 2px 2px 70px rgb(0, 0, 0);
 }
+
 .return {
   color: var(--cinza);
-  margin-top: 10px;
+  margin-top: 1%;
   font-size: 200%;
   width: 80%;
   text-align: start;
   text-decoration: none;
 }
 
-h2 {
+#forgetpass h2 {
   margin-bottom: 20px;
   color: var(--verde);
   font-size: 20px;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 
-#novasenha .texto {
+.texto {
   text-align: justify;
   color: var(--verde);
   margin-top: 1%;
   width: 75%;
 }
 
-#novasenha .pagina_esquerda input {
+.pagina_esquerda input {
   color: white;
   text-align: center;
   margin-top: 8%;
@@ -97,11 +98,11 @@ h2 {
   border-radius: 30px;
 }
 
-#novasenha .confmSenha1 {
+.avancar {
   width: 100%;
 }
 
-#novasenha .confmSenha2 {
+.pagina_esquerda button {
   cursor: pointer;
   margin: 10%;
   color: white;
@@ -114,13 +115,13 @@ h2 {
   text-transform: uppercase;
 }
 
-#novasenha .ladoDireito {
+.ladoDireito {
   display: flex;
   align-items: end;
   width: 50%;
 }
 
-#novasenha .pagina_direita {
+.pagina_direita {
   width: 100%;
   display: flex;
   justify-content: center;
@@ -128,7 +129,7 @@ h2 {
   flex-direction: column;
 }
 
-#novasenha .pagina_direita p {
+.pagina_direita p {
   color: white;
   text-align: center;
   font-size: 50px;
@@ -136,7 +137,7 @@ h2 {
   margin-bottom: 14%;
 }
 
-#novasenha label {
+#forgetpass label {
   margin-top: 5%;
   position: relative;
   width: 120px;
@@ -144,13 +145,13 @@ h2 {
   cursor: pointer;
 }
 
-#novasenha label input {
+#forgetpass label input {
   position: relative;
   z-index: 1;
   appearance: none;
 }
 
-#novasenha label span {
+#forgetpass label span {
   position: absolute;
   left: 70px;
   width: 40px;
@@ -160,10 +161,10 @@ h2 {
   transition: 0, 5s;
 }
 
-#novasenha label input:checked ~ span {
+#forgetpass label input:checked ~ span {
   background: #cf4b83;
 }
-#novasenha label span i {
+#forgetpass label span i {
   transition: 0, 5s;
   top: 3.8px;
   left: 2px;
@@ -174,59 +175,63 @@ h2 {
   border-radius: 50%;
 }
 
-#novasenha label input:checked ~ span i {
+#forgetpass label input:checked ~ span i {
   left: 18px;
   background: #393939;
 }
 
-#novasenha .pagina_direita img {
+.pagina_direita img {
   width: 55%;
 }
 
 @media screen and (max-width: 1180px) {
-  #novasenha .cabecalho {
+  .cabecalho {
     height: 58px;
   }
 
-  #novasenha .pagina_direita p {
+  .pagina_direita p {
     font-size: 30px;
   }
 }
 
 @media screen and (max-width: 685px) {
-  #novasenha .esquerdinha {
+  .return {
+    margin-top: 0%;
+  }
+
+  .esquerdinha {
     width: 100%;
   }
 
-  #novasenha .ladoDireito {
+  .ladoDireito {
     width: 100%;
   }
 
-  #novasenha .pagina_direita p {
+  .pagina_direita p {
     font-size: 35px;
     margin-top: 30%;
   }
 
-  #novasenha .pagina_esquerda button {
+  .pagina_esquerda button {
     font-size: 70%;
     width: 45%;
   }
 
-  #novasenha .pagina_direita {
+  .pagina_direita {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
   }
 
-  #novasenha body {
+  body {
     background-image: url(../../assets/img/Background2.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
   }
 
-  #novasenha main {
+  main {
     flex-direction: column;
     display: flex;
     margin: 0 auto;
@@ -234,21 +239,32 @@ h2 {
       sans-serif;
   }
 
-  #novasenha .pagina_direita img {
+  .pagina_direita img {
     width: 75%;
   }
 
-  #novasenha .cabecalho img {
+  .cabecalho img {
     width: 15%;
   }
 
-  #novasenha .texto {
+  .texto {
     font-size: smaller;
   }
 }
 
 @media screen and (max-width: 684px) {
-  #novasenha .cabecalho img {
+  .cabecalho img {
     width: 10%;
   }
+}
+
+@media screen and (max-width: 850px) {
+  .return {
+    margin-top: 8%;
+  }
+}
+
+.linkavanca {
+  text-decoration: none;
+  color: white;
 }

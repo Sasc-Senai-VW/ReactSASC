@@ -1,4 +1,4 @@
-import "./style.css";
+import "./style.cardequip.css";
 
 export default function CardEquipamento(props: any) {
   function parseListaEquipamento() {
@@ -11,16 +11,18 @@ export default function CardEquipamento(props: any) {
 
   return (
     <>
-      <tbody id="cardequip">
-        <tr className="linhaTabela">
-          <td>{props.id}</td>
-          <td>{props.modelo}</td>
-          <td>R$ {props.valor}</td>
-          <td>{props.data}</td>
-          <td>{props.consumo}(kWh)</td>
-          <td>{props.fabricante}</td>
-        </tr>
-      </tbody>
+      <div id="cardequip">
+        <tbody>
+          <tr className="linhaTabela">
+            <td>{props.id}</td>
+            <td>{props.modelo}</td>
+            <td>R$ {props.valor}</td>
+            <td>{props.data}</td>
+            <td>{props.consumo}(kWh)</td>
+            <td>{props.fabricante}</td>
+          </tr>
+        </tbody>
+      </div>
     </>
   );
 }

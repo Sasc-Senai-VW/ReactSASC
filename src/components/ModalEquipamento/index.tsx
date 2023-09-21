@@ -1,5 +1,5 @@
 import React from "react";
-import "./style.css";
+import "./style.modalequip.css";
 import { useState } from "react";
 import api from "../../utils/api";
 import { useEffect } from "react";

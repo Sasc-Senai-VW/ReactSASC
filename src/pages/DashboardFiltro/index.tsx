@@ -1,7 +1,7 @@
 import React from "react";
 import ReactApexChart from "react-apexcharts";
 
-import "./style.css";
+import "./style.dash.css";
 
 interface MyComponentProps {}
 

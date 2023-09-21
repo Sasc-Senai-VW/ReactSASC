@@ -1,10 +1,10 @@
-#equipamento main {
+main {
   display: flex;
-  background-color: rgb(209, 209, 209);
+  /* background-color: rgb(209, 209, 209); */
   width: 100%;
 }
 
-#equipamento .table__header {
+.table__header {
   margin-top: 2%;
   width: 100%;
   height: 10%;
@@ -16,7 +16,7 @@
   align-items: center;
 }
 
-#equipamento .table__header .input-group {
+.table__header .input-group {
   width: 35%;
   height: 100%;
   background-color: rgba(18, 18, 18, 0.403);
@@ -30,19 +30,19 @@
   transition: 0.2s;
 }
 
-#equipamento .table__header .input-group:hover {
+.table__header .input-group:hover {
   width: 45%;
   background-color: #fff8;
   box-shadow: 0 0.1rem 0.4rem #0002;
 }
 
-#equipamento .table__header .input-group img {
+.table__header .input-group img {
   width: 1.2rem;
   height: 1.2rem;
   cursor: pointer;
 }
 
-#equipamento .table__header .input-group input {
+.table__header .input-group input {
   width: 100%;
   padding: 0 0.5rem 0 0.3rem;
   background-color: transparent;
@@ -50,7 +50,7 @@
   outline: none;
 }
 
-#equipamento .equipamentos {
+.equipamentos {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -58,7 +58,7 @@
   height: 100vh;
 }
 
-#equipamento .painelEqpm {
+.painelEqpm {
   margin-left: 30%;
   width: 100%;
   height: 90%;
@@ -66,15 +66,15 @@
   border-radius: 20px;
 }
 
-#equipamento .size1 {
+.size1 {
   font-size: 90%;
 }
 
-#equipamento .size2 {
+.size2 {
   font-size: 150%;
 }
 
-#equipamento .buscarInput {
+.buscarInput {
   border-radius: 8px;
   background-color: #e1e0e0;
   border: none;
@@ -85,11 +85,11 @@
   color: black;
 }
 
-#equipamento .menu2Bbtn a {
+.menu2Bbtn a {
   text-decoration: none;
 }
 
-#equipamento button {
+button {
   margin-left: 1%;
   width: 5%;
 
@@ -103,7 +103,7 @@
   cursor: pointer;
 }
 
-#equipamento .btnNovoEqpm button {
+.btnNovoEqpm button {
   text-align: center;
   border-radius: 8px;
   background-color: #cf4b83;
@@ -118,7 +118,7 @@
   cursor: pointer;
 }
 
-#equipamento .btnEditar button {
+.btnEditar button {
   border-radius: 8px;
   background-color: #dceee8;
   color: rgb(95, 95, 95);
@@ -130,7 +130,7 @@
   cursor: pointer;
 }
 
-#equipamento .btnExcluir button {
+.btnExcluir button {
   border-radius: 8px;
   background-color: #dceee8;
   color: rgb(95, 95, 95);
@@ -142,7 +142,7 @@
   cursor: pointer;
 }
 
-#equipamento .tabelaEqpm {
+.tabelaEqpm {
   width: 90%;
   margin-top: 5%;
   margin-left: 5%;
@@ -154,7 +154,7 @@
   text-align: center;
 }
 
-#equipamento .tabelaEqpm td {
+.tabelaEqpm td {
   width: 64px;
   padding: 1% 0.2%;
   display: flex;
@@ -162,12 +162,12 @@
   justify-content: left;
 }
 
-#equipamento .tabelaEqpm th {
+.tabelaEqpm th {
   width: 64px;
   border-radius: 25px 25px 25px 0px;
 }
 
-#equipamento .tabelaEqpm thead tr {
+.tabelaEqpm thead tr {
   width: 50vw;
   padding: 1% 0.2%;
   color: black;
@@ -175,25 +175,25 @@
   font-weight: bold;
 }
 
-#equipamento tr {
+tr {
   display: flex;
   border-radius: 10px;
   justify-content: space-evenly;
   align-items: start;
 }
 
-#equipamento tr.linhaTabela {
+tr.linhaTabela {
   width: 50vw;
 }
 
-#equipamento .tabelaEquip {
+.tabelaEquip {
   flex: 1;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
 }
 
-#equipamento select {
+select {
   width: auto;
   padding: 5px;
   border-radius: 20px;
@@ -201,20 +201,19 @@
   background: linear-gradient(136deg, #0000001a 0%, #ffffff0b 100%);
   backdrop-filter: blur(15px);
   color: #000000fb;
-  font-size: 8px;
 }
 
-#equipamento form {
+form {
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-#equipamento .export__file {
+.export__file {
   position: relative;
 }
 
-#equipamento .export__file .export__file-btn {
+.export__file .export__file-btn {
   display: inline-block;
   width: 2rem;
   height: 2rem;
@@ -223,17 +222,17 @@
   transition: 0.2s ease-in-out;
 }
 
-#equipamento .export__file .export__file-btn:hover {
+.export__file .export__file-btn:hover {
   background-color: #fff;
   transform: scale(1.15);
   cursor: pointer;
 }
 
-#equipamento .export__file input {
+.export__file input {
   display: none;
 }
 
-#equipamento .export__file .export__file-options {
+.export__file .export__file-options {
   position: absolute;
   right: 0;
 
@@ -251,13 +250,13 @@
   transition: 0.2s;
 }
 
-#equipamento .export__file input:checked + .export__file-options {
+.export__file input:checked + .export__file-options {
   opacity: 1;
   transform: scale(1);
   z-index: 100;
 }
 
-#equipamento .export__file .export__file-options label {
+.export__file .export__file-options label {
   display: block;
   width: 100%;
   padding: 0.6rem 0;
@@ -270,189 +269,189 @@
   transition: 0.2s ease-in-out;
 }
 
-#equipamento .export__file .export__file-options label:first-of-type {
+.export__file .export__file-options label:first-of-type {
   padding: 1rem 0;
   background-color: #86e49d !important;
 }
 
-#equipamento .export__file .export__file-options label:hover {
+.export__file .export__file-options label:hover {
   transform: scale(1.05);
   background-color: #fff;
   cursor: pointer;
 }
 
-#equipamento .export__file .export__file-options img {
+.export__file .export__file-options img {
   width: 2rem;
   height: auto;
 }
 
-#equipamento input {
+input {
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
 @media screen and (max-width: 1300px) {
-  #equipamento .size1 {
+  .size1 {
     font-size: 85%;
   }
 
-  #equipamento .size2 {
+  .size2 {
     font-size: 100%;
   }
 }
 
 @media screen and (max-width: 1100px) {
-  #equipamento .size1 {
+  .size1 {
     font-size: 75%;
   }
 
-  #equipamento .size2 {
+  .size2 {
     font-size: 100%;
   }
 
-  #equipamento .btnNovoEqpm button {
+  .btnNovoEqpm button {
     font-size: 70%;
   }
 }
 @media screen and (max-width: 1306px) {
-  #equipamento .btnNovoEqpm button {
+  .btnNovoEqpm button {
     width: auto;
   }
 }
 
 @media screen and (max-width: 990px) {
-  #equipamento .size1 {
+  .size1 {
     font-size: 68%;
   }
 
-  #equipamento .size2 {
+  .size2 {
     font-size: 100%;
   }
 
-  #equipamento .btnNovoEqpm button {
+  .btnNovoEqpm button {
     font-size: 60%;
   }
 
-  #equipamento .tabelaEqpm {
+  .tabelaEqpm {
     font-size: 80%;
   }
-  #equipamento .table__header h1 {
+  .table__header h1 {
     font-size: 14px;
   }
 }
 
 @media screen and (max-width: 890px) {
-  #equipamento .size1 {
+  .size1 {
     font-size: 58%;
   }
 
-  #equipamento .size2 {
+  .size2 {
     font-size: 90%;
   }
 
-  #equipamento .btnNovoEqpm button {
+  .btnNovoEqpm button {
     font-size: 50%;
   }
 
-  #equipamento .tabelaEqpm {
+  .tabelaEqpm {
     font-size: 75%;
   }
 }
 
 @media screen and (max-width: 790px) {
-  #equipamento .tabelaEqpm td {
+  .tabelaEqpm td {
     width: 47px;
   }
 
-  #equipamento .tabelaEqpm {
+  .tabelaEqpm {
     font-size: 70%;
   }
 }
 
 @media screen and (max-width: 790px) {
-  #equipamento .size1 {
+  .size1 {
     font-size: 49%;
   }
 
-  #equipamento .size2 {
+  .size2 {
     font-size: 85%;
   }
-  #equipamento .table__header h1 {
+  .table__header h1 {
     font-size: 12px;
   }
 
-  #equipamento select {
+  select {
     font-size: 8px;
     padding: 4px;
   }
 
-  #equipamento .table__header .input-group {
+  .table__header .input-group {
     width: 25%;
   }
 
-  #equipamento .table__header .input-group input {
+  .table__header .input-group input {
     width: 100%;
     font-size: 8px;
   }
-  #equipamento .table__header .input-group img {
+  .table__header .input-group img {
     width: 0.9rem;
     height: 0.7rem;
   }
 }
 
 @media screen and (max-width: 722px) {
-  #equipamento .tabelaEqpm td {
+  .tabelaEqpm td {
     width: 44px;
   }
 
-  #equipamento .tabelaEqpm {
+  .tabelaEqpm {
     font-size: 68%;
   }
 }
 
 @media screen and (max-width: 680px) {
-  #equipamento main {
+  main {
     display: flex;
     flex-direction: column;
   }
-  #equipamento .tabelaEqpm td {
+  .tabelaEqpm td {
     width: 40px;
   }
 
-  #equipamento .tabelaEqpm thead tr {
+  .tabelaEqpm thead tr {
     font-size: 90%;
   }
 
-  #equipamento .menu {
+  .menu {
     width: 100%;
     height: 10vh;
     position: fixed;
     bottom: 0;
   }
 
-  #equipamento .menu_lateral {
+  .menu_lateral {
     padding: 0;
     height: 10vh;
     width: 100%;
     border-radius: 25px 25px 0 0;
   }
 
-  #equipamento .menu_conteudo {
+  .menu_conteudo {
     align-items: center;
     padding: 0;
     width: 100%;
     height: 10vh;
   }
 
-  #equipamento .menu_conteudo ul {
+  .menu_conteudo ul {
     display: flex;
     align-items: center;
     width: 100%;
     height: 10vh;
   }
 
-  #equipamento .item_menu {
+  .item_menu {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -460,7 +459,7 @@
     height: 10vh;
   }
 
-  #equipamento .item_menu a {
+  .item_menu a {
     padding-left: 0;
     display: flex;
     justify-content: center;
@@ -469,209 +468,209 @@
     padding: 0;
   }
 
-  #equipamento .pagAtual {
+  .pagAtual {
     margin-left: 0;
     background-color: transparent;
   }
 
-  #equipamento .IconAtual {
+  .IconAtual {
     color: #cf4b83;
   }
 
-  #equipamento .btnSair {
+  .btnSair {
     display: none;
   }
 
-  #equipamento .btn_expandir {
+  .btn_expandir {
     display: none;
   }
 
-  #equipamento .size1 {
+  .size1 {
     font-size: 55%;
   }
 
-  #equipamento .size2 {
+  .size2 {
     font-size: 80%;
   }
 
-  #equipamento .txt_link {
+  .txt_link {
     display: none;
   }
 
-  #equipamento hr {
+  hr {
     display: none;
   }
 
-  #equipamento .espaco2 {
+  .espaco2 {
     margin-top: 0;
     width: 20%;
   }
 
-  #equipamento .painelEqpm {
+  .painelEqpm {
     height: 85%;
     margin-top: -10%;
   }
 }
 
 @media screen and (max-width: 670px) {
-  #equipamento .tabelaEqpm td {
+  .tabelaEqpm td {
     width: 44px;
   }
-  #equipamento .tabelaEqpm {
+  .tabelaEqpm {
     font-size: 60%;
   }
 }
 
 @media screen and (max-width: 645px) {
-  #equipamento .table__header {
+  .table__header {
     flex-direction: column;
   }
-  #equipamento select {
+  select {
     margin-top: 2%;
   }
-  #equipamento .table__header .input-group {
+  .table__header .input-group {
     margin-top: 2%;
     width: 40%;
   }
 }
 
 @media screen and (max-width: 600px) {
-  #equipamento .tabelaEqpm td {
+  .tabelaEqpm td {
     width: 40px;
   }
-  #equipamento .tabelaEqpm {
+  .tabelaEqpm {
     font-size: 55%;
   }
 }
 
 @media screen and (max-width: 580px) {
-  #equipamento tr.linhaTabela {
+  tr.linhaTabela {
     width: 51vw;
   }
 
-  #equipamento .tabelaEqpm thead tr {
+  .tabelaEqpm thead tr {
     width: 51vw;
   }
 }
 
 @media screen and (max-width: 550px) {
-  #equipamento .tabelaEqpm td {
+  .tabelaEqpm td {
     width: 35px;
   }
-  #equipamento .tabelaEqpm {
+  .tabelaEqpm {
     font-size: 45%;
   }
-  #equipamento tr.linhaTabela {
+  tr.linhaTabela {
     width: 52vw;
   }
 
-  #equipamento .tabelaEqpm thead tr {
+  .tabelaEqpm thead tr {
     width: 52vw;
   }
 }
 
 @media screen and (max-width: 530px) {
-  #equipamento tr.linhaTabela {
+  tr.linhaTabela {
     width: 51vw;
   }
-  #equipamento .tabelaEqpm thead tr {
+  .tabelaEqpm thead tr {
     width: 51vw;
   }
 }
 
 @media screen and (max-width: 500px) {
-  #equipamento tr.linhaTabela {
+  tr.linhaTabela {
     width: 50vw;
   }
-  #equipamento .tabelaEqpm thead tr {
+  .tabelaEqpm thead tr {
     width: 50vw;
   }
 }
 
 @media screen and (max-width: 475px) {
-  #equipamento tr.linhaTabela {
+  tr.linhaTabela {
     width: 49vw;
   }
-  #equipamento .tabelaEqpm thead tr {
+  .tabelaEqpm thead tr {
     width: 49vw;
   }
 }
 
 @media screen and (max-width: 460px) {
-  #equipamento tr.linhaTabela {
+  tr.linhaTabela {
     width: 48vw;
   }
 
-  #equipamento .tabelaEqpm thead tr {
+  .tabelaEqpm thead tr {
     width: 48vw;
   }
 }
 
 @media screen and (max-width: 450px) {
-  #equipamento tr.linhaTabela {
+  tr.linhaTabela {
     width: 49vw;
   }
 }
 
 @media screen and (max-width: 450px) {
-  #equipamento .painelEqpm {
+  .painelEqpm {
     margin-top: -15%;
   }
 
-  #equipamento .tabelaEqpm {
+  .tabelaEqpm {
     font-size: 40%;
   }
 
-  #equipamento .btnNovoEqpm button {
+  .btnNovoEqpm button {
     font-size: 35%;
     width: 25%;
   }
-  #equipamento .table__header .input-group {
+  .table__header .input-group {
     margin-top: 2%;
     width: 70%;
   }
 }
 @media screen and (max-width: 450px) {
-  #equipamento .btnNovoEqpm button {
+  .btnNovoEqpm button {
     width: 70px;
     font-size: 30%;
   }
 }
 @media screen and (max-width: 430px) {
-  #equipamento tr.linhaTabela {
+  tr.linhaTabela {
     width: 50vw;
   }
-  #equipamento .tabelaEqpm thead tr {
+  .tabelaEqpm thead tr {
     width: 49vw;
   }
 }
 
 @media screen and (max-width: 410px) {
-  #equipamento tr.linhaTabela {
+  tr.linhaTabela {
     width: 52vw;
   }
-  #equipamento .tabelaEqpm thead tr {
+  .tabelaEqpm thead tr {
     width: 51vw;
   }
 }
 
 @media screen and (max-width: 385px) {
-  #equipamento .painelEqpm {
+  .painelEqpm {
     margin-top: -20%;
   }
 
-  #equipamento .tabelaEqpm {
+  .tabelaEqpm {
     font-size: 30%;
   }
 
-  #equipamento .tabelaEqpm thead {
+  .tabelaEqpm thead {
     font-size: 35%;
   }
 
-  #equipamento tr.linhaTabela {
+  tr.linhaTabela {
     width: 49vw;
   }
-  #equipamento .tabelaEqpm thead tr {
+  .tabelaEqpm thead tr {
     width: 48vw;
   }
 }
