@@ -174,7 +174,7 @@ export default function ModalEquipamento({
               </div>
 
               <a className="cad_box_input">
-                <button onClick={() => CardEquipamento(true)}>Cadastrar</button>
+                <button className="botao_cadastrar"onClick={() => CardEquipamento(true)}>Cadastrar</button>
               </a>
             </form>
           </div>

@@ -153,7 +153,7 @@ function Equipamento() {
                       placeholder="Procurar "
                       onChange={retornoEquipGeral}
                     />
-                    <button type="submit">
+                    <button className="pesquisar" type="submit">
                       <img src={search} alt="" />
                     </button>
                   </div>
@@ -161,8 +161,8 @@ function Equipamento() {
               </form>
 
               <div className="menu2Bbtn">
-                <a className="btnNovoEqpm">
-                  <button onClick={() => setModalEquipamentoAberto(true)}>
+                <a className="">
+                  <button className="btnNovoEqpm" onClick={() => setModalEquipamentoAberto(true)}>
                     + Novo Equipamento
                   </button>
                   <Modal

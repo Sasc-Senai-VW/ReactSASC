@@ -26,6 +26,21 @@
   margin-top: -2%;
   cursor: pointer;
 }
+
+ .botao_cadastrar{
+  text-align: center;
+    border-radius: 8px;
+    background-color: #cf4b83;
+    color: white;
+    border: none;
+    width: 30%;
+    height: 3.5vh;
+    margin-left: 5%;
+    margin-top: 2%;
+    font-weight: 600;
+    font-size: 80%;
+    cursor: pointer;
+}
 .main_cadastro .container_cad {
   display: flex;
   justify-content: center;
