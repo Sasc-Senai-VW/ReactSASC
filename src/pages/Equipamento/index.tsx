@@ -3,6 +3,8 @@ import api from "../../utils/api";
 import { useEffect, useState } from "react";
 import "./style.css";
 import search from "../../assets/img/search.png";
+import Modal from "../../components/ModalEquipamento";
+import axios from "axios";
 
 export default Equipamento;
 
@@ -24,6 +26,8 @@ function Equipamento() {
   const [filtroDigitado, setfiltroDigitado] = useState<string>("");
 
   const [listaBuscaFiltrado, setlistaBuscaFiltrado] = useState<any[]>(equip);
+
+  const [modalEquipamentoAberto, setModalEquipamentoAberto] = useState(false);
 
   useEffect(() => {
     document.title = "Lista de Equipamentos";
@@ -85,7 +89,7 @@ function Equipamento() {
   }
 
   function listarEquipamentos() {
-    api.get("users").then((resposta: any) => {
+    api.get("equipamentos").then((resposta: any) => {
       console.log(resposta.data);
       setEquip(resposta.data);
     });
@@ -109,8 +113,6 @@ function Equipamento() {
       }
     }
   }
-
-  alternarCoresTabela();
 
   return (
     <>
@@ -152,11 +154,17 @@ function Equipamento() {
             </form>
 
             <div className="menu2Bbtn">
-              <a
-                className="btnNovoEqpm"
-                href="../CadastramentoDeEquipamentos/index.html"
-              >
-                <button>+ Novo Equipamento</button>
+              <a className="btnNovoEqpm">
+                <button onClick={() => setModalEquipamentoAberto(true)}>
+                  + Novo Equipamento
+                </button>
+
+                <Modal
+                  isOpen={modalEquipamentoAberto}
+                  setModalEquipamentoFechado={() =>
+                    setModalEquipamentoAberto(!setModalEquipamentoAberto)
+                  }
+                />
               </a>
             </div>
             <table className="tabelaEqpm">

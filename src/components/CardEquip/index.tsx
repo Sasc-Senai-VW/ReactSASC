@@ -11,7 +11,7 @@ export default function CardEquipamento(props: any) {
 
   return (
     <>
-      <tbody>
+      <tbody id="cardequip">
         <tr className="linhaTabela">
           <td>{props.id}</td>
           <td>{props.modelo}</td>

@@ -3,7 +3,7 @@ import "./style.css";
 import PropTypes from "prop-types";
 
 const YoutubeEmbed = ({ embedId }: any) => (
-  <div className="video-responsive">
+  <div className="video-responsive" id="video">
     <iframe
       width="853"
       height="480"

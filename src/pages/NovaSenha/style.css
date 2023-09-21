@@ -19,7 +19,7 @@
   background-position: center center;
 }
 
-.cabecalho {
+#novasenha .cabecalho {
   width: 1400px auto;
   height: 80px;
   margin: 0;
@@ -28,25 +28,25 @@
   align-items: center;
 }
 
-.cabecalho img {
+#novasenha .cabecalho img {
   width: 5%;
 }
 
-main {
+#novasenha main {
   margin: 0 auto;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   display: flex;
   justify-content: space-between;
 }
 
-.esquerdinha {
+#novasenha .esquerdinha {
   display: flex;
   align-items: center;
   justify-content: center;
   width: 50%;
 }
 
-.pagina_esquerda {
+#novasenha .pagina_esquerda {
   background: linear-gradient(
     150deg,
     rgba(255, 255, 255, 0.356) 100%,
@@ -64,7 +64,7 @@ main {
   box-shadow: 2px 2px 70px rgb(0, 0, 0);
 }
 
-.return {
+#novasenha .return {
   color: var(--cinza);
   margin-top: 10px;
   font-size: 200%;
@@ -73,21 +73,21 @@ main {
   text-decoration: none;
 }
 
-h2 {
+#novasenha h2 {
   margin-bottom: 20px;
   color: var(--verde);
   font-size: 20px;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 
-.texto {
+#novasenha .texto {
   text-align: justify;
   color: var(--verde);
   margin-top: 1%;
   width: 75%;
 }
 
-.pagina_esquerda input {
+#novasenha .pagina_esquerda input {
   color: white;
   text-align: center;
   margin-top: 8%;
@@ -98,11 +98,11 @@ h2 {
   border-radius: 30px;
 }
 
-.confmSenha1 {
+#novasenha .confmSenha1 {
   width: 100%;
 }
 
-.confmSenha2 {
+#novasenha .confmSenha2 {
   cursor: pointer;
   margin: 10%;
   color: white;
@@ -115,13 +115,13 @@ h2 {
   text-transform: uppercase;
 }
 
-.ladoDireito {
+#novasenha .ladoDireito {
   display: flex;
   align-items: end;
   width: 50%;
 }
 
-.pagina_direita {
+#novasenha .pagina_direita {
   width: 100%;
   display: flex;
   justify-content: center;
@@ -129,7 +129,7 @@ h2 {
   flex-direction: column;
 }
 
-.pagina_direita p {
+#novasenha .pagina_direita p {
   color: white;
   text-align: center;
   font-size: 50px;
@@ -137,7 +137,7 @@ h2 {
   margin-bottom: 14%;
 }
 
-label {
+#novasenha label {
   margin-top: 5%;
   position: relative;
   width: 120px;
@@ -145,13 +145,13 @@ label {
   cursor: pointer;
 }
 
-label input {
+#novasenha label input {
   position: relative;
   z-index: 1;
   appearance: none;
 }
 
-label span {
+#novasenha label span {
   position: absolute;
   left: 70px;
   width: 40px;
@@ -161,10 +161,10 @@ label span {
   transition: 0, 5s;
 }
 
-label input:checked ~ span {
+#novasenha label input:checked ~ span {
   background: #cf4b83;
 }
-label span i {
+#novasenha label span i {
   transition: 0, 5s;
   top: 3.8px;
   left: 2px;
@@ -175,59 +175,59 @@ label span i {
   border-radius: 50%;
 }
 
-label input:checked ~ span i {
+#novasenha label input:checked ~ span i {
   left: 18px;
   background: #393939;
 }
 
-.pagina_direita img {
+#novasenha .pagina_direita img {
   width: 55%;
 }
 
 @media screen and (max-width: 1180px) {
-  .cabecalho {
+  #novasenha .cabecalho {
     height: 58px;
   }
 
-  .pagina_direita p {
+  #novasenha .pagina_direita p {
     font-size: 30px;
   }
 }
 
 @media screen and (max-width: 685px) {
-  .esquerdinha {
+  #novasenha .esquerdinha {
     width: 100%;
   }
 
-  .ladoDireito {
+  #novasenha .ladoDireito {
     width: 100%;
   }
 
-  .pagina_direita p {
+  #novasenha .pagina_direita p {
     font-size: 35px;
     margin-top: 30%;
   }
 
-  .pagina_esquerda button {
+  #novasenha .pagina_esquerda button {
     font-size: 70%;
     width: 45%;
   }
 
-  .pagina_direita {
+  #novasenha .pagina_direita {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
   }
 
-  body {
+  #novasenha body {
     background-image: url(../../assets/img/Background2.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
   }
 
-  main {
+  #novasenha main {
     flex-direction: column;
     display: flex;
     margin: 0 auto;
@@ -235,21 +235,21 @@ label input:checked ~ span i {
       sans-serif;
   }
 
-  .pagina_direita img {
+  #novasenha .pagina_direita img {
     width: 75%;
   }
 
-  .cabecalho img {
+  #novasenha .cabecalho img {
     width: 15%;
   }
 
-  .texto {
+  #novasenha .texto {
     font-size: smaller;
   }
 }
 
 @media screen and (max-width: 684px) {
-  .cabecalho img {
+  #novasenha .cabecalho img {
     width: 10%;
   }
 }

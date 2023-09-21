@@ -6,14 +6,14 @@
   --font1: "Tajawal", sans-serif;
 }
 
-header {
+#headz header {
   position: absolute;
   width: 100%;
   display: flex;
   justify-content: end;
 }
 
-label {
+#headz label {
   margin-top: 1.5%;
   margin-right: 3%;
   position: relative;
@@ -22,13 +22,13 @@ label {
   cursor: pointer;
 }
 
-label input {
+#headz label input {
   position: relative;
   z-index: 1;
   appearance: none;
 }
 
-label span {
+#headz label span {
   position: absolute;
   left: 70px;
   width: 40px;
@@ -38,11 +38,11 @@ label span {
   transition: 0, 5s;
 }
 
-label input:checked ~ span {
+#headz label input:checked ~ span {
   background: #cf4b83;
 }
 
-label span i {
+#headz label span i {
   transition: 0, 5s;
   top: 3.8px;
   left: 2px;
@@ -53,7 +53,7 @@ label span i {
   border-radius: 50%;
 }
 
-label input:checked ~ span i {
+#headz label input:checked ~ span i {
   left: 18px;
   background: #393939;
 }

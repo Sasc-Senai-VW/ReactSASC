@@ -9,7 +9,7 @@ import YoutubeEmbed from "../../components/Youtube";
 export default function Home() {
   return (
     <>
-      <div className="geral">
+      <div className="geral" id="geralzao">
         <section className="grid">
           <div className="graph Month"></div>
 

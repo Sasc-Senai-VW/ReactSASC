@@ -5,7 +5,6 @@ import { Route, Routes, BrowserRouter } from "react-router-dom";
 import { createRoot } from "react-dom/client";
 
 import Home from "./pages/Home";
-import CadastroEquipamento from "./pages/CadastroEquipamento";
 import DashboardFiltro from "./pages/DashboardFiltro";
 import Equipamento from "./pages/Equipamento";
 import EsqueceuSenha from "./pages/EsqueceuSenha";
@@ -22,7 +21,7 @@ ReactDOM.createRoot(document.getElementById("root")!).render(
       <Menu />
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="cadastroequipamento" element={<CadastroEquipamento />} />
+
         <Route path="dashboardfiltro" element={<DashboardFiltro />} />
         <Route path="equipamento" element={<Equipamento />} />
         <Route path="esqueceusenha" element={<EsqueceuSenha />} />

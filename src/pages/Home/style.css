@@ -1,10 +1,10 @@
 /* Visao geral */
 
-.geral {
+#geralzao .geral {
   height: 100%;
 }
 
-.grid {
+#geralzao .grid {
   margin-left: 17.5%;
   width: 80%;
   display: grid;
@@ -14,17 +14,17 @@
   gap: 25px;
 }
 
-.grid img {
+#geralzao .grid img {
   box-shadow: 10px 10px 25px rgb(0, 0, 0);
   border-radius: 0 25px 25px 25px;
 }
 
-.videoYoutb {
+#geralzao .videoYoutb {
   box-shadow: 10px 10px 25px rgb(0, 0, 0);
   border-radius: 0 25px 25px 25px;
 }
 
-.graph {
+#geralzao .graph {
   display: flex;
   align-items: center;
   text-align: center;
@@ -33,7 +33,7 @@
   flex-direction: row;
 }
 
-.Month {
+#geralzao .Month {
   /* border-radius:0 25px 25px 25px;
     background-color:  #1f1f1fd0; */
   background-position: center;
@@ -45,7 +45,7 @@
   grid-row-end: 4; */
 }
 
-.return {
+#geralzao .return {
   color: var(--cinza);
   margin-top: 1%;
   font-size: 200%;
@@ -54,7 +54,7 @@
   text-decoration: none;
 }
 
-.Donutleft {
+#geralzao .Donutleft {
   background-image: url(../img/Banner-Climas.png);
   background-size: cover;
   background-repeat: no-repeat;
@@ -68,7 +68,7 @@
   /* box-shadow: 10px 10px 25px rgb(0, 0, 0); */
 }
 
-.Barsright {
+#geralzao .Barsright {
   background-color: transparent;
   background-size: 150%;
   background-repeat: no-repeat;
@@ -84,7 +84,7 @@
   grid-row-end: 1; */
 }
 
-.Barsleft {
+#geralzao .Barsleft {
   border-radius: 0 25px 25px 25px;
   background-color: #1f1f1fd0;
   background-color: transparent;
@@ -102,7 +102,7 @@
   grid-row-end: 2; */
 }
 
-.Donutright {
+#geralzao .Donutright {
   border-radius: 0 25px 25px 25px;
   border-radius: 0 25px 25px 25px;
   /* background-color:  #1F1F1F; */
@@ -119,22 +119,22 @@
   justify-content: center;
 }
 
-.grid img {
+#geralzao .grid img {
   width: 100%;
   border-radius: 0 15px 15px 15px;
   background-size: cover;
   background-repeat: no-repeat;
 }
 
-.banner-ativo {
+#geralzao .banner-ativo {
   display: flex;
   box-shadow: 10px 10px 25px rgb(0, 0, 0);
 }
 
 @media screen and (max-width: 680px) {
-  .painelEqpm {
+  #geralzao .painelEqpm {
   }
-  .grid {
+  #geralzao .grid {
     margin-left: 10%;
   }
 }
