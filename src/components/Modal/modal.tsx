@@ -93,22 +93,6 @@ export default function Modal({ isOpen, setModalFechado }) {
                   required
                 />
               </div>
-              <div className="cad_box_input">
-                <label className="labelFoto" htmlFor="foto">
-                  Enviar Foto:
-                </label>
-                {/* Passar primeiro como exemplo */}
-                <input
-                  className="inputFoto"
-                  type="file"
-                  id="foto"
-                  onChange={verificarCampoUpload} // vai atualizar quando alterar valor do input
-                  required
-                />
-                <label className="labelImgFoto" htmlFor="foto">
-                  <img className="cameraInput" src={camera} />
-                </label>
-              </div>
               <div className="cad_linha_select">
                 <label htmlFor="foto">Tipo de usuario:</label>
                 <select

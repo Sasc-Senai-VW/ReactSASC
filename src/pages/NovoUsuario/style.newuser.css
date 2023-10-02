@@ -488,6 +488,7 @@
 }
 
 #newuser tr {
+  padding: 10px;
   display: flex;
   height: 40px;
   border-radius: 10px;

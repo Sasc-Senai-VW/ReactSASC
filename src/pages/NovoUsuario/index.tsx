@@ -43,19 +43,19 @@ function NovoUsuario() {
                 <table>
                   <tbody>
                     <tr>
-                      <th>Usuário</th>
+                      <th>Nome</th>
+                      <th>Email</th>
                       <th>Categoria</th>
-                      <th>Senha</th>
                     </tr>
                     <tr className="linha_impar">
-                      <td>2023004</td>
-                      <td>Lorem</td>
-                      <td>2015</td>
+                      <td>Lorem123</td>
+                      <td>email@email.com</td>
+                      <td>Comum</td>
                     </tr>
                     <tr className="linha_par">
-                      <td>2023004</td>
-                      <td>Lorem</td>
-                      <td>2015</td>
+                      <td>Lorem123</td>
+                      <td>email@email.com</td>
+                      <td>Administrador</td>
                     </tr>
                   </tbody>
                 </table>
